@@ -1,6 +1,103 @@
 /* CSS Layout*/
-body{
+body {
     width: 900px;
-    margin: auto; 
+    margin: auto;
+}
 
+/*-------------------------------------- Header / Nav barre -----------------------------------*/
+/*--- Logo and title----------*/
+#branding {
+    position: relative;
+}
+
+#branding>img {
+    width: 10%;
+}
+
+#branding h1+p {
+    margin-top: -25px;
+}
+
+/*---nav barre--------------*/
+#branding #nav_barre_main {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#branding #nav_barre_main ul {
+    display: inline-block;
+
+}
+
+#branding #nav_barre_main ul li {
+    float: left;
+    margin: 0 30px;
+}
+
+/*--- Filter field------------*/
+div#filter {
+    margin-top: 30px;
+
+}
+
+div#filter ul#filter_field {
+    display: flex;
+
+}
+
+div#filter ul#filter_field li {
+    margin: 0 20px;
+}
+
+/*-------------------------------------- Main ---------------------------------------*/
+main#wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(2)
+}
+
+/*-------------------------------------- Section ------------------------------------*/
+
+section#container_main{
+    display: grid;
+}
+
+/*-------------------------------------- Article ------------------------------------*/
+
+section#container_main article#content_main{
+    grid-column:1;
+}
+section#container_main article#content_sub{
+    grid-column: 2;
+
+}
+/*--- ul ----------------*/
+section#container_main article#content_main ul {
+  display: flex;
+  flex-direction: row;
+}
+
+section#container_sub article#content_sub ul{
+    display: flex;
+    flex-direction: row;
+}
+    
+
+
+
+section article ul li img{
+    width: 200px;
+   
+}
+
+/*-------------------------------------- Footer ------------------------------------*/
+footer#foot_page{
+
+}
+
+footer#foot_page section#info_site ul{
+    display: flex;
+    flex-direction: row;
 }
