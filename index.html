@@ -13,21 +13,23 @@
 </head>
 
 <body>
-    <header id="heading">
+    <header id="branding">
         <img src="/images/logo/Reservia@3x.png" alt="Reservia logo">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <span>En plein centre ville ou pleine nature</span>
-        <nav>
+        <p>En plein centre ville ou pleine nature</p>
+        <nav id="nav_barre_main">
             <ul>
                 <li><a href="Hébergements">Hébergements</a></li>
                 <li><a href="Activités">Activités</a></li>
                 <li><a href="S'inscrie">S'inscrie</a></li>
             </ul>
         </nav>
-        <div id="filtre"> <img src="#" alt="logo">
+        <div id="filter">
+            <img src="#" alt="logo">
             <label for=""></label><input type="text"><a href="#">Recherche</a>
-            <ul>filtre
-                <li><img src="/images/activites/" alt="économique">economique</li>
+            <ul id="filter_field"> 
+                <span>filtre</span>
+                <li><img src="/images/activites/" alt="">economique</li>
                 <li>familial</li>
                 <li>romantique</li>
                 <li>animaux autorises</li>
@@ -36,10 +38,10 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h2>Herbegements</h2>
+    <main id="wrapper">
+        <section id="container_main"> 
+            <article id="content_main">
+                <h2>Herbegements à Marseille</h2>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
@@ -82,12 +84,12 @@
                 </ul>
                 <span>Afficher plus</span>
             </article>
-            <article>
+            <article id="content_sub">
                 <h2>Les plus populaire<img src="#" alt=""></h2>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <p>Hotel Le soeil du matin</p>
+                        <p>Hotel Le soleil du matin</p>
                         <p>prix de la nuit xxx$</p>
                         <p>notes en etoile</p>
                     </li>
@@ -106,8 +108,8 @@
                 </ul>
             </article>
         </section>
-        <section>
-            <article>
+        <section id="container_sub">
+            <article id="content_sub">
                 <h2>Activites a Marseille</h2>
                 <ul>
                     <li>
@@ -138,7 +140,8 @@
             </article>
         </section>
     </main>
-    <footer>
+    <footer id="foot_page">
+        <section id="info_site">
         <ul>
             <il>
                 <h4>A propos</h4>
@@ -163,7 +166,7 @@
                 </ul>
             </il>
         </ul>
-
+</section>
     </footer>
 </body>
 
