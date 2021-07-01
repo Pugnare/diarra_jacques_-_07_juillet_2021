@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3e6bead995.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/icons.css">
@@ -25,26 +27,29 @@
             </ul>
         </nav>
         <div id="filter">
-            <img src="#" alt="logo">
-            <label for=""></label><input type="text"><a href="#">Recherche</a>
-            <ul id="filter_field"> 
+            <div id="filter_style">
+               <i class="fas fa-map-marker-alt"></i>
+                <label for=""><input type="text"><a href="#">Recherche</a></label>
+            </div>
+            <ul id="filter_field">
                 <span>filtre</span>
                 <li><img src="/images/activites/" alt="">economique</li>
                 <li>familial</li>
                 <li>romantique</li>
                 <li>animaux autorises</li>
             </ul>
-            <figure><img src="" alt="info">Plus de 500 logements sont disponible dans cette ville</figure>
+            <figure><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville</figure>
         </div>
     </header>
 
     <main id="wrapper">
-        <section id="container_main"> 
+        <section id="container_main">
             <article id="content_main">
                 <h2>Herbegements à Marseille</h2>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
+
                         <p>Auberge la cannebiere</p>
                         <p>Nuit a partie de 25$</p>
                         <p>notes en etoile</p>
@@ -85,33 +90,39 @@
                 <span>Afficher plus</span>
             </article>
             <article id="content_sub">
-                <h2>Les plus populaire<img src="#" alt=""></h2>
+                <h2>Les plus populaire <i class="fas fa-chart-line"></i></h2>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-                        <p>Hotel Le soleil du matin</p>
-                        <p>prix de la nuit xxx$</p>
-                        <p>notes en etoile</p>
+                        <div>
+                            <p>Hotel Le soleil du matin</p>
+                            <p>prix de la nuit xxx$</p>
+                            <p>notes en etoile</p>
+                        </div>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
-                        <p>destination</p>
-                        <p>prix de la nuit xxx$</p>
-                        <p>notes en etoile</p>
+                        <div>
+                            <p>destination</p>
+                            <p>prix de la nuit xxx$</p>
+                            <p>notes en etoile</p>
+                        </div>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
-                        <p>Hotel Tout bleu et blanc</p>
-                        <p>prix de la nuit xxx$</p>
-                        <p>notes en etoile</p>
+                        <div>
+                            <p>Hotel Tout bleu et blanc</p>
+                            <p>prix de la nuit xxx$</p>
+                            <p>notes en etoile</p>
+                        </div>
                     </li>
                 </ul>
             </article>
         </section>
         <section id="container_sub">
-            <article id="content_sub">
+            <article id="content_main">
                 <h2>Activites a Marseille</h2>
-                <ul>
+                <ul id="activites">
                     <li>
                         <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
                         <p>Vieux Port</p>
@@ -142,31 +153,31 @@
     </main>
     <footer id="foot_page">
         <section id="info_site">
-        <ul>
-            <il>
-                <h4>A propos</h4>
-                <ul>
-                    <li><a href="">Fonctionnements du site</a></li>
-                    <li><a href="">Conditions general de vente</a></li>
-                    <li><a href="">Donnees et confidentialite</a></li>
-                </ul>
-            </il>
-            <il>
-                <h4>Nos hebergements</h4>
-                <ul>
-                    <li><a href="">Charte qualite</a></li>
-                    <li><a href="">Soumettre votre hotel</a></li>
-                </ul>
-            </il>
-            <il>
-                <h4>Assistance</h4>
-                <ul>
-                    <li><a href="">Contre d'aide</a></li>
-                    <li><a href="">Nous contacter</a></li>
-                </ul>
-            </il>
-        </ul>
-</section>
+            <ul>
+                <il>
+                    <h4>A propos</h4>
+                    <ul>
+                        <li><a href="">Fonctionnements du site</a></li>
+                        <li><a href="">Conditions general de vente</a></li>
+                        <li><a href="">Donnees et confidentialite</a></li>
+                    </ul>
+                </il>
+                <il>
+                    <h4>Nos hebergements</h4>
+                    <ul>
+                        <li><a href="">Charte qualite</a></li>
+                        <li><a href="">Soumettre votre hotel</a></li>
+                    </ul>
+                </il>
+                <il>
+                    <h4>Assistance</h4>
+                    <ul>
+                        <li><a href="">Contre d'aide</a></li>
+                        <li><a href="">Nous contacter</a></li>
+                    </ul>
+                </il>
+            </ul>
+        </section>
     </footer>
 </body>
 
