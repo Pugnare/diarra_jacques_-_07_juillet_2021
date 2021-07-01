@@ -44,9 +44,19 @@ ul {
 }
 
 /*--- Filter field------------*/
+
+div#filter a {
+
+    padding: 5px 35px;
+}
+
 div#filter {
     margin-top: 35px;
 
+}
+
+div#filter input {
+    height: 21px;
 }
 
 div#filter ul#filter_field {
@@ -58,10 +68,23 @@ div#filter ul#filter_field li {
     margin: 0 20px;
 }
 
-div#filter ul#filter_field + figure{
-    margin:50px 0 20px 0;
-    
+div#filter ul#filter_field+figure {
+    margin: 50px 0 20px 0;
 }
+
+header#branding div#filter figure i {
+    margin-right: 5px;
+}
+
+div#filter div#filter_style {
+    width: 318.5px;
+}
+
+div#filter div#filter_style i {
+    padding: 5px 10px;
+
+}
+
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 
 
@@ -75,14 +98,14 @@ section#container_sub {
 section#container_main {
     display: grid;
     grid-column-gap: 25px;
-    
+
 }
 
 /*------------------------------------------------------- Contnaire_main Article   -------------------------------------------------*/
 /*--- position under container #content_main "center" and  #content_sub "right"-----------*/
 section#container_main article#content_main {
     grid-column: 1;
-  
+
 }
 
 section#container_main article#content_sub {
@@ -106,6 +129,7 @@ section#container_main article#content_main ul {
     flex-direction: row;
     justify-content: space-around;
 }
+
 /*--- content_sub-------------*/
 section#container_main article#content_sub {
     padding-left: 50px;
@@ -165,16 +189,28 @@ section#container_main article#content_sub ul li img {
 
 /*--------------------------------------------------------- Contnaire_sub   ------------------------------------------------*/
 
-section#container_sub{
+section#container_sub {
     margin-top: 150px;
 }
 
 
-/*----------------------------------------------------------- img -----------------------------------------------------------*/
+/*----------------------------------------------------------- images / icons-----------------------------------------------------------*/
 
+/*--- icons-----------------------------*/
+/*--- h2 position relative for i (icone)*/
+section#container_main article#content_sub h2 {
+    position: relative;
+}
 
+section#container_main article#content_sub i {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
 
-#activites li img {
+/*--- images---------------------*/
+
+ul#activites li img {
     width: 100%;
 }
 
@@ -225,9 +261,10 @@ section#container_sub article#content_main ul#activites li:nth-child(5) {
 
 /*---------------------------------------------------------------- Footer ----------------------------------------------------------*/
 
-footer#foot_page{
- margin-top: 150px; 
+footer#foot_page {
+    margin-top: 150px;
 }
+
 footer#foot_page section#info_site {
     height: 300px;
     display: flex;

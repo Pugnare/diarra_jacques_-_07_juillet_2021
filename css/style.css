@@ -1,5 +1,128 @@
 /*couleur de la charte 
 bleu #0065fc
 claire #deebff
-background #f2f2f2
 */
+
+
+/* ------------------------------------------------------------ Generic regle -------------------------------------------------------*/
+
+/*--- Background-color #container_main article and footer#foot_site --*/
+
+main section#container_main article,
+footer {
+    background-color: #f2f2f2;
+}
+
+/*--- a / link "color and style" --------*/
+a {
+    color: #0065fc;
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: #0065fc;
+}
+
+a:visited {
+    color: #bbbbbb;
+}
+
+a:focus {
+    color: #deebff;
+}
+
+a:hover {
+    color: #bbbbbb
+}
+
+a:active {
+    color: #0065fc;
+
+}
+
+/* style none "list"*/
+ul li {
+    list-style: none;
+
+}
+
+/* ------------------------------------------------------------ Header -------------------------------------------------------------*/
+
+header#branding div#filter div#filter_style i {
+    background-color: #f2f2f2;
+}
+
+header#branding div#filter div#filter_style {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+
+}
+
+header#branding div#filter input {
+    border: none;
+}
+
+header#branding div#filter a {
+    color: #deebff;
+    background: #0065fc;
+    border-radius: 0 5px 5px 0;
+}
+
+header#branding div#filter figure i {
+    color: #0065fc;
+
+}
+
+/* ------------------------------------------------------------ Main ----------------------------------------------------------------*/
+/* ------------------------------------------------------------- Section ------------------------------------------------------------*/
+/* ------------------------------------------------------------ Article -------------------------------------------------------------*/
+
+/*--- Container_main article */
+section#container_main article#content_main,
+section#container_main article#content_sub {
+    border-radius: 20px;
+}
+
+/*--- Container_main article ul ------------*/
+section#container_main article#content_main ul li,
+section#container_main article#content_sub ul li {
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+section#container_main article#content_main ul li img {
+    border-radius: 5px 5px 0 0;
+}
+
+section#container_main article#content_sub ul li img {
+    border-radius: 5px 0 0 5px;
+}
+
+/*--- Contanier_sub*/
+
+/*box shadow*/
+section#container_sub article#content_main ul#activites li {
+    box-shadow: 25px 18px 20px 1px rgba(0, 0, 0, .2);
+}
+
+/*radius*/
+section#container_sub article#content_main ul#activites li {
+    border-radius: 15px;
+}
+
+section#container_sub article#content_main ul#activites li img {
+    border-radius: 15px 15px 0 0;
+}
+
+/*align text*/
+
+#container_sub article#content_main ul li p {
+    text-align: center;
+    margin: auto 0;
+    padding: 20px 0 20px;
+
+}
+
+/* ------------------------------------------------------------ Footer ----------------------------------------------------------------*/
