@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3e6bead995.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/icons.css">
     <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/icons.css">
     <title>Reservia</title>
 </head>
 
@@ -28,17 +27,18 @@
         </nav>
         <div id="filter">
             <div id="filter_style">
-               <i class="fas fa-map-marker-alt"></i>
+                <img class="fas fa-map-marker-alt" src="/images/icon/map-marker-alt-solid.svg" />
                 <label for=""><input type="text"><a href="#">Recherche</a></label>
             </div>
             <ul id="filter_field">
-                <span>filtre</span>
-                <li><img src="/images/activites/" alt="">economique</li>
-                <li>familial</li>
-                <li>romantique</li>
-                <li>animaux autorises</li>
+                <span>Filtre</span>
+                <li><img class="fa-money-solid" src="/images/icon/money-bill-wave-solid.svg" alt="Economie">Economique</li>
+                <li><img class="fa-child-solid" src="/images/icon/child-solid.svg" alt="Familial">Familial</li>
+                <li><img class="fa-heart-solid" src="/images/icon/heart-solid.svg" alt="Romantique">Romantique</li>
+                <li><img class="fa-dog-solid" src="/images/icon/dog-solid.svg" alt="Animal">Animaux autorises</li>
             </ul>
-            <figure><i class="fas fa-info"></i>Plus de 500 logements sont disponible dans cette ville</figure>
+            <figure><img class="fas fa-info" src="/images/icon/info-solid.svg" />Plus de 500 logements sont disponible
+                dans cette ville</figure>
         </div>
     </header>
 
@@ -50,70 +50,125 @@
                     <li>
                         <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
 
-                        <p>Auberge la cannebiere</p>
-                        <p>Nuit a partie de 25$</p>
-                        <p>notes en etoile</p>
+                        <p class="name_location">Auberge la cannebiere</p>
+                        <p class="price">Nuit a partie de 25€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-half-alt-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                        </ul>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
                         <p>Hotel du port</p>
-                        <p>Nuit a partie de 52$</p>
-                        <p>notes en etoile</p>
+                        <p>Nuit a partie de 52€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                        </ul>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-                        <p>Hotel les mouettes</p>
-                        <p>Nuit a partie de 76$</p>
-                        <p>notes en etoile</p>
+                        <p class="name_destination">Hotel les mouettes</p>
+                        <p>Nuit a partie de 76€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-half-alt-solid.svg" alt=""></li>
+                        </ul>
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                         <p>Hotel de la mer</p>
-                        <p>Nuit a partie de 46$</p>
-                        <p>notes en etoile</p>
+                        <p>Nuit a partie de 46€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                        </ul>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                         <p>Auberge le panier</p>
-                        <p>Nuit a partie de 23$</p>
-                        <p>notes en etoile</p>
+                        <p>Nuit a partie de 23€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                        </ul>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
                         <p>Hotel chez Amina</p>
-                        <p>Nuit a partie de 96$</p>
-                        <p>notes en etoile</p>
+                        <p>Nuit a partie de 96€</p>
+                        <ul class="note_list">
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                            <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                        </ul>
                     </li>
                 </ul>
                 <span>Afficher plus</span>
             </article>
             <article id="content_sub">
-                <h2>Les plus populaire <i class="fas fa-chart-line"></i></h2>
+                <h2>Les plus populaire <img class="fas fa-chart-line" src="/images/icon/chart-line-solid.svg" /></h2>
                 <ul>
                     <li>
                         <img src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                         <div>
                             <p>Hotel Le soleil du matin</p>
-                            <p>prix de la nuit xxx$</p>
-                            <p>notes en etoile</p>
+                            <p>prix de la nuit 25€</p>
+                            <ul class="note_list">
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-half-alt-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-regular.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-regular.svg" alt="note"></li>
+                            </ul>
+
                         </div>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
                         <div>
                             <p>destination</p>
-                            <p>prix de la nuit xxx$</p>
-                            <p>notes en etoile</p>
+                            <p>prix de la nuit 30€</p>
+                            <ul class="note_list">
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-half-alt-solid.svg" alt="note"></li>
+                            </ul>
                         </div>
                     </li>
                     <li>
                         <img src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
                         <div>
                             <p>Hotel Tout bleu et blanc</p>
-                            <p>prix de la nuit xxx$</p>
-                            <p>notes en etoile</p>
+                            <p>prix de la nuit 50€</p>
+                            <ul class="note_list">
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-half-alt-solid.svg" alt="note"></li>
+                                <li><img class="fa-star-solid" src="/images/icon/star-solid-half.svg" alt="note"></li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
@@ -124,27 +179,27 @@
                 <h2>Activites a Marseille</h2>
                 <ul id="activites">
                     <li>
-                        <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Vieux port Marseille">
                         <p>Vieux Port</p>
                     </li>
                     <li>
-                        <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Fort de Pomegues">
                         <p>Fort de Pomegues</p>
                     </li>
                     <li>
-                        <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Iles du Frioul">
                         <p>Iles du Frioul</p>
                     </li>
                     <li>
-                        <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc nation des Calanques">
                         <p>Parc nation des Calanques</p>
                     </li>
                     <li>
-                        <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                         <p>Notre-Dame-de-la-Garde</p>
                     </li>
                     <li>
-                        <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                        <img src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Parc Longchamp">
                         <p>Parc Longchamp</p>
                     </li>
                 </ul>
@@ -154,7 +209,7 @@
     <footer id="foot_page">
         <section id="info_site">
             <ul>
-                <il>
+                <li>
                     <h4>A propos</h4>
                     <ul>
                         <li><a href="">Fonctionnements du site</a></li>
@@ -162,20 +217,20 @@
                         <li><a href="">Donnees et confidentialite</a></li>
                     </ul>
                 </il>
-                <il>
+                <li>
                     <h4>Nos hebergements</h4>
                     <ul>
                         <li><a href="">Charte qualite</a></li>
                         <li><a href="">Soumettre votre hotel</a></li>
                     </ul>
-                </il>
-                <il>
+                </li>
+                <li>
                     <h4>Assistance</h4>
                     <ul>
                         <li><a href="">Contre d'aide</a></li>
                         <li><a href="">Nous contacter</a></li>
                     </ul>
-                </il>
+                </li>
             </ul>
         </section>
     </footer>

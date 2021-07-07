@@ -33,7 +33,7 @@ a:focus {
 }
 
 a:hover {
-    color: #bbbbbb
+    color: #bbbbbb;
 }
 
 a:active {
@@ -49,8 +49,9 @@ ul li {
 
 /* ------------------------------------------------------------ Header -------------------------------------------------------------*/
 
-header#branding div#filter div#filter_style i {
+header#branding div#filter div#filter_style img {
     background-color: #f2f2f2;
+ 
 }
 
 header#branding div#filter div#filter_style {
@@ -66,19 +67,23 @@ header#branding div#filter input {
 header#branding div#filter a {
     color: #deebff;
     background: #0065fc;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 1 5px 15px 0;
 }
 
-header#branding div#filter figure i {
-    color: #0065fc;
-
+header#branding div#filter ul#filter_field li {
+    border: 3px solid #f2f2f2;
+    border-radius: 25px;
 }
 
+div#filter div#filter_style + ul#filter_field img{
+    border-radius: 50%;
+    background-color:#f2f2f2;;
+}
 /* ------------------------------------------------------------ Main ----------------------------------------------------------------*/
 /* ------------------------------------------------------------- Section ------------------------------------------------------------*/
 /* ------------------------------------------------------------ Article -------------------------------------------------------------*/
 
-/*--- Container_main article */
+/*--- Container_main article ---- */
 section#container_main article#content_main,
 section#container_main article#content_sub {
     border-radius: 20px;

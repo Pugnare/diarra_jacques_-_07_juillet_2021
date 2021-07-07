@@ -1,0 +1,208 @@
+/*--- Screen -------*/
+
+@media screen and (min-width:1081px) {}
+
+/*1080*/
+@media screen and (min-width:415px) and (max-width:1080px) {
+
+    section#container_main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+
+    section#container_main article#content_main {
+        padding: 5.17%;
+        margin-bottom: 60px;
+    }
+
+    section#container_main article#content_sub {
+        padding-left: 35px;
+
+    }
+}
+
+/*---------------------------------------------------- mobile ----------------------------------------*/
+/*414 x 667*/
+
+@media screen and (max-width: 414px) {
+    body {
+        margin: 0 auto;
+        min-width: initial;
+        max-width: 414px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5px;
+    }
+
+    header#branding,
+    main {
+        width: 400px;
+    }
+
+
+    /*------------------------------------------------- header ---------------------------------------*/
+    #branding {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #branding>img {
+        width: 25%;
+    }
+
+    #branding h1 {
+        margin-top: 45px;
+
+    }
+
+    #branding #nav_barre_main {
+        position: initial;
+        margin-top: 50px;
+
+    }
+
+    #branding #nav_barre_main ul {
+        margin: 0;
+    }
+
+    #branding #nav_barre_main li:last-child {
+        position: absolute;
+        right: -10px;
+        top: 10px;
+    }
+
+    #branding #nav_barre_main div#filter_style {
+        margin: 0 auto;
+    }
+
+    header#branding div#filter ul#filter_field {
+        flex-wrap: wrap;
+        margin: 50px 0;
+
+        position: relative;
+    }
+
+    header#branding div#filter ul#filter_field span {
+
+        position: absolute;
+        top: -40px;
+        left: 53px
+    }
+
+    header#branding div#filter ul#filter_field li {
+        margin: 4px 3px;
+    }
+
+    header#branding div#filter ul#filter_field li img {
+        margin-right: 8px;
+    }
+
+    /*---------------------------------------------------- main --------------------------------------*/
+
+
+    /*-------------------------------------------------- section -------------------------------------*/
+    main#wrapper section#container_main {
+
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main#wrapper section#container_sub {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*-------------------------------------------------- article -------------------------------------*/
+    /*--- #container_main #content_main*/
+    
+    section#container_main article#content_main{
+        padding: initial;
+        flex-direction: column;
+    }
+    section#container_main article#content_main ul {
+   
+       
+    }
+
+
+    section#container_main article#content_main ul>li {
+        height: 190px;
+    }
+
+    section#container_main article#content_main ul>li img {
+        height: 49%;
+        width: 100%;
+
+    }
+
+    section#container_main article#content_main >ul {
+        flex-direction: column;
+    }
+    section#container_main article#content_main ul li ul.note_list {
+        justify-content: center;
+    }
+
+    section#container_main article#content_main ul li ul.note_list li{
+        height: 10px;
+    }
+
+    /*--- #container_main #content_sub*/
+
+    section#container_main article#content_sub {
+       
+
+    }
+
+    /*--- #container_sub #content_main ---*/
+
+    section#container_sub article#content_main ul#activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    section#container_main article#content_sub {
+        padding: initial;
+    }
+    section#container_main article#content_sub ul li div p:nth-child(2){
+        margin: initial;
+    }
+
+    /*------------------------------------------------------- footer ------------------------------------------------*/
+
+    footer#foot_page section#info_site {
+        flex-direction: column;
+        height: initial;
+        margin: auto;
+
+    }
+
+    footer#foot_page section#info_site>ul {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 370px;
+    }
+
+
+    /*------------------------------------------------------- style----------------------------------------------------*/
+
+    /*--- Section ---*/
+    main#wrapper section#container_main article#content_main {
+        background-color: initial;
+    }
+
+    main#wrapper section#container_main article#content_main ul li,
+    main#wrapper section#container_sub article#content_main ul li {
+        box-shadow: 2px 10px 20px 1px rgba(0, 0, 0, .2);
+    }
+
+    main#wrapper section#container_main article#content_main ul li ul li {
+        box-shadow: initial;
+    }
+}

@@ -1,2 +1,62 @@
-
 /*police du site Raleway*/
+@font-face {
+    font-family: Raleway, sans-serif;
+    src: url("../fonts/static/Raleway-Black.ttf") format("truetype");
+
+}
+
+body{
+    font-family: Raleway
+}
+
+/*-------------------------------------------------- Header --------------------------------------------------*/
+/*--- Tilte and nav -----------*/
+
+
+header#branding h1 {
+    font-size: 22px;
+}
+
+header#branding h1+p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header#branding nav {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* --- div#filter --------------*/
+
+header#branding div#filter div#filter_style label{
+    font-weight: 600;
+}
+
+header#branding div#filter ul#filter_field{
+    font-weight: 800;
+
+}
+
+/*----------------------------------------------------- Main -----------------------------------------------*/
+
+/*--- section / article*/
+section#container_main article#content_main ul li img + p,
+section#container_main article#content_sub ul li div > p:first-child,
+section#container_main article#content_main > span
+{
+    font-weight: 800;
+}
+
+
+section#container_sub article#content_main p{
+    font-weight: 800;
+}
+
+
+/*----------------------------------------------------- Footer -----------------------------------------------*/
+
+footer#foot_page ul li a{
+    font-weight: 600;
+    font-size: 14px;
+}

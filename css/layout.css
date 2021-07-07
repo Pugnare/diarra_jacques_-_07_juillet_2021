@@ -23,7 +23,7 @@ ul {
 }
 
 #branding h1+p {
-    margin-top: -25px;
+    margin-top: -10px;
 }
 
 /*---nav barre--------------*/
@@ -46,8 +46,7 @@ ul {
 /*--- Filter field------------*/
 
 div#filter a {
-
-    padding: 5px 35px;
+    padding: 15px;
 }
 
 div#filter {
@@ -56,33 +55,49 @@ div#filter {
 }
 
 div#filter input {
-    height: 21px;
+    height: 44px;
 }
 
 div#filter ul#filter_field {
     display: flex;
-
+    margin-top: 55px;
 }
 
-div#filter ul#filter_field li {
+div#filter ul#filter_field>span {
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+div#filter div#filter_style+ul#filter_field li {
     margin: 0 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
 }
 
 div#filter ul#filter_field+figure {
     margin: 50px 0 20px 0;
 }
 
-header#branding div#filter figure i {
-    margin-right: 5px;
+header#branding div#filter figure img.fa-info {
+    margin-right: 12px;
 }
 
 div#filter div#filter_style {
-    width: 318.5px;
+    width: 323.5px;
 }
 
-div#filter div#filter_style i {
-    padding: 5px 10px;
 
+
+/*--- icon -----------*/
+div#filter div#filter_style img.fa-map-marker-alt {
+    padding: 15px 25px;
+    margin-bottom: -18px;
+}
+
+div#filter div#filter_style+ul#filter_field li img {
+    margin-right: 25px;
+    padding: 10px;
 }
 
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
@@ -98,7 +113,12 @@ section#container_sub {
 section#container_main {
     display: grid;
     grid-column-gap: 25px;
+}
 
+section#container_main article#content_main>span {
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 30px;
 }
 
 /*------------------------------------------------------- Contnaire_main Article   -------------------------------------------------*/
@@ -130,6 +150,11 @@ section#container_main article#content_main ul {
     justify-content: space-around;
 }
 
+/*-----------*/
+section#container_main article#content_main ul li>ul.note_list {
+    justify-content: center;
+}
+
 /*--- content_sub-------------*/
 section#container_main article#content_sub {
     padding-left: 50px;
@@ -139,6 +164,7 @@ section#container_main article#content_sub {
 /*--- content_sub h2 -------------*/
 section#container_main article#content_sub h2 {
     margin-top: 0px;
+    position: relative;
 }
 
 /*--- content_sub ul -------------*/
@@ -159,19 +185,52 @@ section#container_main article#content_sub ul li {
     flex-direction: row;
 }
 
+
+
+
 /*--- content_sub div and p ---*/
 section#container_main article#content_sub ul li div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 50px);
+
+
+}
+
+
+section#container_main article#content_sub ul li div p:nth-child(1) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+
+
+
+}
+
+section#container_main article#content_sub ul li div p:nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+    margin-top: -15px;
+}
+
+/*--- content_sub div icon ---*/
+section#container_main article#content_sub ul li div ul.note_list {
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: center;
+
 }
 
-section#container_main article#content_sub ul li div p {
-    display: block;
-    margin: 0px 0 0 50px;
-}
+section#container_main article#content_sub ul li div ul.note_list li {
+    height: 10px;
 
-section#container_main article#content_sub ul li div p:first-child {
-    margin-top: 15px;
 }
 
 /*---- img --------*/
@@ -182,10 +241,11 @@ section#container_main article#content_main ul li img {
 
 }
 
-section#container_main article#content_sub ul li img {
+section#container_main article#content_sub ul li>img {
     width: 135px;
     height: 150px;
 }
+
 
 /*--------------------------------------------------------- Contnaire_sub   ------------------------------------------------*/
 
@@ -193,16 +253,21 @@ section#container_sub {
     margin-top: 150px;
 }
 
+/*--- article#content_main   -----------*/
+
+
 
 /*----------------------------------------------------------- images / icons-----------------------------------------------------------*/
 
 /*--- icons-----------------------------*/
-/*--- h2 position relative for i (icone)*/
+
+
+/*--- h2 position relative for img (icone)*/
 section#container_main article#content_sub h2 {
     position: relative;
 }
 
-section#container_main article#content_sub i {
+section#container_main article#content_sub img.fa-chart-line {
     position: absolute;
     right: 20px;
     top: 5px;
@@ -263,10 +328,11 @@ section#container_sub article#content_main ul#activites li:nth-child(5) {
 
 footer#foot_page {
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 footer#foot_page section#info_site {
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,5 +342,9 @@ footer#foot_page section#info_site>ul {
     width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
+}
+
+footer#foot_page section#info_site ul li ul li:nth-child(1n+1) {
+    margin: 8px 0;
 }

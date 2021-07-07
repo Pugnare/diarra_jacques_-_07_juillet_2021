@@ -1,1 +1,47 @@
 /* pour les  icon "font awesome"*/
+
+img.fa-map-marker-alt{
+    width: 12px;
+}
+img.fa-info{
+    width: 7px;
+   
+}
+img.fa-chart-line{
+    width: 18px;
+}
+
+img.fa-money-solid{
+    width:25px;
+    height:25px;
+}
+img.fa-dog-solid{
+    width: 28px;
+}
+
+img.fa-child-solid{
+    width: 25px;
+    height:25px;
+}
+img.fa-heart-solid{
+    width: 25px;
+}
+
+
+img.fa-star-solid,
+img.fa-star-half-alt-solid,
+img.fa-star-regular
+ {
+ width: 10px;
+}
+
+
+section#container_main article#content_sub ul li div ul.note_list li img.fa-star-solid{
+    width: 10px;
+    height:10px;
+}
+
+section#container_main article#content_main ul li ul.note_list li img.fa-star-solid{
+    width: 10px;
+    height:10px;
+}
