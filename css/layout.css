@@ -3,8 +3,9 @@
 
 /*genetic style*/
 body {
-    width: 1300px;
-    margin: auto;
+    max-width: 1300px;
+    
+    margin: 0 auto;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
 }
 
 #branding>img {
-    width: 10%;
+    width: 150px;
 }
 
 #branding h1+p {
@@ -84,7 +85,7 @@ header#branding div#filter figure img.fa-info {
 }
 
 div#filter div#filter_style {
-    width: 323.5px;
+    width: 380.5px;
 }
 
 
@@ -105,15 +106,17 @@ div#filter div#filter_style+ul#filter_field li img {
 
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
 /*--- genetric regle contnaire_main and sub "width* -----------------*/
-section#container_main,
-section#container_sub {
-    width: 1300px;
-}
 
 section#container_main {
-    display: grid;
-    grid-column-gap: 25px;
+    display: flex;
+    
+    justify-content: space-between;
 }
+
+
+/*------------------------------------------------------- Contnaire_main Article   -------------------------------------------------*/
+/*--- position under container #content_main "center" and  #content_sub "right"-----------*/
+
 
 section#container_main article#content_main>span {
     display: inline-block;
@@ -121,18 +124,13 @@ section#container_main article#content_main>span {
     padding-bottom: 30px;
 }
 
-/*------------------------------------------------------- Contnaire_main Article   -------------------------------------------------*/
-/*--- position under container #content_main "center" and  #content_sub "right"-----------*/
+
 section#container_main article#content_main {
-    grid-column: 1;
+    padding: 4%;
+    
+    margin-right: 35px;
 
 }
-
-section#container_main article#content_sub {
-    grid-column: 2;
-}
-
-
 
 section#container_main article#content_main h2 {
     margin-left: 25px;
@@ -148,6 +146,7 @@ section#container_main article#content_main ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
 }
 
 /*-----------*/
@@ -157,6 +156,7 @@ section#container_main article#content_main ul li>ul.note_list {
 
 /*--- content_sub-------------*/
 section#container_main article#content_sub {
+
     padding-left: 50px;
     padding-top: 20px;
 }
