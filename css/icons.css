@@ -7,7 +7,8 @@ img.fa-info{
     width: 7px;
    
 }
-img.fa-chart-line{
+img.fa-chart-line,
+img.fa-searh-solid{
     width: 18px;
 }
 
@@ -26,6 +27,7 @@ img.fa-child-solid{
 img.fa-heart-solid{
     width: 25px;
 }
+
 
 
 img.fa-star-solid,

@@ -1,54 +1,81 @@
 /*--- Screen -------*/
 
-@media screen and (min-width:1081px) {}
 
-/*1080*/
-@media screen and (min-width:415px) and (max-width:1080px) {
 
-    section#container_main {
-        flex-wrap: wrap;
-        justify-content: center;
+@media screen and (min-width:992px) {}
+
+@media screen and (min-width:768px) and (max-width:991.98px) {
+
+    main#wrapper section#container_main {
+        justify-content: space-evenly;
+
+    }
+
+    main#wrapper section#container_main article#content_main h2~ul {
+        flex-direction: column;
+        width: 35%;
+
+    }
+
+    main#wrapper section#container_main article#content_main h2+div {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        padding-bottom: 40px;
+    }
+
+    main#wrapper section#container_main article#content_main h2+div span {
+        position: absolute;
+        left: 0;
+        bottom: -1rem;
     }
 
 
-
-
-    section#container_main article#content_main {
-        padding: 5.17%;
-        margin-bottom: 60px;
-    }
-
-    section#container_main article#content_sub {
-        padding-left: 35px;
-
-    }
 }
 
-/*---------------------------------------------------- mobile ----------------------------------------*/
-/*414 x 667*/
+@media screen and (min-width:576px) and (max-width:767.98px) {
 
-@media screen and (max-width: 414px) {
-    body {
-        margin: 0 auto;
-        min-width: initial;
-        max-width: 414px;
+
+    main#wrapper section#container_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main#wrapper section#container_main article#content_main {
+        margin-bottom: 50px;
+    }
+
+    main#wrapper section#container_main article#content_main span {
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+    }
+    
+
+    main#wrapper section#container_sub article#content_main ul#activites {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0 5px;
+        width: initial;
+    }
+}
+
+/*--------------------------------------------------------------------- mobile ---------------------------------------------------------------------*/
+/*575.98 x 667*/
+
+@media screen and (max-width: 575.98px) {
+    body {
+        margin: initial;
+        padding: 0 25px;
     }
 
-    header#branding,
-    main {
-        width: 400px;
-    }
 
 
-    /*------------------------------------------------- header ---------------------------------------*/
+    /*---- header ---------------------------------------*/
     #branding {
         display: flex;
         flex-direction: column;
-        position: relative;
+
     }
 
     #branding>img {
@@ -66,32 +93,58 @@
 
     }
 
-    #branding #nav_barre_main ul {
-        margin: 0;
-    }
-
     #branding #nav_barre_main li:last-child {
         position: absolute;
-        right: -10px;
+        right: 3%;
         top: 10px;
     }
 
-    #branding #nav_barre_main div#filter_style {
-        margin: 0 auto;
+    #branding div#filter div#filter_style {
+        display: flex;
+        justify-content: space-between;
+        width: initial;
     }
+
+    #branding div#filter div#filter_style img {
+        padding: initial;
+        padding: 20px;
+        margin: initial;
+
+    }
+
+    #branding div#filter div#filter_style label {
+        display: flex;
+
+    }
+
+    #branding div#filter div#filter_style label a {
+        padding: initial;
+    }
+
+    div#filter div#filter_style label a#btn_filter {
+        visibility: hidden;
+        display: none;
+    }
+
+    header#branding div#filter div#filter_style input {
+        height: initial;
+    }
+
+    header#branding div#filter div#filter_style label+img.fa-searh-solid {
+        display: initial;
+        visibility: visible;
+        padding: 15px;
+    }
+
+    /**/
 
     header#branding div#filter ul#filter_field {
         flex-wrap: wrap;
-        margin: 50px 0;
 
-        position: relative;
     }
 
     header#branding div#filter ul#filter_field span {
-
-        position: absolute;
-        top: -40px;
-        left: 53px
+        margin-top: -20px
     }
 
     header#branding div#filter ul#filter_field li {
@@ -99,7 +152,8 @@
     }
 
     header#branding div#filter ul#filter_field li img {
-        margin-right: 8px;
+        margin: initial;
+        padding: initial;
     }
 
     /*---------------------------------------------------- main --------------------------------------*/
@@ -119,43 +173,65 @@
 
     /*-------------------------------------------------- article -------------------------------------*/
     /*--- #container_main #content_main*/
-    
-    section#container_main article#content_main{
+
+    section#container_main article#content_main {
+        display: flex;
         padding: initial;
         flex-direction: column;
+        width: initial;
     }
+
     section#container_main article#content_main ul {
-   
-       
+
+        width: initial;
+        margin: initial;
     }
 
-
-    section#container_main article#content_main ul>li {
-        height: 190px;
-    }
 
     section#container_main article#content_main ul>li img {
-        height: 49%;
+        height:70%;
         width: 100%;
 
     }
 
-    section#container_main article#content_main >ul {
+    section#container_main article#content_main>ul {
         flex-direction: column;
     }
+
     section#container_main article#content_main ul li ul.note_list {
         justify-content: center;
     }
 
-    section#container_main article#content_main ul li ul.note_list li{
+    section#container_main article#content_main ul li ul.note_list li {
         height: 10px;
     }
 
-    /*--- #container_main #content_sub*/
+    /*--- #container_main #content_sub ---*/
 
     section#container_main article#content_sub {
-       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: initial;
+        width: initial;
+    }
 
+    section#container_main article#content_sub>ul {
+        width: initial;
+        margin: initial;
+        padding: 0 25px;
+    }
+
+    section#container_main article#content_sub ul>li img {
+        height: initial;
+    }
+
+    section#container_main article#content_sub ul li div {
+        display: initial;
+    }
+
+    section#container_main article#content_sub ul li img+div {
+        margin-left: 10%;
     }
 
     /*--- #container_sub #content_main ---*/
@@ -164,17 +240,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        width: initial;
     }
 
-    section#container_main article#content_sub {
-        padding: initial;
-    }
-    section#container_main article#content_sub ul li div p:nth-child(2){
+
+    section#container_main article#content_sub ul li div p:nth-child(2) {
         margin: initial;
     }
 
     /*------------------------------------------------------- footer ------------------------------------------------*/
+    footer#foot_site {
+        margin: initial;
+    }
 
     footer#foot_page section#info_site {
         flex-direction: column;
@@ -185,8 +262,8 @@
 
     footer#foot_page section#info_site>ul {
         flex-direction: column;
-        margin: 0 auto;
-        width: 370px;
+        justify-content: center;
+        width: initial;
     }
 
 

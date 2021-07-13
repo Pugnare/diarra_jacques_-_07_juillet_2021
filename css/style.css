@@ -57,7 +57,6 @@ header#branding div#filter div#filter_style img {
 header#branding div#filter div#filter_style {
     border: 1px solid #f2f2f2;
     border-radius: 5px;
-
 }
 
 header#branding div#filter input {
@@ -67,7 +66,12 @@ header#branding div#filter input {
 header#branding div#filter a {
     color: #deebff;
     background: #0065fc;
-    border-radius: 0 1 5px 15px 0;
+    border-radius: 0 15px 15px 0;
+}
+
+header#branding div#filter div#filter_style label+img.fa-searh-solid{
+    background-color: #0065fc;
+    border-radius: 0 15px 15px 0;
 }
 
 header#branding div#filter ul#filter_field li {
@@ -77,13 +81,13 @@ header#branding div#filter ul#filter_field li {
 
 div#filter div#filter_style + ul#filter_field img{
     border-radius: 50%;
-    background-color:#f2f2f2;;
+    background-color:#f2f2f2;
 }
-/* ------------------------------------------------------------ Main ----------------------------------------------------------------*/
-/* ------------------------------------------------------------- Section ------------------------------------------------------------*/
+
 /* ------------------------------------------------------------ Article -------------------------------------------------------------*/
 
 /*--- Container_main article ---- */
+
 section#container_main article#content_main,
 section#container_main article#content_sub {
     border-radius: 20px;

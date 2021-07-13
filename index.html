@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/screen.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -29,12 +29,12 @@
         <div id="filter">
             <div id="filter_style">
                 <img class="fas fa-map-marker-alt" src="./images/icon/map-marker-alt-solid.svg" />
-                <label for=""><input type="text"><a href="#">Recherche</a></label>
+                <label for=""><input type="text"><a id="btn_filter" href="#">Recherche</a></label>
+                <img class="fa-searh-solid btn_icon" src="./images/icon/search-solid.svg"/>
             </div>
             <ul id="filter_field">
                 <span>Filtre</span>
-                <li><img class="fa-money-solid" src="./images/icon/money-bill-wave-solid.svg" alt="Economie">Economique
-                </li>
+                <li><img class="fa-money-solid" src="./images/icon/money-bill-wave-solid.svg" alt="Economie">Economique</li>
                 <li><img class="fa-child-solid" src="./images/icon/child-solid.svg" alt="Familial">Familial</li>
                 <li><img class="fa-heart-solid" src="./images/icon/heart-solid.svg" alt="Romantique">Romantique</li>
                 <li><img class="fa-dog-solid" src="./images/icon/dog-solid.svg" alt="Animal">Animaux autorises</li>
@@ -48,10 +48,10 @@
         <section id="container_main">
             <article id="content_main">
                 <h2>Herbegements à Marseille</h2>
+                <div id="style_list_herberg">
                 <ul>
                     <li>
-                        <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="">
-
+                        <img src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre_1">
                         <p class="name_location">Auberge la cannebiere</p>
                         <p class="price">Nuit a partie de 25€</p>
                         <ul class="note_list">
@@ -63,7 +63,7 @@
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre_2">
                         <p>Hotel du port</p>
                         <p>Nuit a partie de 52€</p>
                         <ul class="note_list">
@@ -75,7 +75,7 @@
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre_3">
                         <p class="name_destination">Hotel les mouettes</p>
                         <p>Nuit a partie de 76€</p>
                         <ul class="note_list">
@@ -89,7 +89,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre_4">
                         <p>Hotel de la mer</p>
                         <p>Nuit a partie de 46€</p>
                         <ul class="note_list">
@@ -101,7 +101,7 @@
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre_5">
                         <p>Auberge le panier</p>
                         <p>Nuit a partie de 23€</p>
                         <ul class="note_list">
@@ -113,7 +113,7 @@
                         </ul>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre_6">
                         <p>Hotel chez Amina</p>
                         <p>Nuit a partie de 96€</p>
                         <ul class="note_list">
@@ -131,7 +131,7 @@
                 <h2>Les plus populaire <img class="fas fa-chart-line" src="./images/icon/chart-line-solid.svg" /></h2>
                 <ul>
                     <li>
-                        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre_7">
                         <div>
                             <p>Hotel Le soleil du matin</p>
                             <p>prix de la nuit 25€</p>
@@ -147,7 +147,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre_8">
                         <div>
                             <p>destination</p>
                             <p>prix de la nuit 30€</p>
@@ -162,7 +162,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                        <img src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre_9">
                         <div>
                             <p>Hotel Tout bleu et blanc</p>
                             <p>prix de la nuit 50€</p>
@@ -177,6 +177,7 @@
                         </div>
                     </li>
                 </ul>
+            </div>
             </article>
         </section>
         <section id="container_sub">
@@ -223,23 +224,23 @@
                 <li>
                     <h4>A propos</h4>
                     <ul>
-                        <li><a href="">Fonctionnements du site</a></li>
-                        <li><a href="">Conditions general de vente</a></li>
+                        <li><a href="#">Fonctionnements du site</a></li>
+                        <li><a href="#">Conditions general de vente</a></li>
                         <li><a href="">Donnees et confidentialite</a></li>
                     </ul>
                     </il>
                 <li>
                     <h4>Nos hebergements</h4>
                     <ul>
-                        <li><a href="">Charte qualite</a></li>
-                        <li><a href="">Soumettre votre hotel</a></li>
+                        <li><a href="#">Charte qualite</a></li>
+                        <li><a href="#">Soumettre votre hotel</a></li>
                     </ul>
                 </li>
                 <li>
                     <h4>Assistance</h4>
                     <ul>
-                        <li><a href="">Contre d'aide</a></li>
-                        <li><a href="">Nous contacter</a></li>
+                        <li><a href="#">Contre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
                     </ul>
                 </li>
             </ul>

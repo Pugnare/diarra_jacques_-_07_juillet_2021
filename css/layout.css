@@ -4,12 +4,12 @@
 /*genetic style*/
 body {
     max-width: 1300px;
-    
+
     margin: 0 auto;
 }
 
 ul {
-    margin-left: -40px;
+    padding: initial;
 }
 
 
@@ -48,6 +48,7 @@ ul {
 
 div#filter a {
     padding: 15px;
+    margin-left: 57px;
 }
 
 div#filter {
@@ -61,6 +62,7 @@ div#filter input {
 
 div#filter ul#filter_field {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 55px;
 }
 
@@ -88,12 +90,15 @@ div#filter div#filter_style {
     width: 380.5px;
 }
 
-
-
 /*--- icon -----------*/
 div#filter div#filter_style img.fa-map-marker-alt {
     padding: 15px 25px;
     margin-bottom: -18px;
+}
+
+header#branding div#filter div#filter_style label+img.fa-searh-solid {
+    display: none;
+    visibility: hidden;
 }
 
 div#filter div#filter_style+ul#filter_field li img {
@@ -101,81 +106,84 @@ div#filter div#filter_style+ul#filter_field li img {
     padding: 10px;
 }
 
+
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 
 
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
-/*--- genetric regle contnaire_main and sub "width* -----------------*/
 
 section#container_main {
     display: flex;
-    
     justify-content: space-between;
 }
 
-
-/*------------------------------------------------------- Contnaire_main Article   -------------------------------------------------*/
-/*--- position under container #content_main "center" and  #content_sub "right"-----------*/
-
-
-section#container_main article#content_main>span {
-    display: inline-block;
-    margin-left: 30px;
-    padding-bottom: 30px;
-}
-
+/*--- Container_main content_main   -----------------------*/
 
 section#container_main article#content_main {
-    padding: 4%;
-    
-    margin-right: 35px;
+    width: 65%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 
 }
 
 section#container_main article#content_main h2 {
-    margin-left: 25px;
+    margin-left: 30px
 }
 
+
+section#container_main article#content_main span {
+    display: inline-block;
+    margin-left: 30px;
+    padding-bottom: 30px
+}
+
+/*--- content_main ul -----*/
+section#container_main article#content_main div>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section#container_main ul li,
+section#container_sub ul li {
+    padding: 8px;
+    margin: 10px 0;
+
+}
 /*--- content_main ul li p----*/
+
 section#container_main article#content_main ul li p {
     margin: 0 auto;
 }
 
-/*--- content_main ul -----*/
-section#container_main article#content_main ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
 
-/*-----------*/
 section#container_main article#content_main ul li>ul.note_list {
+    display: flex;
     justify-content: center;
 }
 
-/*--- content_sub-------------*/
+/*--- container_main content_sub ----------------------------------------------------------------------*/
+
 section#container_main article#content_sub {
-
-    padding-left: 50px;
-    padding-top: 20px;
-}
-
-/*--- content_sub h2 -------------*/
-section#container_main article#content_sub h2 {
-    margin-top: 0px;
-    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*--- content_sub ul -------------*/
-section#container_main article#content_sub ul {
+section#container_main article#content_sub>ul {
     width: 89%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*--- content_sub li ---------*/
-section#container_main ul li,
+
 section#container_sub ul li {
-    padding: 5px;
+    padding: 15px;
     margin: 10px 0;
 
 }
@@ -183,19 +191,21 @@ section#container_sub ul li {
 section#container_main article#content_sub ul li {
     display: flex;
     flex-direction: row;
+    justify-content: start;
 }
 
+section#container_main article#content_sub h2 {
+    align-self: flex-start;
+    margin-left: 30px;
+}
 
 
 
 /*--- content_sub div and p ---*/
 section#container_main article#content_sub ul li div {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 50px);
-
-
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 15px
 }
 
 
@@ -236,14 +246,14 @@ section#container_main article#content_sub ul li div ul.note_list li {
 /*---- img --------*/
 
 section#container_main article#content_main ul li img {
-    width: 200px;
+    width: 230px;
     height: 120px;
-
+   
 }
 
 section#container_main article#content_sub ul li>img {
     width: 135px;
-    height: 150px;
+
 }
 
 
@@ -253,24 +263,15 @@ section#container_sub {
     margin-top: 150px;
 }
 
-/*--- article#content_main   -----------*/
-
-
 
 /*----------------------------------------------------------- images / icons-----------------------------------------------------------*/
 
-/*--- icons-----------------------------*/
-
-
 /*--- h2 position relative for img (icone)*/
-section#container_main article#content_sub h2 {
-    position: relative;
-}
+
 
 section#container_main article#content_sub img.fa-chart-line {
-    position: absolute;
-    right: 20px;
-    top: 5px;
+
+    margin-left: 4rem
 }
 
 /*--- images---------------------*/
