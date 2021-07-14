@@ -1,6 +1,8 @@
 /*couleur de la charte 
 bleu #0065fc
 claire #deebff
+        
+fond #f2f2f2
 */
 
 
@@ -49,14 +51,10 @@ ul li {
 
 /* ------------------------------------------------------------ Header -------------------------------------------------------------*/
 
-header#branding div#filter div#filter_style img {
-    background-color: #f2f2f2;
- 
-}
 
-header#branding div#filter div#filter_style {
-    border: 1px solid #f2f2f2;
-    border-radius: 5px;
+
+header#branding div#filter figure img.fa-info{
+    border: 2px solid #f2f2f2;
 }
 
 header#branding div#filter input {
@@ -69,6 +67,15 @@ header#branding div#filter a {
     border-radius: 0 15px 15px 0;
 }
 
+header#branding div#filter div#filter_style {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+header#branding div#filter div#filter_style img {
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+}
 header#branding div#filter div#filter_style label+img.fa-searh-solid{
     background-color: #0065fc;
     border-radius: 0 15px 15px 0;
@@ -84,9 +91,9 @@ div#filter div#filter_style + ul#filter_field img{
     background-color:#f2f2f2;
 }
 
-/* ------------------------------------------------------------ Article -------------------------------------------------------------*/
+/* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
 
-/*--- Container_main article ---- */
+
 
 section#container_main article#content_main,
 section#container_main article#content_sub {
@@ -98,24 +105,31 @@ section#container_main article#content_main ul li,
 section#container_main article#content_sub ul li {
 
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 25px;
+    
 }
 
+/*--------------*/
 section#container_main article#content_main ul li img {
-    border-radius: 5px 5px 0 0;
+    border-radius: 19px 19px 0 0;
 }
 
 section#container_main article#content_sub ul li img {
-    border-radius: 5px 0 0 5px;
+    border-radius: 19px 0 0 19px;
 }
-
-/*--- Contanier_sub*/
-
 /*box shadow*/
-section#container_sub article#content_main ul#activites li {
-    box-shadow: 25px 18px 20px 1px rgba(0, 0, 0, .2);
+
+section#container_main article#content_main ul li.list_herberg,
+section#container_main article#content_sub ul li.list_populaire{
+    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
 }
 
+
+section#container_sub article#content_main ul#activites li img{
+    box-shadow: 0px -11px 75px 1px rgba(0, 0, 0, 0.1);
+    
+}
 /*radius*/
 section#container_sub article#content_main ul#activites li {
     border-radius: 15px;
@@ -125,13 +139,17 @@ section#container_sub article#content_main ul#activites li img {
     border-radius: 15px 15px 0 0;
 }
 
-/*align text*/
-
-#container_sub article#content_main ul li p {
-    text-align: center;
-    margin: auto 0;
-    padding: 20px 0 20px;
-
+section#container_sub article#content_main ul#activites li p{
+    box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px ;
 }
 
+
+
+
+
 /* ------------------------------------------------------------ Footer ----------------------------------------------------------------*/
+
+footer#foot_page a{
+    color: black;
+}

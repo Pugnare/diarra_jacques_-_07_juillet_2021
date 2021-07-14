@@ -1,30 +1,34 @@
 /* pour les  icon "font awesome"*/
 
-img.fa-map-marker-alt{
+img.fa-map-marker-alt {
     width: 12px;
 }
-img.fa-info{
-    width: 7px;
-   
+
+img.fa-info {
+    width: 20px;
+
 }
+
 img.fa-chart-line,
-img.fa-searh-solid{
+img.fa-searh-solid {
     width: 18px;
 }
 
-img.fa-money-solid{
-    width:25px;
-    height:25px;
+img.fa-money-solid {
+    width: 25px;
+    height: 25px;
 }
-img.fa-dog-solid{
+
+img.fa-dog-solid {
     width: 28px;
 }
 
-img.fa-child-solid{
+img.fa-child-solid {
     width: 25px;
-    height:25px;
+    height: 25px;
 }
-img.fa-heart-solid{
+
+img.fa-heart-solid {
     width: 25px;
 }
 
@@ -32,18 +36,22 @@ img.fa-heart-solid{
 
 img.fa-star-solid,
 img.fa-star-half-alt-solid,
-img.fa-star-regular
- {
- width: 10px;
+img.fa-star-regular {
+    width: 10px;
 }
 
+header#branding div#filter figure img.fa-info {
+    padding: 2px;
+    border-radius: 50%;
 
-section#container_main article#content_sub ul li div ul.note_list li img.fa-star-solid{
-    width: 10px;
-    height:10px;
 }
 
-section#container_main article#content_main ul li ul.note_list li img.fa-star-solid{
+section#container_main article#content_main ul li ul.note_list li img.fa-star-solid {
     width: 10px;
-    height:10px;
+    height: 10px;
+}
+
+section#container_main article#content_sub ul li div ul.note_list li img.fa-star-solid {
+    width: 10px;
+    height: 10px;
 }

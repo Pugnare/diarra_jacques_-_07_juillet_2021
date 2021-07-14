@@ -58,18 +58,18 @@ div#filter {
 
 div#filter input {
     height: 44px;
+   
 }
 
 div#filter ul#filter_field {
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 55px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-div#filter ul#filter_field>span {
-    margin-top: 15px;
-    margin-right: 50px;
-}
+
 
 div#filter div#filter_style+ul#filter_field li {
     margin: 0 20px;
@@ -82,9 +82,13 @@ div#filter ul#filter_field+figure {
     margin: 50px 0 20px 0;
 }
 
-header#branding div#filter figure img.fa-info {
-    margin-right: 12px;
+ div#filter figure{
+    width: 36%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
 }
+
 
 div#filter div#filter_style {
     width: 380.5px;
@@ -146,22 +150,31 @@ section#container_main article#content_main div>ul {
     flex-wrap: wrap;
 }
 
-section#container_main ul li,
-section#container_sub ul li {
-    padding: 8px;
-    margin: 10px 0;
-
+section#container_main article#content_main ul li.list_herberg{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
+
+
 /*--- content_main ul li p----*/
 
 section#container_main article#content_main ul li p {
-    margin: 0 auto;
+   
 }
 
 
 section#container_main article#content_main ul li>ul.note_list {
-    display: flex;
-    justify-content: center;
+     
+     display: flex;
+     align-content: flex-end;
+     flex-wrap: wrap;
+    
+}
+section#container_main article#content_main ul li>ul.note_list li{
+ display: flex;
+ justify-content: space-evenly;
+    
 }
 
 /*--- container_main content_sub ----------------------------------------------------------------------*/
@@ -173,6 +186,7 @@ section#container_main article#content_sub {
     align-items: center;
 }
 
+
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
     width: 89%;
@@ -182,11 +196,8 @@ section#container_main article#content_sub>ul {
 
 /*--- content_sub li ---------*/
 
-section#container_sub ul li {
-    padding: 15px;
-    margin: 10px 0;
 
-}
+
 
 section#container_main article#content_sub ul li {
     display: flex;
@@ -248,7 +259,6 @@ section#container_main article#content_sub ul li div ul.note_list li {
 section#container_main article#content_main ul li img {
     width: 230px;
     height: 120px;
-   
 }
 
 section#container_main article#content_sub ul li>img {
@@ -257,10 +267,32 @@ section#container_main article#content_sub ul li>img {
 }
 
 
-/*--------------------------------------------------------- Contnaire_sub   ------------------------------------------------*/
+/*--------------------------------------------------------- Container_sub   ------------------------------------------------*/
+
+
 
 section#container_sub {
     margin-top: 150px;
+}
+
+section#container_sub ul li {
+    padding: 15px;
+    margin: 10px 0;
+
+}
+
+section#container_sub article#content_main ul li {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/*align text*/
+
+#container_sub article#content_main ul li p {
+    text-align: center;
+    margin: auto 0;
+    padding: 20px 0 20px;
+
 }
 
 
@@ -278,11 +310,6 @@ section#container_main article#content_sub img.fa-chart-line {
 
 ul#activites li img {
     width: 100%;
-}
-
-ul#activites li:nth-child(1) img {
-    width: 100%;
-
 }
 
 
@@ -336,7 +363,7 @@ footer#foot_page section#info_site {
     height: 250px;
     display: flex;
     align-items: center;
-    justify-content: center;
+   
 }
 
 footer#foot_page section#info_site>ul {

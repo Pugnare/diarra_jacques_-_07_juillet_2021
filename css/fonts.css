@@ -43,10 +43,11 @@ header#branding div#filter ul#filter_field{
 /*--- section / article*/
 section#container_main article#content_main ul li img + p,
 section#container_main article#content_sub ul li div > p:first-child,
-section#container_main article#content_main > span
+section#container_main article#content_main div#style_list_herberg > span
 {
     font-weight: 800;
 }
+
 
 
 section#container_sub article#content_main p{
@@ -57,6 +58,6 @@ section#container_sub article#content_main p{
 /*----------------------------------------------------- Footer -----------------------------------------------*/
 
 footer#foot_page ul li a{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
 }
