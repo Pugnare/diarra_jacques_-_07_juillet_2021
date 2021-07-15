@@ -3,7 +3,7 @@
 
 /*genetic style*/
 body {
-    max-width: 1300px;
+    max-width: 1440px;
 
     margin: 0 auto;
 }
@@ -46,23 +46,24 @@ ul {
 
 /*--- Filter field------------*/
 
-div#filter a {
-    padding: 15px;
-    margin-left: 57px;
-}
-
 div#filter {
-    margin-top: 35px;
-
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    height: 230px;
 }
 
-div#filter input {
-    height: 44px;
-   
+div#filter figure {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: initial;
+
 }
 
 div#filter ul#filter_field {
-    width: 80%;
+    width: 69%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -78,26 +79,22 @@ div#filter div#filter_style+ul#filter_field li {
     align-items: center;
 }
 
-div#filter ul#filter_field+figure {
-    margin: 50px 0 20px 0;
-}
-
- div#filter figure{
-    width: 36%;
-    display:flex;
-    align-items:center;
-    justify-content: space-around;
-}
-
-
 div#filter div#filter_style {
-    width: 380.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 29.3%;
 }
+
+div#filter a {
+    padding: 15px;
+}
+
 
 /*--- icon -----------*/
 div#filter div#filter_style img.fa-map-marker-alt {
     padding: 15px 25px;
-    margin-bottom: -18px;
+  
 }
 
 header#branding div#filter div#filter_style label+img.fa-searh-solid {
@@ -124,22 +121,28 @@ section#container_main {
 /*--- Container_main content_main   -----------------------*/
 
 section#container_main article#content_main {
-    width: 65%;
+    width: 61.3%;
+
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
 }
 
-section#container_main article#content_main h2 {
-    margin-left: 30px
+section#container_main article#content_main div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+section#container_main article#content_main h2,
+section#container_main article#content_main div+span {
+    width: 91%;
+    align-self: center;
+}
 
-section#container_main article#content_main span {
-    display: inline-block;
-    margin-left: 30px;
-    padding-bottom: 30px
+section#container_main article#content_main div+span{
+    margin: 25px 0; 
 }
 
 /*--- content_main ul -----*/
@@ -148,50 +151,62 @@ section#container_main article#content_main div>ul {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-section#container_main article#content_main ul li.list_herberg{
+/*--- content_main ul li-----*/
+section#container_main article#content_main ul li.list_herberg {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    height: 200px;
 }
 
-
-/*--- content_main ul li p----*/
-
-section#container_main article#content_main ul li p {
-   
-}
-
-
+/*--- content_main ul li ul (content ring)---*/
 section#container_main article#content_main ul li>ul.note_list {
-     
-     display: flex;
-     align-content: flex-end;
-     flex-wrap: wrap;
-    
+
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
 }
-section#container_main article#content_main ul li>ul.note_list li{
- display: flex;
- justify-content: space-evenly;
-    
+
+/*--- content_main ul li ul li ( ring)---*/
+section#container_main article#content_main ul li>ul.note_list li {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* align left*/
+section#container_main article#content_main ul li p {
+    margin: initial;
+}
+
+section#container_main article#content_main ul li p,
+section#container_main article#content_main ul li ul.note_list {
+    margin-left: 20px;
 }
 
 /*--- container_main content_sub ----------------------------------------------------------------------*/
 
 section#container_main article#content_sub {
-    
+
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+
     align-items: center;
+   
 }
 
 
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
     width: 89%;
+    height:650px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
 }
 
 /*--- content_sub li ---------*/
@@ -201,58 +216,40 @@ section#container_main article#content_sub>ul {
 
 section#container_main article#content_sub ul li {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+
 }
 
 section#container_main article#content_sub h2 {
-    align-self: flex-start;
-    margin-left: 30px;
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 
 
-/*--- content_sub div and p ---*/
+/*--- content_sub div ---*/
 section#container_main article#content_sub ul li div {
-    display: flex;
-    flex-flow: column wrap;
-    margin-left: 15px
+    display: grid;
+    grid-template-rows: 45px 20px;
+    grid-column-gap: 10px
+}
+
+section#container_main article#content_sub ul li div ul {
+
+    align-self: end;
+}
+
+section#container_main article#content_sub ul li div>p {
+    margin: initial;
 }
 
 
-section#container_main article#content_sub ul li div p:nth-child(1) {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 1;
-
-
-
-}
-
-section#container_main article#content_sub ul li div p:nth-child(2) {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-
-    margin-top: -15px;
-}
-
-/*--- content_sub div icon ---*/
 section#container_main article#content_sub ul li div ul.note_list {
-
     display: flex;
-    flex-direction: row;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    justify-self: center;
 
 }
 
-section#container_main article#content_sub ul li div ul.note_list li {
-    height: 10px;
-
-}
 
 /*---- img --------*/
 
@@ -261,8 +258,10 @@ section#container_main article#content_main ul li img {
     height: 120px;
 }
 
-section#container_main article#content_sub ul li>img {
+section#container_main article#content_sub ul li .img_populaire {
     width: 135px;
+    height: 125px;
+    margin-right: 15px;
 
 }
 
@@ -363,7 +362,7 @@ footer#foot_page section#info_site {
     height: 250px;
     display: flex;
     align-items: center;
-   
+
 }
 
 footer#foot_page section#info_site>ul {
