@@ -4,8 +4,8 @@
 /*genetic style*/
 body {
     max-width: 1440px;
-
     margin: 0 auto;
+    padding: 50px;
 }
 
 ul {
@@ -54,7 +54,7 @@ div#filter {
 }
 
 div#filter figure {
-    width: 32%;
+    width: 33%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +63,7 @@ div#filter figure {
 }
 
 div#filter ul#filter_field {
-    width: 69%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
