@@ -125,11 +125,15 @@ section#container_main article#content_sub ul li.list_populaire{
     border: 5px solid white;
 }
 
-
 section#container_sub article#content_main ul#activites li img{
     box-shadow: 0px -11px 75px 1px rgba(0, 0, 0, 0.1);
     
 }
+
+main#wrapper section#container_main article#content_main ul li ul li {
+    box-shadow: initial;
+}
+
 /*radius*/
 section#container_sub article#content_main ul#activites li {
     border-radius: 15px;

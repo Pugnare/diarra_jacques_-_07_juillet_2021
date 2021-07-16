@@ -83,18 +83,28 @@ div#filter div#filter_style {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 29.3%;
+    width: 29%;
+}
+
+div#filter div#filter_style label {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+div#filter div#filter_style label input{
+    width: 100%;
 }
 
 div#filter a {
     padding: 15px;
+   
 }
 
 
 /*--- icon -----------*/
 div#filter div#filter_style img.fa-map-marker-alt {
-    padding: 15px 25px;
-  
+    padding: 15px 25px 18px;
+
 }
 
 header#branding div#filter div#filter_style label+img.fa-searh-solid {
@@ -141,8 +151,8 @@ section#container_main article#content_main div+span {
     align-self: center;
 }
 
-section#container_main article#content_main div+span{
-    margin: 25px 0; 
+section#container_main article#content_main div+span {
+    margin: 25px 0;
 }
 
 /*--- content_main ul -----*/
@@ -196,14 +206,14 @@ section#container_main article#content_sub {
     flex-flow: column wrap;
 
     align-items: center;
-   
+
 }
 
 
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
     width: 89%;
-    height:650px;
+    height: 650px;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;

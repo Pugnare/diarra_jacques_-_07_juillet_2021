@@ -1,8 +1,14 @@
 /*--- Screen -------*/
 
 
+/* 
+@media screen and (min-width:992px) and (max-width: 1200px) {
 
-@media screen and (min-width:992px) and (max-width: 1200px) {}
+    div#filter div#filter_style {
+        width: 38.3%;
+    }
+}
+
 
 @media screen and (min-width:768px) and (max-width:991.98px) {
 
@@ -29,10 +35,11 @@
         left: 0;
         bottom: -1rem;
     }
-
-
 }
+ */
 
+
+/* 
 @media screen and (min-width:576px) and (max-width:767.98px) {
 
 
@@ -58,7 +65,7 @@
         align-items: center;
         width: initial;
     }
-}
+} */
 
 /*--------------------------------------------------------------------- mobile ---------------------------------------------------------------------*/
 /*575.98 x 667*/
@@ -66,58 +73,102 @@
 @media screen and (max-width: 575.98px) {
     body {
         margin: initial;
-        padding: 0 25px;
+        padding: initial;
     }
 
 
 
     /*---- header ---------------------------------------*/
-    #branding {
+    header#branding {
         display: flex;
         flex-direction: column;
-
+        justify-content: space-evenly;
+        height: 644px;
+        margin: 20px 10px;
     }
 
-    #branding>img {
+    header#branding>img {
         width: 25%;
+        order: -2;
     }
 
-    #branding h1 {
-        margin-top: 45px;
+    header#branding h1+p {
+        margin: initial;
+
 
     }
 
-    #branding #nav_barre_main {
+    header#branding #nav_barre_main {
         position: initial;
-        margin-top: 50px;
-
+        order: -1;
     }
 
-    #branding #nav_barre_main li:last-child {
+    header#branding #nav_barre_main ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%
+    }
+
+    header#branding #nav_barre_main ul li:last-child {
         position: absolute;
         right: 3%;
         top: 10px;
     }
 
-    #branding div#filter div#filter_style {
+
+/* anime buttom*/
+    header#branding #nav_barre_main ul li:nth-child(1),
+    header#branding #nav_barre_main ul li:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: initial;
+        padding-bottom: 20px;
+    }
+
+    header#branding #nav_barre_main ul li:nth-child(1),
+    header#branding #nav_barre_main ul li:nth-child(2) {
+        border-bottom: 3px solid #0065fc;
+    }
+
+
+    header#branding #nav_barre_main ul li:link {
+        border-bottom: 3px solid #0065fc;
+    
+    }
+    header#branding #nav_barre_main ul li:nth-child(1):hover,
+    header#branding #nav_barre_main ul li:nth-child(2):hover {
+        border-bottom: 3px solid#f2f2f2;
+    }
+
+
+    /**/
+    header#branding div#filter {
+        height: initial;
+        flex-grow: 1;
+    }
+
+    header#branding div#filter div#filter_style {
         display: flex;
         justify-content: space-between;
         width: initial;
+
+
     }
 
-    #branding div#filter div#filter_style img {
+    header#branding div#filter div#filter_style img {
         padding: initial;
         padding: 20px;
         margin: initial;
 
     }
 
-    #branding div#filter div#filter_style label {
+    header#branding div#filter div#filter_style label {
         display: flex;
 
     }
 
-    #branding div#filter div#filter_style label a {
+    header#branding div#filter div#filter_style label a {
         padding: initial;
     }
 
@@ -139,12 +190,14 @@
     /**/
 
     header#branding div#filter ul#filter_field {
-        flex-wrap: wrap;
-
+        width: initial;
+        align-items: initial;
+        justify-content: initial;
     }
 
     header#branding div#filter ul#filter_field span {
-        margin-top: -20px
+        width: 100%;
+
     }
 
     header#branding div#filter ul#filter_field li {
@@ -152,7 +205,16 @@
     }
 
     header#branding div#filter ul#filter_field li img {
-        margin: initial;
+        margin-right: 18px
+    }
+
+    header#branding div#filter figure {
+        width: 100%;
+    }
+
+    header#branding div#filter figure img {
+        margin-right: 10px;
+        align-self: baseline;
         padding: initial;
     }
 
@@ -176,9 +238,10 @@
 
     section#container_main article#content_main {
         display: flex;
-        padding: initial;
+        padding: 0 15px;
         flex-direction: column;
         width: initial;
+
     }
 
     section#container_main article#content_main ul {
@@ -189,7 +252,7 @@
 
 
     section#container_main article#content_main ul>li img {
-        height:70%;
+        height: 70%;
         width: 100%;
 
     }
@@ -198,13 +261,23 @@
         flex-direction: column;
     }
 
-    section#container_main article#content_main ul li ul.note_list {
-        justify-content: center;
+    section#container_main article#content_main ul li.list_herberg {
+        margin: 10px 0;
+        width: 95%;
     }
 
     section#container_main article#content_main ul li ul.note_list li {
         height: 10px;
     }
+
+    section#container_sub article#content_main ul#activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: initial;
+        padding: 0 15px
+    }
+
 
     /*--- #container_main #content_sub ---*/
 
@@ -214,6 +287,11 @@
         justify-content: center;
         padding: initial;
         width: initial;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 95%;
+        justify-content: space-between;
     }
 
     section#container_main article#content_sub>ul {
@@ -227,36 +305,30 @@
     }
 
     section#container_main article#content_sub ul li div {
-        display: initial;
+
+        grid-template-rows: initial;
+
     }
-
-    section#container_main article#content_sub ul li img+div {
-        margin-left: 10%;
-    }
-
-    /*--- #container_sub #content_main ---*/
-
-    section#container_sub article#content_main ul#activites {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: initial;
-    }
-
 
     section#container_main article#content_sub ul li div p:nth-child(2) {
         margin: initial;
     }
 
+
     /*------------------------------------------------------- footer ------------------------------------------------*/
-    footer#foot_site {
-        margin: initial;
+    
+   
+    footer#foot_page {
+        margin: 50px 0 0 0;
+        padding: 0 25px 0 25px;
+        
     }
 
     footer#foot_page section#info_site {
         flex-direction: column;
         height: initial;
-        margin: auto;
+        width: 100%;
+        align-items:flex-start;
 
     }
 
@@ -269,17 +341,13 @@
 
     /*------------------------------------------------------- style----------------------------------------------------*/
 
-    /*--- Section ---*/
+
     main#wrapper section#container_main article#content_main {
         background-color: initial;
     }
 
-    main#wrapper section#container_main article#content_main ul li,
-    main#wrapper section#container_sub article#content_main ul li {
-        box-shadow: 2px 10px 20px 1px rgba(0, 0, 0, .2);
-    }
 
-    main#wrapper section#container_main article#content_main ul li ul li {
-        box-shadow: initial;
+    section#container_main article#content_sub {
+        border-radius: initial !important;
     }
 }
