@@ -116,7 +116,7 @@
     }
 
 
-/* anime buttom*/
+    /* anime buttom*/
     header#branding #nav_barre_main ul li:nth-child(1),
     header#branding #nav_barre_main ul li:nth-child(2) {
         display: flex;
@@ -134,8 +134,9 @@
 
     header#branding #nav_barre_main ul li:link {
         border-bottom: 3px solid #0065fc;
-    
+
     }
+
     header#branding #nav_barre_main ul li:nth-child(1):hover,
     header#branding #nav_barre_main ul li:nth-child(2):hover {
         border-bottom: 3px solid#f2f2f2;
@@ -152,8 +153,6 @@
         display: flex;
         justify-content: space-between;
         width: initial;
-
-
     }
 
     header#branding div#filter div#filter_style img {
@@ -229,8 +228,7 @@
     }
 
     main#wrapper section#container_sub {
-        display: flex;
-        justify-content: center;
+        margin-top: 50px;
     }
 
     /*-------------------------------------------------- article -------------------------------------*/
@@ -244,49 +242,38 @@
 
     }
 
-    section#container_main article#content_main ul {
-
-        width: initial;
-        margin: initial;
+    section#container_main article#content_main div#style_list_herberg {
+        display: grid;
+        row-gap: 13px
     }
 
-
-    section#container_main article#content_main ul>li img {
-        height: 70%;
-        width: 100%;
-
+    section#container_main article#content_main ul {
+        display: grid;
+        row-gap: 13px;
+        margin: initial;
     }
 
     section#container_main article#content_main>ul {
         flex-direction: column;
+        padding: 0 15px;
     }
 
-    section#container_main article#content_main ul li.list_herberg {
-        margin: 10px 0;
-        width: 95%;
+    section#container_main article#content_main ul li.list_herberg div {
+
+        width: 100%;
     }
 
     section#container_main article#content_main ul li ul.note_list li {
         height: 10px;
     }
 
-    section#container_sub article#content_main ul#activites {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: initial;
-        padding: 0 15px
-    }
+
 
 
     /*--- #container_main #content_sub ---*/
 
     section#container_main article#content_sub {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: initial;
-        width: initial;
+        margin-bottom: 30px;
     }
 
     section#container_main article#content_sub h2 {
@@ -298,6 +285,7 @@
         width: initial;
         margin: initial;
         padding: 0 25px;
+        
     }
 
     section#container_main article#content_sub ul>li img {
@@ -314,21 +302,33 @@
         margin: initial;
     }
 
+    /*--- container_sub article_content ----*/
+
+    section#container_sub article#content_main {
+        padding: 0 13px;
+    }
+
+    section#container_sub article#content_main ul#activites {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: initial;
+    }
 
     /*------------------------------------------------------- footer ------------------------------------------------*/
-    
-   
+
+
     footer#foot_page {
         margin: 50px 0 0 0;
         padding: 0 25px 0 25px;
-        
+
     }
 
     footer#foot_page section#info_site {
         flex-direction: column;
         height: initial;
         width: 100%;
-        align-items:flex-start;
+        align-items: flex-start;
 
     }
 

@@ -263,9 +263,15 @@ section#container_main article#content_sub ul li div ul.note_list {
 
 /*---- img --------*/
 
-section#container_main article#content_main ul li img {
+section#container_main article#content_main ul li.list_herberg >div{
     width: 230px;
     height: 120px;
+    overflow: hidden;
+}
+
+section#container_main article#content_main ul li img {
+   width: 100%;
+   height: auto;
 }
 
 section#container_main article#content_sub ul li .img_populaire {
