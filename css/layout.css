@@ -88,16 +88,17 @@ div#filter div#filter_style {
 
 div#filter div#filter_style label {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     width: 100%;
 }
-div#filter div#filter_style label input{
+
+div#filter div#filter_style label input {
     width: 100%;
 }
 
 div#filter a {
     padding: 15px;
-   
+
 }
 
 
@@ -181,7 +182,7 @@ section#container_main article#content_main ul li>ul.note_list {
 
 }
 
-/*--- content_main ul li ul li ( ring)---*/
+/*--- content_main ul li ul li (ring)---*/
 section#container_main article#content_main ul li>ul.note_list li {
     display: flex;
     justify-content: space-evenly;
@@ -204,9 +205,7 @@ section#container_main article#content_sub {
 
     display: flex;
     flex-flow: column wrap;
-
     align-items: center;
-
 }
 
 
@@ -221,9 +220,6 @@ section#container_main article#content_sub>ul {
 
 /*--- content_sub li ---------*/
 
-
-
-
 section#container_main article#content_sub ul li {
     display: flex;
 
@@ -236,49 +232,46 @@ section#container_main article#content_sub h2 {
 
 }
 
-
-
 /*--- content_sub div ---*/
-section#container_main article#content_sub ul li div {
+section#container_main article#content_sub ul li.list_populaire div {
     display: grid;
-    grid-template-rows: 45px 20px;
-    grid-column-gap: 10px
 }
 
-section#container_main article#content_sub ul li div ul {
-
-    align-self: end;
+section#container_main article#content_sub ul li.list_populaire div>p:nth-child(1) {
+    align-self: flex-end
 }
 
-section#container_main article#content_sub ul li div>p {
+section#container_main article#content_sub ul li.list_populaire div>ul:nth-child(3) {
+
+    align-self: flex-end;
+}
+
+section#container_main article#content_sub ul li.list_populaire div>p {
     margin: initial;
 }
-
 
 section#container_main article#content_sub ul li div ul.note_list {
     display: flex;
 
 }
 
-
 /*---- img --------*/
 
-section#container_main article#content_main ul li.list_herberg >div{
+section#container_main article#content_main ul li.list_herberg>div {
     width: 230px;
     height: 120px;
     overflow: hidden;
 }
 
 section#container_main article#content_main ul li img {
-   width: 100%;
-   height: auto;
+    width: 100%;
+    height: auto;
 }
 
 section#container_main article#content_sub ul li .img_populaire {
     width: 135px;
     height: 125px;
     margin-right: 15px;
-
 }
 
 

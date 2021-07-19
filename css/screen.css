@@ -101,6 +101,7 @@
     header#branding #nav_barre_main {
         position: initial;
         order: -1;
+        margin: 0 -10px
     }
 
     header#branding #nav_barre_main ul {
@@ -116,7 +117,7 @@
     }
 
 
-    /* anime buttom*/
+    /*--- anime buttom ---*/
     header#branding #nav_barre_main ul li:nth-child(1),
     header#branding #nav_barre_main ul li:nth-child(2) {
         display: flex;
@@ -288,32 +289,7 @@
         
     }
 
-    section#container_main article#content_sub ul>li img {
-        height: initial;
-    }
-
-    section#container_main article#content_sub ul li div {
-
-        grid-template-rows: initial;
-
-    }
-
-    section#container_main article#content_sub ul li div p:nth-child(2) {
-        margin: initial;
-    }
-
-    /*--- container_sub article_content ----*/
-
-    section#container_sub article#content_main {
-        padding: 0 13px;
-    }
-
-    section#container_sub article#content_main ul#activites {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: initial;
-    }
+    
 
     /*------------------------------------------------------- footer ------------------------------------------------*/
 
