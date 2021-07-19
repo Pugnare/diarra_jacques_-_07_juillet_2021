@@ -15,19 +15,22 @@ footer {
     background-color: #f2f2f2;
 }
 
-/*--- a / link "color and style" --------*/
+/*--- a / link "color and border" --------*/
 a {
     color: #0065fc;
     outline: none;
     text-decoration: none;
+    border-top: 2px solid #0065fc;
 }
 
 a:link {
-    color: #0065fc;
+    color: #bbbbbb;
+    border: none;
 }
 
 a:visited {
     color: #bbbbbb;
+    
 }
 
 a:focus {
@@ -35,7 +38,8 @@ a:focus {
 }
 
 a:hover {
-    color: #bbbbbb;
+    color:   #0065fc;
+    border-top: 2px solid  #0065fc;
 }
 
 a:active {
@@ -43,11 +47,11 @@ a:active {
 
 }
 
-/* style none "list"*/
-ul li {
+ul {
     list-style: none;
 
 }
+
 
 /* ------------------------------------------------------------ Header -------------------------------------------------------------*/
 

@@ -27,6 +27,10 @@ header#branding nav {
     font-weight: 600;
 }
 
+header#branding nav li:last-child a{
+    font-weight: 700;
+}
+
 /* --- div#filter --------------*/
 
 header#branding div#filter div#filter_style label {

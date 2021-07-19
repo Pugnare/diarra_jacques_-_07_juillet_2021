@@ -1,72 +1,5 @@
 /*--- Screen -------*/
 
-
-/* 
-@media screen and (min-width:992px) and (max-width: 1200px) {
-
-    div#filter div#filter_style {
-        width: 38.3%;
-    }
-}
-
-
-@media screen and (min-width:768px) and (max-width:991.98px) {
-
-    main#wrapper section#container_main {
-        justify-content: space-evenly;
-
-    }
-
-    main#wrapper section#container_main article#content_main h2~ul {
-        flex-direction: column;
-        width: 35%;
-
-    }
-
-    main#wrapper section#container_main article#content_main h2+div {
-        display: flex;
-        justify-content: space-evenly;
-        position: relative;
-        padding-bottom: 40px;
-    }
-
-    main#wrapper section#container_main article#content_main h2+div span {
-        position: absolute;
-        left: 0;
-        bottom: -1rem;
-    }
-}
- */
-
-
-/* 
-@media screen and (min-width:576px) and (max-width:767.98px) {
-
-
-    main#wrapper section#container_main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main#wrapper section#container_main article#content_main {
-        margin-bottom: 50px;
-    }
-
-    main#wrapper section#container_main article#content_main span {
-        padding-bottom: 30px;
-        padding-top: 30px;
-
-    }
-    
-
-    main#wrapper section#container_sub article#content_main ul#activites {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: initial;
-    }
-} */
-
 /*--------------------------------------------------------------------- mobile ---------------------------------------------------------------------*/
 /*575.98 x 667*/
 
@@ -75,8 +8,6 @@
         margin: initial;
         padding: initial;
     }
-
-
 
     /*---- header ---------------------------------------*/
     header#branding {
@@ -94,55 +25,31 @@
 
     header#branding h1+p {
         margin: initial;
-
-
     }
 
     header#branding #nav_barre_main {
         position: initial;
         order: -1;
-        margin: 0 -10px
+        
     }
 
     header#branding #nav_barre_main ul {
         display: flex;
-        justify-content: space-between;
+       
         width: 100%
     }
 
-    header#branding #nav_barre_main ul li:last-child {
+    header#branding #nav_barre_main ul li:last-child a{
         position: absolute;
-        right: 3%;
-        top: 10px;
+        right: -34px;
+        top: -57px;
     }
-
 
     /*--- anime buttom ---*/
-    header#branding #nav_barre_main ul li:nth-child(1),
-    header#branding #nav_barre_main ul li:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: initial;
-        padding-bottom: 20px;
-    }
-
-    header#branding #nav_barre_main ul li:nth-child(1),
-    header#branding #nav_barre_main ul li:nth-child(2) {
-        border-bottom: 3px solid #0065fc;
-    }
-
-
-    header#branding #nav_barre_main ul li:link {
-        border-bottom: 3px solid #0065fc;
-
-    }
-
-    header#branding #nav_barre_main ul li:nth-child(1):hover,
-    header#branding #nav_barre_main ul li:nth-child(2):hover {
-        border-bottom: 3px solid#f2f2f2;
-    }
-
+    /* header#branding #nav_barre_main ul li a:hover{
+        color: red;
+        border-color: red;
+    } */
 
     /**/
     header#branding div#filter {
@@ -322,6 +229,7 @@
 
 
     /*------------------------------------------------------- style----------------------------------------------------*/
+
 
 
     main#wrapper section#container_main article#content_main {

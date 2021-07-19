@@ -5,7 +5,7 @@
 body {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 85px 50px;
 }
 
 ul {
@@ -35,14 +35,14 @@ ul {
 }
 
 #branding #nav_barre_main ul {
-    display: inline-block;
-
+    display: flex;
+    align-items: baseline;
 }
 
-#branding #nav_barre_main ul li {
-    float: left;
-    margin: 0 30px;
+#branding #nav_barre_main ul li a{
+    padding: 75px 50px 0;
 }
+
 
 /*--- Filter field------------*/
 
