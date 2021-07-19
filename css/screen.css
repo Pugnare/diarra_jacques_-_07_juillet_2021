@@ -30,28 +30,36 @@
     header#branding #nav_barre_main {
         position: initial;
         order: -1;
-        
+        margin: 0 auto;
     }
 
     header#branding #nav_barre_main ul {
-        display: flex;
-       
-        width: 100%
+       align-content: space-between;
     }
 
     header#branding #nav_barre_main ul li:last-child a{
         position: absolute;
-        right: -34px;
-        top: -57px;
+        padding: initial;
+        border: initial;
+        right: 5px;
+        top: 0;
     }
 
-    /*--- anime buttom ---*/
-    /* header#branding #nav_barre_main ul li a:hover{
-        color: red;
-        border-color: red;
-    } */
+    #branding #nav_barre_main ul li a {
+        padding: 0 43px 15px;
+    }
 
-    /**/
+    #branding #nav_barre_main ul li a:link {
+        border-top: initial;
+        border-bottom: 2px solid #bbbbbb;
+    }
+    
+    #branding #nav_barre_main ul li a:hover {
+       border-top: none;
+        color: #0065cf;
+        border-bottom: 2px solid #0065fc;
+    }
+ 
     header#branding div#filter {
         height: initial;
         flex-grow: 1;

@@ -17,34 +17,25 @@ footer {
 
 /*--- a / link "color and border" --------*/
 a {
-    color: #0065fc;
-    outline: none;
     text-decoration: none;
-    border-top: 2px solid #0065fc;
 }
 
 a:link {
     color: #bbbbbb;
-    border: none;
 }
 
 a:visited {
     color: #bbbbbb;
-    
-}
-
-a:focus {
-    color: #deebff;
 }
 
 a:hover {
-    color:   #0065fc;
-    border-top: 2px solid  #0065fc;
+    color: #0065fc;
+
+   border-top: 2px solid #0065fc;
 }
 
 a:active {
     color: #0065fc;
-
 }
 
 ul {
@@ -57,7 +48,7 @@ ul {
 
 
 
-header#branding div#filter figure img.fa-info{
+header#branding div#filter figure img.fa-info {
     border: 2px solid #f2f2f2;
 }
 
@@ -80,7 +71,8 @@ header#branding div#filter div#filter_style img {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
-header#branding div#filter div#filter_style label+img.fa-searh-solid{
+
+header#branding div#filter div#filter_style label+img.fa-searh-solid {
     background-color: #0065fc;
     border-radius: 0 15px 15px 0;
 }
@@ -90,9 +82,9 @@ header#branding div#filter ul#filter_field li {
     border-radius: 25px;
 }
 
-div#filter div#filter_style + ul#filter_field img{
+div#filter div#filter_style+ul#filter_field img {
     border-radius: 50%;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
 }
 
 /* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
@@ -110,7 +102,7 @@ section#container_main article#content_sub ul li {
 
     background-color: #fff;
     border-radius: 25px;
-    
+
 }
 
 /*--------------*/
@@ -121,17 +113,18 @@ section#container_main article#content_main ul li img {
 section#container_main article#content_sub ul li img {
     border-radius: 19px 0 0 19px;
 }
+
 /*box shadow*/
 
 section#container_main article#content_main ul li.list_herberg,
-section#container_main article#content_sub ul li.list_populaire{
+section#container_main article#content_sub ul li.list_populaire {
     box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
     border: 5px solid white;
 }
 
-section#container_sub article#content_main ul#activites li img{
+section#container_sub article#content_main ul#activites li img {
     box-shadow: 0px -11px 75px 1px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 main#wrapper section#container_main article#content_main ul li ul li {
@@ -147,9 +140,9 @@ section#container_sub article#content_main ul#activites li img {
     border-radius: 15px 15px 0 0;
 }
 
-section#container_sub article#content_main ul#activites li p{
+section#container_sub article#content_main ul#activites li p {
     box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 15px 15px ;
+    border-radius: 0 0 15px 15px;
 }
 
 
@@ -158,6 +151,6 @@ section#container_sub article#content_main ul#activites li p{
 
 /* ------------------------------------------------------------ Footer ----------------------------------------------------------------*/
 
-footer#foot_page a{
+footer#foot_page a {
     color: black;
 }
