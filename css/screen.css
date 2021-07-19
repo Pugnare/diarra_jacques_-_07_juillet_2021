@@ -184,7 +184,7 @@
     header#branding div#filter div#filter_style label+img.fa-searh-solid {
         display: initial;
         visibility: visible;
-        padding: 15px;
+        padding: 19px;
     }
 
     /**/
@@ -228,9 +228,6 @@
         flex-direction: column-reverse;
     }
 
-    main#wrapper section#container_sub {
-        margin-top: 50px;
-    }
 
     /*-------------------------------------------------- article -------------------------------------*/
     /*--- #container_main #content_main*/
@@ -283,12 +280,22 @@
     }
 
     section#container_main article#content_sub>ul {
-        width: initial;
         margin: initial;
-        padding: 0 25px;
-        
+       
     }
 
+    /*--- #container_sub #content_main ---*/
+    section#container_sub{
+        margin: initial;
+        padding: 0 25px;
+    }
+
+    section#container_sub article#content_main ul#activites{
+        grid-column-gap:initial;
+        
+        display: flex;
+        flex-flow: column wrap;
+    }
     
 
     /*------------------------------------------------------- footer ------------------------------------------------*/
@@ -305,7 +312,6 @@
         height: initial;
         width: 100%;
         align-items: flex-start;
-
     }
 
     footer#foot_page section#info_site>ul {
