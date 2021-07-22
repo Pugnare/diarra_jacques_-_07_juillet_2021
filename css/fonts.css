@@ -33,11 +33,13 @@ header#branding nav li:last-child a{
 
 /* --- div#filter --------------*/
 
-header#branding div#filter div#filter_style label {
+header#branding div#filter div#filter_style label{
     font-weight: 600;
 }
 
-header#branding div#filter ul#filter_field {
+header#branding div#filter ul#filter_field,
+header#branding div#filter div#filter_style input::placeholder
+{
     font-weight: 800;
 
 }
@@ -45,7 +47,7 @@ header#branding div#filter ul#filter_field {
 /*----------------------------------------------------- Main -----------------------------------------------*/
 
 /*--- section / article*/
-section#container_main article#content_main ul li img+p,
+section#container_main article#content_main ul li div+p,
 section#container_main article#content_sub ul li div>p:first-child,
 section#container_main article#content_main>span {
     font-weight: 800;

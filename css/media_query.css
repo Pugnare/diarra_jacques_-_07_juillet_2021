@@ -96,10 +96,11 @@
         height: initial;
     }
 
-    header#branding div#filter div#filter_style label+img.fa-searh-solid {
+    header#branding div#filter div#filter_style label+img.fa-searh-solid.btn_icon{
         display: initial;
         visibility: visible;
         padding: 19px;
+        border-radius: 15px;
     }
 
     /**/
@@ -210,6 +211,10 @@
         
         display: flex;
         flex-flow: column wrap;
+    }
+
+    section#container_sub article#content_main ul li:nth-child(3n+1) {
+        height: 183px;
     }
     
 

@@ -3,7 +3,7 @@
 
 /*genetic style*/
 body {
-    max-width: 1440px;
+    max-width: 1338px;
     margin: 0 auto;
     padding: 85px 50px;
 }
@@ -39,7 +39,7 @@ ul {
     align-items: baseline;
 }
 
-#branding #nav_barre_main ul li a{
+#branding #nav_barre_main ul li a {
     padding: 75px 50px 0;
 }
 
@@ -93,7 +93,7 @@ div#filter div#filter_style label {
 }
 
 div#filter div#filter_style label input {
-    width: 100%;
+   margin-left: 10px;
 }
 
 div#filter a {
@@ -133,7 +133,6 @@ section#container_main {
 
 section#container_main article#content_main {
     width: 61.3%;
-
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -209,6 +208,11 @@ section#container_main article#content_sub {
 }
 
 
+section#container_main article#content_sub img.fa-chart-line {
+    margin-left: 4rem
+}
+
+
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
     width: 89%;
@@ -280,87 +284,79 @@ section#container_main article#content_sub ul li .img_populaire {
 
 
 section#container_sub {
-    margin-top: 150px;
+    margin-top: 75px;
 }
 
-section#container_sub ul li {
-    padding: 15px;
-    margin: 10px 0;
 
+
+section#container_sub article#content_main ul#activites li p {
+    position: absolute;
+    bottom: -16px;
+    width: 94%;
 }
 
 section#container_sub article#content_main ul li {
-    padding: 5px;
-    margin: 10px 0;
+    height: 183px;
+    position: relative;
+    background-position: center;
+    background-size: 100%;
+    background-repeat:no-repeat;
 }
 
-/*align text*/
-
-#container_sub article#content_main ul li p {
-    text-align: center;
-    margin: auto 0;
-    padding: 20px 0 20px;
-
+section#container_sub article#content_main ul li:nth-child(3n+1) {
+    height: 409px;
+    background-size:cover;
 }
-
-
-/*----------------------------------------------------------- images / icons-----------------------------------------------------------*/
-
-/*--- h2 position relative for img (icone)*/
-
-
-section#container_main article#content_sub img.fa-chart-line {
-
-    margin-left: 4rem
-}
-
-/*--- images---------------------*/
-
-ul#activites li img {
-    width: 100%;
-}
-
 
 /*grid #container_sub*/
 section#container_sub article#content_main ul#activites {
-    display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: auto;
-    grid-column-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 302px);
+    column-gap: 42px;
+    row-gap: 42px;
+    grid-template-areas:
+        "img1 img2 img4 img5"
+        "img1 img3 img4 img6";
 }
 
 section#container_sub article#content_main ul#activites li:nth-child(1) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-area: img1;
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+
 }
 
 section#container_sub article#content_main ul#activites li:nth-child(2) {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-area: img2;
+    background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 
 }
 
 section#container_sub article#content_main ul#activites li:nth-child(3) {
-    grid-column-start: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-area: img3;
+    background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(4) {
+    grid-area: img4;
+    background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 
 }
 
 section#container_sub article#content_main ul#activites li:nth-child(5) {
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-
+    grid-area: img5;
+    background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 
 }
 
-/*---------------------------------------------------------------- Footer ----------------------------------------------------------*/
+section#container_sub article#content_main ul#activites li:nth-child(6) {
+    grid-area: img6;
+    background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+
+}
+
+/*------------------------------------------------------------ ---- Footer ----------------------------------------------------------*/
 
 footer#foot_page {
     margin-top: 150px;
