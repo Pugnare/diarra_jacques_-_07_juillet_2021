@@ -3,6 +3,12 @@
 /*--------------------------------------------------------------------- mobile ---------------------------------------------------------------------*/
 /*575.98 x 667*/
 
+@media screen and (min-width: 576px) and (max-width:900px){
+    body{
+   
+    }
+}
+
 @media screen and (max-width: 575.98px) {
     body {
         margin: initial;
@@ -188,6 +194,8 @@
 
     section#container_main article#content_sub {
         margin-bottom: 30px;
+        width: 100%;
+        padding-bottom: 50px
     }
 
     section#container_main article#content_sub h2 {
@@ -197,24 +205,29 @@
 
     section#container_main article#content_sub>ul {
         margin: initial;
-       
+    }
+
+    section#container_main article#content_sub ul li.list_populaire div {
+        width: 52%;
     }
 
     /*--- #container_sub #content_main ---*/
     section#container_sub{
+        
         margin: initial;
         padding: 0 25px;
     }
 
     section#container_sub article#content_main ul#activites{
-        grid-column-gap:initial;
-        
         display: flex;
+        grid-column-gap:initial;
         flex-flow: column wrap;
+        align-items: center;
     }
 
-    section#container_sub article#content_main ul li:nth-child(3n+1) {
-        height: 183px;
+    section#container_sub article#content_main ul#activites li {
+        min-width: 335px ;
+        height: 189px;
     }
     
 
@@ -249,8 +262,8 @@
         background-color: initial;
     }
 
-
-    section#container_main article#content_sub {
-        border-radius: initial !important;
+    main#wrapper section#container_main article#content_main,
+    main#wrapper section#container_main article#content_sub {
+        border-radius: initial;
     }
 }
