@@ -20,7 +20,7 @@ ul {
 }
 
 #branding>img {
-    width: 150px;
+    width: 94px;
 }
 
 #branding h1+p {
@@ -50,7 +50,6 @@ div#filter {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
-    height: 230px;
 }
 
 div#filter figure {
@@ -63,11 +62,10 @@ div#filter figure {
 }
 
 div#filter ul#filter_field {
-    width: 75%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+   
 }
 
 
@@ -98,14 +96,12 @@ div#filter div#filter_style label input {
 
 div#filter a {
     padding: 15px;
-
 }
 
 
 /*--- icon -----------*/
 div#filter div#filter_style img.fa-map-marker-alt {
     padding: 15px 25px 18px;
-
 }
 
 header#branding div#filter div#filter_style label+img.fa-searh-solid {
@@ -121,21 +117,26 @@ div#filter div#filter_style+ul#filter_field li img {
 
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 
-
+main{
+   margin-top: 20px;
+     
+}
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
 
 section#container_main {
     display: flex;
     justify-content: space-between;
+    
+   
 }
 
 /*--- Container_main content_main   -----------------------*/
 
 section#container_main article#content_main {
-    width: 61.3%;
+    width: 64.3%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    
 
 }
 
@@ -153,6 +154,9 @@ section#container_main article#content_main div+span {
 
 section#container_main article#content_main div+span {
     margin: 25px 0;
+   
+    bottom: 0;
+    left: 33px;
 }
 
 /*--- content_main ul -----*/
@@ -201,10 +205,11 @@ section#container_main article#content_main ul li ul.note_list {
 /*--- container_main content_sub ----------------------------------------------------------------------*/
 
 section#container_main article#content_sub {
-
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+
+    width: 31.6%;
 }
 
 
@@ -215,17 +220,18 @@ section#container_main article#content_sub img.fa-chart-line {
 
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
-    width: 89%;
-    height: 650px;
     display: flex;
+    padding: 0 31px;
     flex-flow: column wrap;
-    justify-content: space-evenly;
+    gap: 35px;
+    
 }
 
 /*--- content_sub li ---------*/
 
 section#container_main article#content_sub ul li {
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -239,15 +245,8 @@ section#container_main article#content_sub h2 {
 /*--- content_sub div ---*/
 section#container_main article#content_sub ul li.list_populaire div {
     display: grid;
-}
-
-section#container_main article#content_sub ul li.list_populaire div>p:nth-child(1) {
-    align-self: flex-end
-}
-
-section#container_main article#content_sub ul li.list_populaire div>ul:nth-child(3) {
-
-    align-self: flex-end;
+     width: 60%;
+     align-items: center;
 }
 
 section#container_main article#content_sub ul li.list_populaire div>p {
@@ -273,9 +272,8 @@ section#container_main article#content_main ul li img {
 }
 
 section#container_main article#content_sub ul li .img_populaire {
-    width: 135px;
-    height: 125px;
-    margin-right: 15px;
+    width: 127px;
+    height: 135px;
 }
 
 
@@ -287,20 +285,14 @@ section#container_sub {
     margin-top: 75px;
 }
 
-
-
-section#container_sub article#content_main ul#activites li p {
-    position: absolute;
-    bottom: -16px;
-    width: 94%;
-}
-
 section#container_sub article#content_main ul li {
+    display: flex;
     height: 183px;
     position: relative;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat:no-repeat;
+    max-width:302px;
 }
 
 section#container_sub article#content_main ul li:nth-child(3n+1) {
@@ -308,11 +300,16 @@ section#container_sub article#content_main ul li:nth-child(3n+1) {
     background-size:cover;
 }
 
+section#container_sub article#content_main ul#activites li p {
+    margin: initial;
+    align-self: flex-end;
+    width: 100%;   
+}
 /*grid #container_sub*/
+
 section#container_sub article#content_main ul#activites {
 
     display: grid;
-    grid-template-columns: repeat(4, 302px);
     column-gap: 42px;
     row-gap: 42px;
     grid-template-areas:
