@@ -1,0 +1,144 @@
+/*couleur de la charte 
+bleu #0065fc
+claire #deebff
+        
+fond #f2f2f2
+*/
+
+
+/* ------------------------------------------------------------ Generic regle -------------------------------------------------------*/
+
+/*--- Background-color #container_main article and footer#foot_site --*/
+
+main section#container_main article,
+footer {
+    background-color: #f2f2f2;
+}
+
+/*--- a / link "color and border" --------*/
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #bbbbbb;
+}
+
+a:visited {
+    color: #bbbbbb;
+}
+
+a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+a:active {
+    color: #0065fc;
+}
+
+ul {
+    list-style: none;
+
+}
+
+
+/* ------------------------------------------------------------ Header -------------------------------------------------------------*/
+
+
+
+header#branding div#filter figure img.fa-info {
+    border: 2px solid #f2f2f2;
+}
+
+header#branding div#filter input {
+    border: none;
+}
+
+header#branding div#filter a {
+    color: #deebff;
+    background: #0065fc;
+    border-radius: 0 15px 15px 0;
+}
+
+header#branding div#filter div#filter_style {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+header#branding div#filter div#filter_style img {
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+}
+
+header#branding div#filter div#filter_style label+img.fa-searh-solid {
+    background-color: #0065fc;
+    border-radius: 0 15px 15px 0;
+}
+
+header#branding div#filter ul#filter_field li {
+    border: 3px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+div#filter div#filter_style+ul#filter_field img {
+    border-radius: 50%;
+    background-color: rgba(0, 101, 252, 0.1);
+}
+
+
+/* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
+
+
+
+section#container_main article#content_main,
+section#container_main article#content_sub {
+    border-radius: 20px;
+}
+
+/*--- Container_main article ul ------------*/
+section#container_main article#content_main ul li,
+section#container_main article#content_sub ul li {
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+section#container_main article#content_main ul li div {
+    border-radius: 19px 19px 0 0;
+}
+
+section#container_main article#content_sub ul li.list_populaire div{
+ border-radius: 19px 0 0 19px;
+}
+
+
+section#container_main article#content_main ul li.list_herberg,
+section#container_main article#content_sub ul li.list_populaire {
+    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+main#wrapper section#container_main article#content_main ul li ul li {
+    box-shadow: initial;
+}
+
+section#container_sub article#content_main ul#activites li p {
+    background-color: white;
+    padding: 20px 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+section#container_sub article#content_main ul#activites li {
+    box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------ Footer ----------------------------------------------------------------*/
+
+footer#foot_page a {
+    color: black;
+}

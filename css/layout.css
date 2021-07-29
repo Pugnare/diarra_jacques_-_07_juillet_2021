@@ -1,0 +1,423 @@
+/* CSS Layout----------------------------------------------------------------*/
+
+
+/*genetic style*/
+body {
+    max-width: 1338px;
+    margin: 0 auto;
+    padding: 85px 50px;
+}
+
+ul {
+    padding: initial;
+}
+
+
+/*-------------------------------------- Header / Nav barre -----------------------------------*/
+/*--- Logo and title----------*/
+#branding {
+    position: relative;
+}
+
+#branding>img {
+    width: 94px;
+}
+
+#branding h1+p {
+    margin-top: -10px;
+}
+
+/*---nav barre--------------*/
+#branding #nav_barre_main {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#branding #nav_barre_main ul {
+    display: flex;
+    align-items: baseline;
+}
+
+#branding #nav_barre_main ul li a {
+    padding: 75px 50px 0;
+}
+
+
+/*--- Filter field------------*/
+
+div#filter {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+div#filter figure {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: initial;
+
+}
+
+div#filter ul#filter_field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+
+div#filter div#filter_style+ul#filter_field li {
+    margin: 0 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+div#filter div#filter_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 29%;
+}
+
+div#filter div#filter_style label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div#filter div#filter_style label input {
+    margin-left: 10px;
+}
+
+div#filter a {
+    padding: 15px;
+}
+
+
+/*--- icon -----------*/
+div#filter div#filter_style img.fa-map-marker-alt {
+    padding: 15px 25px 18px;
+}
+
+header#branding div#filter div#filter_style label+img.fa-searh-solid {
+    display: none;
+    visibility: hidden;
+}
+
+div#filter div#filter_style+ul#filter_field li img {
+    margin-right: 25px;
+    padding: 10px;
+}
+
+
+/*----------------------------------------------------------------- Main ----------------------------------------------------------*/
+
+main {
+    margin-top: 20px;
+
+}
+
+/*-------------------------------------------------------------- Section -----------------------------------------------------------*/
+
+section#container_main {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/*--- Container_main content_main   -----------------------*/
+
+section#container_main article#content_main {
+    width: 64.3%;
+    display: flex;
+    flex-flow: column wrap;
+
+
+}
+
+section#container_main article#content_main div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#container_main article#content_main h2,
+section#container_main article#content_main div+span {
+    width: 91%;
+    align-self: center;
+}
+
+section#container_main article#content_main div+span {
+    margin: 25px 0;
+
+    bottom: 0;
+    left: 33px;
+}
+
+/*--- content_main ul -----*/
+section#container_main article#content_main div>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*--- content_main ul li-----*/
+section#container_main article#content_main ul li.list_herberg {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 200px;
+}
+
+/*--- content_main ul li ul (content ring)---*/
+section#container_main article#content_main ul li>ul.note_list {
+
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+/*--- content_main ul li ul li (ring)---*/
+section#container_main article#content_main ul li>ul.note_list li {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+/* align left*/
+section#container_main article#content_main ul li p {
+    margin: initial;
+}
+
+section#container_main article#content_main ul li p,
+section#container_main article#content_main ul li ul.note_list {
+    margin-left: 20px;
+}
+
+/*--- container_main content_sub ----------------------------------------------------------------------*/
+
+section#container_main article#content_sub {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 31.6%;
+}
+
+section#container_main article#content_sub h2 {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#container_main article#content_sub img.fa-chart-line {
+    margin-left: 4rem
+}
+
+/*--- content_sub ul -------------*/
+section#container_main article#content_sub>ul {
+    display: flex;
+    padding: 0 31px;
+    flex-flow: column wrap;
+    gap: 35px;
+}
+
+/*--- content_sub li ---------*/
+
+section#container_main article#content_sub ul li {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+/*--- content_sub div ---*/
+section#container_main article#content_sub ul li.list_populaire div {
+    display: grid;
+}
+
+section#container_main article#content_sub ul li.list_populaire div.img_populaire {
+    width: 125px;
+    height: 137px;
+    background-size: cover;
+    background-position: center;
+}
+
+section#container_main article#content_sub ul li.list_populaire div.info_populaire {
+    align-content: space-around;
+    width: 184px;
+
+}
+
+section#container_main article#content_sub ul li.list_populaire div.info_populaire p {
+    margin: initial;
+    height: 15px;
+}
+
+section#container_main article#content_sub ul li div ul.note_list {
+    display: flex;
+
+}
+
+/*---- img --------*/
+
+section#container_main article#content_main ul li.list_herberg>div {
+    width: 230px;
+    height: 120px;
+}
+
+section#container_main article#content_main ul li div {
+    background-size: cover;
+    background-position: center;
+}
+
+section#container_main article#content_main ul:first-child li:nth-child(1) div {
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:first-child li:nth-child(2) div {
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:first-child li:nth-child(3) div {
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(1) div {
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(2) div {
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(3) div {
+    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(1) div.img_populaire {
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(2) div.img_populaire {
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(3) div.img_populaire {
+    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+
+/*--------------------------------------------------------- Container_sub   ------------------------------------------------*/
+
+
+
+section#container_sub {
+    margin-top: 75px;
+}
+
+section#container_sub article#content_main ul li {
+    display: flex;
+    height: 183px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+section#container_sub article#content_main ul li:nth-child(3n+1) {
+    height: 409px;
+
+
+}
+
+section#container_sub article#content_main ul#activites li p {
+    margin: initial;
+    align-self: flex-end;
+    width: 100%;
+}
+
+/*grid #container_sub*/
+
+section#container_sub article#content_main ul#activites {
+
+    display: grid;
+    column-gap: 42px;
+    row-gap: 42px;
+    grid-template-columns: repeat(4, 22.6%);
+    grid-template-areas:
+        "img1 img2 img4 img5"
+        "img1 img3 img4 img6"
+    ;
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(1) {
+    grid-area: img1;
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(2) {
+    grid-area: img2;
+    background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(3) {
+    grid-area: img3;
+    background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(4) {
+    grid-area: img4;
+    background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(5) {
+    grid-area: img5;
+    background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+
+}
+
+section#container_sub article#content_main ul#activites li:nth-child(6) {
+    grid-area: img6;
+    background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+
+}
+
+/*------------------------------------------------------------ ---- Footer ----------------------------------------------------------*/
+
+footer#foot_page {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+footer#foot_page section#info_site {
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+}
+
+footer#foot_page section#info_site>ul {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer#foot_page section#info_site ul li ul li:nth-child(1n+1) {
+    margin: 8px 0;
+}
