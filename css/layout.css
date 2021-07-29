@@ -65,7 +65,7 @@ div#filter ul#filter_field {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-   
+
 }
 
 
@@ -91,7 +91,7 @@ div#filter div#filter_style label {
 }
 
 div#filter div#filter_style label input {
-   margin-left: 10px;
+    margin-left: 10px;
 }
 
 div#filter a {
@@ -117,17 +117,18 @@ div#filter div#filter_style+ul#filter_field li img {
 
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 
-main{
-   margin-top: 20px;
-     
+main {
+    margin-top: 20px;
+
 }
+
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
 
 section#container_main {
     display: flex;
     justify-content: space-between;
-    
-   
+
+
 }
 
 /*--- Container_main content_main   -----------------------*/
@@ -136,7 +137,7 @@ section#container_main article#content_main {
     width: 64.3%;
     display: flex;
     flex-flow: column wrap;
-    
+
 
 }
 
@@ -154,7 +155,7 @@ section#container_main article#content_main div+span {
 
 section#container_main article#content_main div+span {
     margin: 25px 0;
-   
+
     bottom: 0;
     left: 33px;
 }
@@ -192,6 +193,9 @@ section#container_main article#content_main ul li>ul.note_list li {
 
 }
 
+
+
+
 /* align left*/
 section#container_main article#content_main ul li p {
     margin: initial;
@@ -208,15 +212,18 @@ section#container_main article#content_sub {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-
     width: 31.6%;
 }
 
+section#container_main article#content_sub h2 {
+    width: 89%;
+    display: flex;
+    justify-content: space-between;
+}
 
 section#container_main article#content_sub img.fa-chart-line {
     margin-left: 4rem
 }
-
 
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
@@ -224,7 +231,6 @@ section#container_main article#content_sub>ul {
     padding: 0 31px;
     flex-flow: column wrap;
     gap: 35px;
-    
 }
 
 /*--- content_sub li ---------*/
@@ -232,25 +238,30 @@ section#container_main article#content_sub>ul {
 section#container_main article#content_sub ul li {
     display: flex;
     justify-content: space-between;
-
-}
-
-section#container_main article#content_sub h2 {
-    width: 89%;
-    display: flex;
-    justify-content: space-between;
-
+    gap: 22px;
 }
 
 /*--- content_sub div ---*/
 section#container_main article#content_sub ul li.list_populaire div {
     display: grid;
-     width: 60%;
-     align-items: center;
 }
 
-section#container_main article#content_sub ul li.list_populaire div>p {
+section#container_main article#content_sub ul li.list_populaire div.img_populaire {
+    width: 125px;
+    height: 137px;
+    background-size: cover;
+    background-position: center;
+}
+
+section#container_main article#content_sub ul li.list_populaire div.info_populaire {
+    align-content: space-around;
+    width: 184px;
+
+}
+
+section#container_main article#content_sub ul li.list_populaire div.info_populaire p {
     margin: initial;
+    height: 15px;
 }
 
 section#container_main article#content_sub ul li div ul.note_list {
@@ -263,17 +274,47 @@ section#container_main article#content_sub ul li div ul.note_list {
 section#container_main article#content_main ul li.list_herberg>div {
     width: 230px;
     height: 120px;
-    overflow: hidden;
 }
 
-section#container_main article#content_main ul li img {
-    width: 100%;
-    height: auto;
+section#container_main article#content_main ul li div {
+    background-size: cover;
+    background-position: center;
 }
 
-section#container_main article#content_sub ul li .img_populaire {
-    width: 127px;
-    height: 135px;
+section#container_main article#content_main ul:first-child li:nth-child(1) div {
+    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:first-child li:nth-child(2) div {
+    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:first-child li:nth-child(3) div {
+    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(1) div {
+    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(2) div {
+    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+section#container_main article#content_main ul:last-child li:nth-child(3) div {
+    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(1) div.img_populaire {
+    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(2) div.img_populaire {
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+section#container_main article#content_sub ul li.list_populaire:nth-child(3) div.img_populaire {
+    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 
@@ -288,23 +329,24 @@ section#container_sub {
 section#container_sub article#content_main ul li {
     display: flex;
     height: 183px;
-    position: relative;
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
-    max-width:302px;
+    background-repeat: no-repeat;
+
 }
 
 section#container_sub article#content_main ul li:nth-child(3n+1) {
     height: 409px;
-    background-size:cover;
+
+
 }
 
 section#container_sub article#content_main ul#activites li p {
     margin: initial;
     align-self: flex-end;
-    width: 100%;   
+    width: 100%;
 }
+
 /*grid #container_sub*/
 
 section#container_sub article#content_main ul#activites {
@@ -312,9 +354,11 @@ section#container_sub article#content_main ul#activites {
     display: grid;
     column-gap: 42px;
     row-gap: 42px;
+    grid-template-columns: repeat(4, 22.6%);
     grid-template-areas:
         "img1 img2 img4 img5"
-        "img1 img3 img4 img6";
+        "img1 img3 img4 img6"
+    ;
 }
 
 section#container_sub article#content_main ul#activites li:nth-child(1) {

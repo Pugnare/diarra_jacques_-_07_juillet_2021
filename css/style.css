@@ -83,7 +83,7 @@ header#branding div#filter ul#filter_field li {
 
 div#filter div#filter_style+ul#filter_field img {
     border-radius: 50%;
-    background-color: rgba(0,101,252,0.1);
+    background-color: rgba(0, 101, 252, 0.1);
 }
 
 
@@ -101,18 +101,16 @@ section#container_main article#content_main ul li,
 section#container_main article#content_sub ul li {
     background-color: #fff;
     border-radius: 25px;
-
 }
 
-section#container_main article#content_main ul li img {
+section#container_main article#content_main ul li div {
     border-radius: 19px 19px 0 0;
 }
 
-section#container_main article#content_sub ul li img {
-    border-radius: 19px 0 0 19px;
+section#container_main article#content_sub ul li.list_populaire div{
+ border-radius: 19px 0 0 19px;
 }
 
-/*box shadow*/
 
 section#container_main article#content_main ul li.list_herberg,
 section#container_main article#content_sub ul li.list_populaire {
@@ -124,15 +122,13 @@ main#wrapper section#container_main article#content_main ul li ul li {
     box-shadow: initial;
 }
 
-/*--- radius ---*/
-
 section#container_sub article#content_main ul#activites li p {
     background-color: white;
     padding: 20px 0 20px 20px;
     border-radius: 0 0 20px 20px;
 }
 
-section#container_sub article#content_main ul#activites li  {
+section#container_sub article#content_main ul#activites li {
     box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
 }
