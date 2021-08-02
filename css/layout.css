@@ -1,190 +1,199 @@
 /* CSS Layout----------------------------------------------------------------*/
 
+body {
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 1338px;
+}
 
 /*genetic style*/
-body {
-    max-width: 1338px;
-    margin: 0 auto;
-    padding: 85px 50px;
+figure {
+    margin: initial;
 }
 
 ul {
-    padding: initial;
+    padding: 0;
+}
+
+header#branding>h1,
+p {
+    margin: 2px 0 0;
 }
 
 
 /*-------------------------------------- Header / Nav barre -----------------------------------*/
-/*--- Logo and title----------*/
-#branding {
-    position: relative;
-}
-
-#branding>img {
-    width: 94px;
-}
-
-#branding h1+p {
-    margin-top: -10px;
-}
-
-/*---nav barre--------------*/
-#branding #nav_barre_main {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#branding #nav_barre_main ul {
-    display: flex;
-    align-items: baseline;
-}
-
-#branding #nav_barre_main ul li a {
-    padding: 75px 50px 0;
-}
-
-
-/*--- Filter field------------*/
-
-div#filter {
+header#branding {
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-evenly;
-}
-
-div#filter figure {
-    width: 33%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: initial;
 
 }
 
-div#filter ul#filter_field {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-
-
-div#filter div#filter_style+ul#filter_field li {
-    margin: 0 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-}
-
-div#filter div#filter_style {
+header#branding div#menu {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 29%;
 }
 
-div#filter div#filter_style label {
+header#branding div#menu nav#nav_barre_main ul.list_btn {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 500px;
 }
 
-div#filter div#filter_style label input {
-    margin-left: 10px;
-}
-
-div#filter a {
-    padding: 15px;
+header#branding div#menu nav#nav_barre_main ul.list_btn a.btn {
+    padding-top: 85px;
 }
 
 
-/*--- icon -----------*/
-div#filter div#filter_style img.fa-map-marker-alt {
-    padding: 15px 25px 18px;
-}
-
-header#branding div#filter div#filter_style label+img.fa-searh-solid {
-    display: none;
-    visibility: hidden;
-}
-
-div#filter div#filter_style+ul#filter_field li img {
-    margin-right: 25px;
-    padding: 10px;
-}
 
 
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 
-main {
-    margin-top: 20px;
-
-}
 
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
 
-section#container_main {
+main#wrapper section#filter {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column wrap;
+}
 
+main#wrapper section#filter div#info_filter{
+    display: flex;
+    align-items:baseline
+}
+main#wrapper section#filter div#info_filter i.fa-info{
+    padding: 5px 10px;
+}
+
+main#wrapper section#filter div#filter_research {
+    display: flex;
+    margin: 25px 0;
+    max-width: 45%;
+}
+
+main#wrapper section#filter div#filter_research label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
 
 }
 
+main#wrapper section#filter div#filter_research label input{
+    padding-left: 1rem;
+}
+
+main#wrapper section#filter div#filter_research label input~a {
+    position: absolute;
+    padding: 20px;
+    right: 0;
+}
+
+
+main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
+    padding: 20px;
+}
+
+main#wrapper section#filter div#filter_research label>i.fa-search {
+    visibility: collapse;
+}
+
+/*-------------------------------*/
+
+main#wrapper section#filter ul#filter_field {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    margin-bottom: 35px;
+}
+
+
+main#wrapper section#filter ul#filter_field li:nth-child(2) i.fas {
+    padding: 14px 12px;
+}
+main#wrapper section#filter ul#filter_field li:nth-child(3) i.fas {
+    padding: 14px 16px;
+}
+main#wrapper section#filter ul#filter_field li:nth-child(4) i.fas {
+    padding: 14px 14px;
+}
+main#wrapper section#filter ul#filter_field li:nth-child(5) i.fas {
+    padding: 14px 13px;
+}
+
+main#wrapper section#filter ul#filter_field li>span {
+    padding: 15px 20px 0 10px;
+
+}
 /*--- Container_main content_main   -----------------------*/
+section#container_main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 section#container_main article#content_main {
-    width: 64.3%;
     display: flex;
     flex-flow: column wrap;
-
-
+    justify-content: space-around;
+    width: 65.8%;
+    width: 880px;
 }
 
-section#container_main article#content_main div {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section#container_main article#content_main h2,
-section#container_main article#content_main div+span {
-    width: 91%;
+section#container_main article#content_main>h2,
+section#container_main article#content_main>span {
     align-self: center;
+    width: 93%;
 }
 
-section#container_main article#content_main div+span {
-    margin: 25px 0;
 
-    bottom: 0;
-    left: 33px;
+section#container_main article#content_main>span {
+    padding: 34px 0 54px;
 }
 
-/*--- content_main ul -----*/
-section#container_main article#content_main div>ul {
+section#container_main article#content_main div#list_hebergement_content {
+    display: grid;
+
+}
+
+section#container_main article#content_main div#list_hebergement_content ul {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
 }
 
-/*--- content_main ul li-----*/
-section#container_main article#content_main ul li.list_herberg {
+section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    width: 249px;
+    height: 202px;
+
+}
+
+section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content {
+    display: flex;
+    flex-direction: column;
+    height: 273px;
+}
+
+section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content img {
+    visibility: hidden;
+
 }
 
 /*--- content_main ul li ul (content ring)---*/
 section#container_main article#content_main ul li>ul.note_list {
-
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
-
 }
+
+
 
 /*--- content_main ul li ul li (ring)---*/
 section#container_main article#content_main ul li>ul.note_list li {
@@ -193,17 +202,18 @@ section#container_main article#content_main ul li>ul.note_list li {
 
 }
 
+/* margin left*/
 
-
-
-/* align left*/
-section#container_main article#content_main ul li p {
-    margin: initial;
+section#container_main article#content_main ul li .position_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-left: 20px;
 }
 
-section#container_main article#content_main ul li p,
-section#container_main article#content_main ul li ul.note_list {
-    margin-left: 20px;
+section#container_main article#content_main ul li div.note_list {
+    font-size: 10px;
 }
 
 /*--- container_main content_sub ----------------------------------------------------------------------*/
@@ -212,11 +222,12 @@ section#container_main article#content_sub {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 31.6%;
+    /* width: 31.6%; */
+    width: 415px%;
 }
 
 section#container_main article#content_sub h2 {
-    width: 89%;
+    width: 81%;
     display: flex;
     justify-content: space-between;
 }
@@ -271,37 +282,39 @@ section#container_main article#content_sub ul li div ul.note_list {
 
 /*---- img --------*/
 
-section#container_main article#content_main ul li.list_herberg>div {
+
+section#container_main article#content_main ul li.list_herberg div.image_content img {
     width: 230px;
     height: 120px;
 }
 
-section#container_main article#content_main ul li div {
+section#container_main article#content_main ul li div.image_content {
     background-size: cover;
     background-position: center;
+    border-color: transparent;
 }
 
-section#container_main article#content_main ul:first-child li:nth-child(1) div {
+section#container_main article#content_main ul:first-child li:nth-child(1) div.image_content {
     background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 
-section#container_main article#content_main ul:first-child li:nth-child(2) div {
+section#container_main article#content_main ul:first-child li:nth-child(2) div.image_content {
     background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 
-section#container_main article#content_main ul:first-child li:nth-child(3) div {
+section#container_main article#content_main ul:first-child li:nth-child(3) div.image_content {
     background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 
-section#container_main article#content_main ul:last-child li:nth-child(1) div {
+section#container_main article#content_main ul:last-child li:nth-child(1) div.image_content {
     background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 
-section#container_main article#content_main ul:last-child li:nth-child(2) div {
+section#container_main article#content_main ul:last-child li:nth-child(2) div.image_content {
     background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 
-section#container_main article#content_main ul:last-child li:nth-child(3) div {
+section#container_main article#content_main ul:last-child li:nth-child(3) div.image_content {
     background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
@@ -328,18 +341,46 @@ section#container_sub {
 
 section#container_sub article#content_main ul li {
     display: flex;
-    height: 183px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
-section#container_sub article#content_main ul li:nth-child(3n+1) {
+section#container_sub article#content_main ul#activites{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section#container_sub article#content_main ul#activites ul {
+    display: flex;
+    justify-content: space-between;
+   column-gap: 2.5rem;
+   
+}
+
+section#container_sub article#content_main ul#activites  ul ul{
+    display: flex;
+    flex-direction: column;
+}
+
+section#container_sub article#content_main ul#activites ul li.image_big,
+section#container_sub article#content_main ul#activites ul li.image_small{
+    width: 303px;
+}
+
+section#container_sub article#content_main ul#activites ul li.image_big {
     height: 409px;
-
-
 }
+
+section#container_sub article#content_main ul#activites  ul ul li.image_small{
+    height: 183px;
+}
+
+
+/* section#container_sub article#content_main ul#activites ul li {
+    display: flex;
+   justify-content: space-around;
+} */
 
 section#container_sub article#content_main ul#activites li p {
     margin: initial;
@@ -347,62 +388,41 @@ section#container_sub article#content_main ul#activites li p {
     width: 100%;
 }
 
-/*grid #container_sub*/
 
-section#container_sub article#content_main ul#activites {
-
-    display: grid;
-    column-gap: 42px;
-    row-gap: 42px;
-    grid-template-columns: repeat(4, 22.6%);
-    grid-template-areas:
-        "img1 img2 img4 img5"
-        "img1 img3 img4 img6"
-    ;
-}
-
-section#container_sub article#content_main ul#activites li:nth-child(1) {
-    grid-area: img1;
+section#container_sub article#content_main ul#activites ul li.image_big {
+   
     background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-
 }
 
-section#container_sub article#content_main ul#activites li:nth-child(2) {
-    grid-area: img2;
+section#container_sub article#content_main ul#activites ul li.image_small {
     background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites li:nth-child(3) {
-    grid-area: img3;
+section#container_sub article#content_main ul#activites  ul ul li {
     background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites li:nth-child(4) {
-    grid-area: img4;
+section#container_sub article#content_main ul#activites ul:last-child li.image_big {
+   
     background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites li:nth-child(5) {
-    grid-area: img5;
+section#container_sub article#content_main ul#activites  ul ul li {
     background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites li:nth-child(6) {
-    grid-area: img6;
+section#container_sub article#content_main ul#activites  ul ul li {
     background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 
 }
 
-/*------------------------------------------------------------ ---- Footer ----------------------------------------------------------*/
+/*----------------------------------------------------------------- Footer ----------------------------------------------------------*/
 
-footer#foot_page {
-    margin-top: 150px;
-    margin-bottom: 50px;
-}
+
 
 footer#foot_page section#info_site {
     height: 250px;

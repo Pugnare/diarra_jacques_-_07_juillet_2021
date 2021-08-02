@@ -5,9 +5,6 @@ claire #deebff
 fond #f2f2f2
 */
 
-
-/* ------------------------------------------------------------ Generic regle -------------------------------------------------------*/
-
 /*--- Background-color #container_main article and footer#foot_site --*/
 
 main section#container_main article,
@@ -43,54 +40,58 @@ ul {
 }
 
 
-/* ------------------------------------------------------------ Header -------------------------------------------------------------*/
 
 
-
-header#branding div#filter figure img.fa-info {
-    border: 2px solid #f2f2f2;
-}
-
-header#branding div#filter input {
-    border: none;
-}
-
-header#branding div#filter a {
-    color: #deebff;
-    background: #0065fc;
-    border-radius: 0 15px 15px 0;
-}
-
-header#branding div#filter div#filter_style {
-    border: 1px solid #f2f2f2;
-    border-radius: 25px;
-}
-
-header#branding div#filter div#filter_style img {
-    background-color: #f2f2f2;
-    border-radius: 15px 0 0 15px;
-}
-
-header#branding div#filter div#filter_style label+img.fa-searh-solid {
-    background-color: #0065fc;
-    border-radius: 0 15px 15px 0;
-}
-
-header#branding div#filter ul#filter_field li {
-    border: 3px solid #f2f2f2;
-    border-radius: 25px;
-}
-
-div#filter div#filter_style+ul#filter_field img {
-    border-radius: 50%;
-    background-color: rgba(0, 101, 252, 0.1);
-}
 
 
 /* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
 
+main#wrapper section#filter div#info_filter i{
+    border-radius: 50%;
+    border: 2px #f2f2f2 solid;
+    color:#0065fc;
+}
+main#wrapper section#filter figure img.fa-info {
+    border: 2px solid #f2f2f2;
+}
 
+main#wrapper section#filter input {
+    border: none;
+}
 
+main#wrapper section#filter a {
+    color: #deebff;
+    background: #0065fc;
+    border-radius: 0 15px 15px 0;
+}
+ 
+main#wrapper section#filter div#filter_research {
+    border: 1px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+}
+
+main#wrapper section#filter div#filter_research label>i.fa-search{
+    background-color: #0065fc;
+    color:white;
+    border-radius: 0 15px 15px 0;
+}
+
+main#wrapper section#filter ul#filter_field li {
+    border: 3px solid #f2f2f2;
+    border-radius: 25px;
+}
+
+main#wrapper section#filter div#filter_research+ul#filter_field i {
+    border-radius: 50%;
+    background-color: rgba(0, 101, 252, 0.1);
+    color:#0065fc;
+}
+/**/
 section#container_main article#content_main,
 section#container_main article#content_sub {
     border-radius: 20px;
@@ -103,23 +104,20 @@ section#container_main article#content_sub ul li {
     border-radius: 25px;
 }
 
-section#container_main article#content_main ul li div {
+
+
+section#container_main article#content_main ul li div.image_content {
     border-radius: 19px 19px 0 0;
+    
+}
+
+section#container_main article#content_main div ul li.list_hebergement{
+  
+    box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
 }
 
 section#container_main article#content_sub ul li.list_populaire div{
  border-radius: 19px 0 0 19px;
-}
-
-
-section#container_main article#content_main ul li.list_herberg,
-section#container_main article#content_sub ul li.list_populaire {
-    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
-    border: 5px solid white;
-}
-
-main#wrapper section#container_main article#content_main ul li ul li {
-    box-shadow: initial;
 }
 
 section#container_sub article#content_main ul#activites li p {
@@ -134,6 +132,11 @@ section#container_sub article#content_main ul#activites li {
 }
 
 
+section#container_main article#content_main div#list_herbergement_content ul li.list_hebergement,
+section#container_main article#content_sub ul li.list_populaire {
+    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
 
 
 

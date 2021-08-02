@@ -1,0 +1,26 @@
+
+
+@media screen and  (min-width:1200px){
+
+    }
+
+@media screen and (min-width: 992px) and (max-width:1199.8px){
+    
+}
+
+@media screen and (min-width: 768.8px) and (max-width:991.8px){
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.8px){
+    
+}
+
+@media screen and (max-width: 575.98px){
+    header#branding div#filter div#filter_research label>i.fa-search{
+        visibility: visible;
+    }
+    header#branding div#filter div#filter_research label>a{
+        visibility: hidden;
+    }
+}
