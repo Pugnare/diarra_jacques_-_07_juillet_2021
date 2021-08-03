@@ -13,14 +13,7 @@ body {
 /*--- Tilte and nav -----------*/
 
 
-header#branding h1 {
-    font-size: 22px;
-}
 
-header#branding h1+p {
-    font-size: 14px;
-    font-weight: 500;
-}
 
 header#branding nav {
     font-size: 16px;
@@ -34,6 +27,15 @@ header#branding nav li:last-child a{
 
 
 /*----section---------------------------------------------- Main -----------------------------------------------*/
+main#wrapper h1.title_main {
+    font-size: 24px;
+}
+
+main#wrapper h1.title_main+p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
 /* --- div#filter --------------*/
 
 main#wrapper section#filter div#info_filter i.fa-info{

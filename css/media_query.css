@@ -1,26 +1,90 @@
+@media screen and (min-width:1200px) and (max-width:1300px) {
 
-
-@media screen and  (min-width:1200px){
-
+    body {
+        /* max-width: 1299.98px; */
+       
     }
 
-@media screen and (min-width: 992px) and (max-width:1199.8px){
+}
+
+@media screen and (min-width: 992px) and (max-width:1199.8px) {
+    header,
+    main
     
-}
-
-@media screen and (min-width: 768.8px) and (max-width:991.8px){
-
-}
-
-@media screen and (min-width: 576px) and (max-width: 767.8px){
+     {
+        width: 880px;
+    }
     
+    section#container_main{
+        row-gap: 30px;
+    }
+    section#container_main article#content_sub{
+        width: 880px;
+    }
+    section#container_main article#content_sub>ul{
+        flex-direction: initial;
+        justify-content: center;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 93%;
+    }
+
+    section#container_sub article#content_main ul#activites{
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big{
+       order:2;
+    }
 }
 
-@media screen and (max-width: 575.98px){
-    header#branding div#filter div#filter_research label>i.fa-search{
+@media screen and (min-width: 768.8px) and (max-width:991.8px) {
+    header,
+    main
+    
+     {
+        width: 768px;
+    }
+    
+
+    
+    section#container_main{
+        row-gap: 30px;
+    }
+    section#container_main article#content_sub{
+        width: 880px;
+    }
+    section#container_main article#content_sub>ul{
+        flex-direction: initial;
+        justify-content: center;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 93%;
+    }
+
+    section#container_sub article#content_main ul#activites{
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big{
+       order:2;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
+
+}
+
+@media screen and (max-width: 575.98px) {
+    header#branding div#filter div#filter_research label>i.fa-search {
         visibility: visible;
     }
-    header#branding div#filter div#filter_research label>a{
+
+    header#branding div#filter div#filter_research label>a {
         visibility: hidden;
     }
 }

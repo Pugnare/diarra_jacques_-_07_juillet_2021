@@ -1,12 +1,24 @@
 /* CSS Layout----------------------------------------------------------------*/
-
 body {
     margin: 0 auto;
-    
     display: flex;
     flex-direction: column;
     row-gap: 50px;
-    max-width: 1338px;
+}
+header,
+main{
+    width: 1338px;
+    align-self: center;
+}
+
+footer{
+    display:flex;
+}
+
+footer section#info_site{
+    width: 1338px;
+    margin: 0 auto;
+    
 }
 
 /*genetic style*/
@@ -38,7 +50,7 @@ header#branding div#menu {
 
 header#branding div#menu nav#nav_barre_main ul.list_btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 500px;
 }
 
@@ -70,7 +82,7 @@ main#wrapper section#filter div#info_filter i.fa-info{
 main#wrapper section#filter div#filter_research {
     display: flex;
     margin: 25px 0;
-    max-width: 45%;
+    width: 400px;
 }
 
 main#wrapper section#filter div#filter_research label {
@@ -153,11 +165,6 @@ section#container_main article#content_main>span {
 
 section#container_main article#content_main>span {
     padding: 34px 0 54px;
-}
-
-section#container_main article#content_main div#list_hebergement_content {
-    display: grid;
-
 }
 
 section#container_main article#content_main div#list_hebergement_content ul {
@@ -434,8 +441,8 @@ footer#foot_page section#info_site {
 footer#foot_page section#info_site>ul {
     width: 900px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    
+    justify-content: space-between;
 }
 
 footer#foot_page section#info_site ul li ul li:nth-child(1n+1) {

@@ -98,17 +98,20 @@ section#container_main article#content_sub {
 }
 
 /*--- Container_main article ul ------------*/
+
+
 section#container_main article#content_main ul li,
 section#container_main article#content_sub ul li {
     background-color: #fff;
     border-radius: 25px;
 }
 
-
-
 section#container_main article#content_main ul li div.image_content {
-    border-radius: 19px 19px 0 0;
-    
+    border-radius: 19px 19px 0 0;    
+}
+
+section#container_main article#content_sub ul li.list_populaire div{
+ border-radius: 19px 0 0 19px;
 }
 
 section#container_main article#content_main div ul li.list_hebergement{
@@ -116,9 +119,13 @@ section#container_main article#content_main div ul li.list_hebergement{
     box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
 }
 
-section#container_main article#content_sub ul li.list_populaire div{
- border-radius: 19px 0 0 19px;
+section#container_main article#content_main div#list_hebergement_content ul li.list_hebergement,
+section#container_main article#content_sub ul li.list_populaire {
+    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.2);
+    border: 5px solid white;
 }
+
+/*---------------*/
 
 section#container_sub article#content_main ul#activites li p {
     background-color: white;
@@ -132,11 +139,7 @@ section#container_sub article#content_main ul#activites li {
 }
 
 
-section#container_main article#content_main div#list_herbergement_content ul li.list_hebergement,
-section#container_main article#content_sub ul li.list_populaire {
-    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
-    border: 5px solid white;
-}
+
 
 
 
