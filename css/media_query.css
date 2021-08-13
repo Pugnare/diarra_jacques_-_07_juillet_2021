@@ -1,27 +1,62 @@
-@media screen and (min-width:1200px) and (max-width:1300px) {
+@media screen and (min-width:1200px) and (max-width:1380px) {
 
-    body {
-        /* max-width: 1299.98px; */
-       
+    header,
+    main {
+        width: 880px;
+    }
+
+    section#container_main {
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    section#container_main article#content_sub {
+        width: 880px;
+    }
+
+    section#container_main article#content_sub>ul {
+        flex-direction: initial;
+        justify-content: center;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 93%;
+    }
+
+    section#container_sub article#content_main ul#activites {
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big {
+        order: 2;
+    }
+
+    footer#foot_page section#info_site {
+        width: 880px;
     }
 
 }
 
 @media screen and (min-width: 992px) and (max-width:1199.8px) {
+
     header,
-    main
-    
-     {
+    main,
+    footer#foot_page section#info_site {
         width: 880px;
     }
-    
-    section#container_main{
+
+    section#container_main {
         row-gap: 30px;
+        flex-wrap: wrap;
     }
-    section#container_main article#content_sub{
+
+
+    section#container_main article#content_sub {
         width: 880px;
     }
-    section#container_main article#content_sub>ul{
+
+    section#container_main article#content_sub>ul {
         flex-direction: initial;
         justify-content: center;
     }
@@ -30,33 +65,62 @@
         width: 93%;
     }
 
-    section#container_sub article#content_main ul#activites{
+    section#container_sub article#content_main ul#activites {
         justify-content: center;
         row-gap: 30px;
     }
 
-    section#container_sub article#content_main ul#activites ul:last-child li.image_big{
-       order:2;
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big {
+        order: 2;
     }
+
+
 }
 
-@media screen and (min-width: 768.8px) and (max-width:991.8px) {
-    header,
-    main
-    
-     {
-        width: 768px;
-    }
-    
+@media screen and (min-width: 768px) and (max-width:991.8px) {
 
-    
-    section#container_main{
-        row-gap: 30px;
+    header,
+    main,
+    footer#foot_page section#info_site {
+        width: 699px;
     }
-    section#container_main article#content_sub{
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 135px 135px 90px;
+    }
+
+
+    section#container_main {
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    main#wrapper section#filter ul#filter_field {
+        row-gap: 20px;
+    }
+
+    main#wrapper section#filter ul#filter_field span {
+        width: 100%;
+    }
+
+    section#container_main article#content_main {
+        width: initial;
+
+    }
+
+    section#container_main article#content_main div#list_hebergement_content {
+        display: flex;
+    }
+
+    section#container_main article#content_main div#list_hebergement_content ul {
+        row-gap: 20px;
+    }
+
+    section#container_main article#content_sub {
         width: 880px;
     }
-    section#container_main article#content_sub>ul{
+
+    section#container_main article#content_sub>ul {
         flex-direction: initial;
         justify-content: center;
     }
@@ -65,26 +129,261 @@
         width: 93%;
     }
 
-    section#container_sub article#content_main ul#activites{
+    section#container_sub article#content_main ul#activites {
         justify-content: center;
         row-gap: 30px;
     }
 
-    section#container_sub article#content_main ul#activites ul:last-child li.image_big{
-       order:2;
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big {
+        order: 2;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.8px) {
+@media screen and (min-width: 576.8px) and (max-width: 767.8px) {
 
+    header,
+    main,
+    footer#foot_page section#info_site {
+        width: 576px;
+    }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 125px 125px 90px;
+    }
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
+        color: #bbbbbb;
+    }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn:hover,
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover {
+        border-top: none;
+        border-bottom: 3px #0065fc solid;
+        padding-bottom: 15px;
+        width: 100%;
+
+    }
+
+    main#wrapper section#filter ul#filter_field {
+        row-gap: 14px;
+    }
+
+    main#wrapper section#filter ul#filter_field span {
+        width: 100%;
+    }
+
+    section#container_main {
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    section#container_main article#content_main {
+        width: initial;
+    }
+
+    section#container_main article#content_main div#list_hebergement_content {
+        display: flex;
+    }
+
+    section#container_main article#content_main div#list_hebergement_content ul {
+        row-gap: 20px;
+    }
+
+    section#container_main article#content_sub {
+        width: 880px;
+    }
+
+    section#container_main article#content_sub>ul {
+        flex-direction: initial;
+        justify-content: center;
+    }
+
+    section#container_main article#content_sub>ul ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 93%;
+    }
+
+    section#container_sub article#content_main ul#activites {
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    section#container_sub article#content_main ul#activites ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+
+    section#container_sub article#content_main ul#activites ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_small {
+        width: 333px;
+        height: 195px;
+    }
+
+    section#container_sub article#content_main ul#activites li.image_big p,
+    section#container_sub article#content_main ul#activites li.image_small p {
+        padding: 18px 20px;
+
+    }
 }
 
-@media screen and (max-width: 575.98px) {
-    header#branding div#filter div#filter_research label>i.fa-search {
-        visibility: visible;
+
+@media screen and (max-width: 576px) {
+
+    header,
+    main {
+        width: 333px;
     }
 
-    header#branding div#filter div#filter_research label>a {
-        visibility: hidden;
+    header#branding div#menu nav#nav_barre_main ul h1 {
+        height: 0px;
+        font-weight: 700;
     }
+    header#branding div#menu nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "tilte . . btn3"
+            " btn1 btn1 btn2 btn2"
+        ;
+    }
+
+
+ 
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn{
+        border-color: white; 
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover,
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn:hover {
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 15px;    
+    }
+    
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) a.btn {
+        border: initial;
+    }
+  
+    
+    main#wrapper section#filter div#filter_research {
+        width: 320px;
+    }
+
+    main#wrapper section#filter div#filter_research label input#area_research~i.fa-search{
+        visibility:visible;
+    }
+
+    main#wrapper section#filter div#filter_research label input#area_research~input#btn_filter {
+        visibility: collapse;
+    }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
+        color: #bbbbbb;
+    }
+
+
+    main#wrapper section#filter ul#filter_field {
+        row-gap: 14px;
+        column-gap: 6px;
+    }
+
+    main#wrapper section#filter ul#filter_field span {
+        width: 100%;
+    }
+
+    section#container_main {
+        row-gap: 30px;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+ section#container_main article#content_sub {
+        width: 375px;
+        align-self: center;
+    }
+
+
+    section#container_main article#content_main {
+        width: initial;
+    }
+
+    section#container_main article#content_main {
+        order: 1;
+        background-color: initial;
+    }
+
+
+    section#container_main article#content_main div#list_hebergement_content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 15px;
+
+    }
+
+    section#container_main article#content_main div#list_hebergement_content ul {
+        flex-direction: column;
+        align-self: center;
+        row-gap: 15px;
+        margin: 0;
+    }
+
+    section#container_main article#content_main~article#content_sub {
+        border-radius: initial;
+        padding-bottom: 50px;
+    }
+
+    section#container_main article#content_sub>ul {
+        flex-direction: initial;
+        justify-content: center;
+        padding: initial;
+    }
+
+    section#container_sub article#content_main ul#activites {
+        flex-direction: column;
+        align-content: center;
+        row-gap: 25px;
+    }
+
+    section#container_sub article#content_main ul#activites ul {
+        flex-wrap: wrap;
+        row-gap: 25px;
+    }
+
+    section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement,
+    section#container_sub article#content_main ul#activites ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_small {
+        width: 333px;
+        height: 195px;
+    }
+
+    section#container_sub article#content_main ul#activites li.image_big p,
+    section#container_sub article#content_main ul#activites li.image_small p {
+        padding: 18px 20px;
+    }
+
+    footer#foot_page {
+        justify-content: center;
+    }
+
+    footer#foot_page section#info_site {
+        height: initial;
+        width: 333px;
+    }
+
+    footer#foot_page section#info_site>ul {
+        padding: initial;
+        justify-content: inherit;
+        flex-direction: column;
+        align-content: center;
+    }
+
 }

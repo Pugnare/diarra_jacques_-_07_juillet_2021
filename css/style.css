@@ -13,24 +13,31 @@ footer {
 }
 
 /*--- a / link "color and border" --------*/
-a {
+a{
     text-decoration: none;
 }
 
-a:link {
+ul.list_btn li a {
+    border: 2px white solid;
+    padding-top:50px;
+    width: 100%;
+}
+
+ul.list_btn li a:link {
     color: #bbbbbb;
 }
 
-a:visited {
+ul.list_btn li a:visited {
     color: #bbbbbb;
 }
 
-a:hover {
+ul.list_btn li:hover a{
     color: #0065fc;
     border-top: 2px solid #0065fc;
+    padding-top:50px;
 }
 
-a:active {
+ul.list_btn li a:active {
     color: #0065fc;
 }
 
@@ -38,11 +45,6 @@ ul {
     list-style: none;
 
 }
-
-
-
-
-
 
 /* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
 
@@ -75,6 +77,7 @@ main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
     border-radius: 15px 0 0 15px;
 }
 
+main#wrapper section#filter div#filter_research label input#btn_filter,
 main#wrapper section#filter div#filter_research label>i.fa-search{
     background-color: #0065fc;
     color:white;
@@ -138,8 +141,30 @@ section#container_sub article#content_main ul#activites li {
     border-radius: 25px;
 }
 
+/*couleur des notes étoile*/
 
 
+div.note_list i.fas,
+ul.note_list i.fas{
+    color: #0065fc;
+    
+}
+ul:first-child li.list_hebergement:nth-child(1) div div.note_list i.fas:last-child,
+ul:first-child li.list_hebergement:nth-child(3) div div.note_list i.fas:last-child{
+color: #deebff;
+}
+
+ul:last-child li.list_hebergement:nth-child(1) div div.note_list i.fas:last-child,
+ul:last-child li.list_hebergement:nth-child(1) div div.note_list i.fas:nth-child(4),
+ul:last-child li.list_hebergement:nth-child(2) div div.note_list i.fas:last-child{
+color: #deebff;
+}
+
+ul li.list_populaire:nth-child(2) div ul i.fas:last-child,
+ul li.list_populaire:nth-child(2) div ul i.fas:nth-child(4),
+ul li.list_populaire:last-child div ul i.fas:last-child{
+    color: #deebff
+}
 
 
 

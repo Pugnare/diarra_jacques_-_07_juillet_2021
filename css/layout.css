@@ -4,21 +4,17 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 50px;
+
 }
+
+header {
+    width: 1338px;
+}
+
 header,
-main{
-    width: 1338px;
+main {
+    padding: 0 20px;
     align-self: center;
-}
-
-footer{
-    display:flex;
-}
-
-footer section#info_site{
-    width: 1338px;
-    margin: 0 auto;
-    
 }
 
 /*genetic style*/
@@ -30,32 +26,68 @@ ul {
     padding: 0;
 }
 
-header#branding>h1,
+
+h1 {
+
+    margin: initial;
+}
+
 p {
     margin: 2px 0 0;
 }
 
 
 /*-------------------------------------- Header / Nav barre -----------------------------------*/
-header#branding {
-    display: flex;
-    flex-flow: column wrap;
 
-}
 
-header#branding div#menu {
-    display: flex;
-    justify-content: space-between;
-}
 
 header#branding div#menu nav#nav_barre_main ul.list_btn {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
+
+    display: grid;
+    grid-template-columns: 1fr 200px 200px 200px;
+    grid-template-areas:
+        "tilte btn1 btn2 btn3"
+    ;
 }
 
-header#branding div#menu nav#nav_barre_main ul.list_btn a.btn {
-    padding-top: 85px;
+
+
+header#branding div#menu nav#nav_barre_main ul {
+    margin: initial;
+    align-items: center;
+}
+
+
+header#branding div#menu nav#nav_barre_main ul h1 {
+    height: 0px;
+    grid-area: tilte;
+}
+
+
+header#branding div#menu nav#nav_barre_main ul li {
+    display: flex;
+    justify-content: center;
+}
+
+
+header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) {
+    grid-area: btn1;
+
+}
+
+header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(3) {
+    grid-area: btn2;
+
+}
+
+header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) {
+    grid-area: btn3;
+
+}
+
+header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn {
+    text-align: center;
+
 }
 
 
@@ -71,11 +103,14 @@ main#wrapper section#filter {
     flex-flow: column wrap;
 }
 
-main#wrapper section#filter div#info_filter{
+main#wrapper section#filter div#info_filter {
     display: flex;
-    align-items:baseline
+    align-items: baseline;
+    column-gap: 15px;
+
 }
-main#wrapper section#filter div#info_filter i.fa-info{
+
+main#wrapper section#filter div#info_filter i.fa-info {
     padding: 5px 10px;
 }
 
@@ -88,19 +123,9 @@ main#wrapper section#filter div#filter_research {
 main#wrapper section#filter div#filter_research label {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
     width: 100%;
 
-}
-
-main#wrapper section#filter div#filter_research label input{
-    padding-left: 1rem;
-}
-
-main#wrapper section#filter div#filter_research label input~a {
-    position: absolute;
-    padding: 20px;
-    right: 0;
 }
 
 
@@ -108,7 +133,17 @@ main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
     padding: 20px;
 }
 
+main#wrapper section#filter div#filter_research label input#area_research {
+    padding-left: 1rem;
+}
+
+main#wrapper section#filter div#filter_research label input#btn_filter,
 main#wrapper section#filter div#filter_research label>i.fa-search {
+    padding: 20px;
+    align-self: center;
+}
+
+main#wrapper section#filter div#filter_research label i.fa-search {
     visibility: collapse;
 }
 
@@ -126,12 +161,15 @@ main#wrapper section#filter ul#filter_field {
 main#wrapper section#filter ul#filter_field li:nth-child(2) i.fas {
     padding: 14px 12px;
 }
+
 main#wrapper section#filter ul#filter_field li:nth-child(3) i.fas {
     padding: 14px 16px;
 }
+
 main#wrapper section#filter ul#filter_field li:nth-child(4) i.fas {
     padding: 14px 14px;
 }
+
 main#wrapper section#filter ul#filter_field li:nth-child(5) i.fas {
     padding: 14px 13px;
 }
@@ -140,12 +178,14 @@ main#wrapper section#filter ul#filter_field li>span {
     padding: 15px 20px 0 10px;
 
 }
+
 /*--- Container_main content_main   -----------------------*/
 section#container_main {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
+    column-gap: 43px
 }
 
 section#container_main article#content_main {
@@ -230,7 +270,7 @@ section#container_main article#content_sub {
     flex-flow: column wrap;
     align-items: center;
     /* width: 31.6%; */
-    width: 415px%;
+    width: 415px;
 }
 
 section#container_main article#content_sub h2 {
@@ -262,6 +302,7 @@ section#container_main article#content_sub ul li {
 /*--- content_sub div ---*/
 section#container_main article#content_sub ul li.list_populaire div {
     display: grid;
+    grid-template-rows: 23px 30px;
 }
 
 section#container_main article#content_sub ul li.list_populaire div.img_populaire {
@@ -273,7 +314,7 @@ section#container_main article#content_sub ul li.list_populaire div.img_populair
 
 section#container_main article#content_sub ul li.list_populaire div.info_populaire {
     align-content: space-around;
-    width: 184px;
+    width: 174px;
 
 }
 
@@ -284,7 +325,7 @@ section#container_main article#content_sub ul li.list_populaire div.info_populai
 
 section#container_main article#content_sub ul li div ul.note_list {
     display: flex;
-
+    font-size: 10px;
 }
 
 /*---- img --------*/
@@ -310,7 +351,7 @@ section#container_main article#content_main ul:first-child li:nth-child(2) div.i
 }
 
 section#container_main article#content_main ul:first-child li:nth-child(3) div.image_content {
-    background-image: url(../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
 
 section#container_main article#content_main ul:last-child li:nth-child(1) div.image_content {
@@ -353,25 +394,26 @@ section#container_sub article#content_main ul li {
     background-repeat: no-repeat;
 }
 
-section#container_sub article#content_main ul#activites{
+section#container_sub article#content_main ul#activites {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 section#container_sub article#content_main ul#activites ul {
     display: flex;
     justify-content: space-between;
-   column-gap: 2.5rem;
-   
+    column-gap: 2.7rem;
+
 }
 
-section#container_sub article#content_main ul#activites  ul ul{
+section#container_sub article#content_main ul#activites ul ul {
     display: flex;
     flex-direction: column;
 }
 
 section#container_sub article#content_main ul#activites ul li.image_big,
-section#container_sub article#content_main ul#activites ul li.image_small{
+section#container_sub article#content_main ul#activites ul li.image_small {
     width: 303px;
 }
 
@@ -379,7 +421,7 @@ section#container_sub article#content_main ul#activites ul li.image_big {
     height: 409px;
 }
 
-section#container_sub article#content_main ul#activites  ul ul li.image_small{
+section#container_sub article#content_main ul#activites ul ul li.image_small {
     height: 183px;
 }
 
@@ -396,53 +438,60 @@ section#container_sub article#content_main ul#activites li p {
 }
 
 
-section#container_sub article#content_main ul#activites ul li.image_big {
-   
+section#container_sub article#content_main ul#activites ul:first-child li.image_big {
+
     background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 
-section#container_sub article#content_main ul#activites ul li.image_small {
+section#container_sub article#content_main ul#activites ul:first-child li.image_small:nth-child(1) {
     background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites  ul ul li {
+section#container_sub article#content_main ul#activites ul:first-child li.image_small:nth-child(2) {
     background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 
 }
 
 section#container_sub article#content_main ul#activites ul:last-child li.image_big {
-   
+
     background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites  ul ul li {
+section#container_sub article#content_main ul#activites ul:last-child ul li.image_small:nth-child(1) {
     background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 
 }
 
-section#container_sub article#content_main ul#activites  ul ul li {
+section#container_sub article#content_main ul#activites ul:last-child ul li.image_small:nth-child(2) {
     background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 
 }
 
 /*----------------------------------------------------------------- Footer ----------------------------------------------------------*/
 
+footer {
 
+    display: flex;
+    justify-content: center;
+
+}
 
 footer#foot_page section#info_site {
     height: 250px;
     display: flex;
     align-items: center;
+    width: 1338px;
+
 
 }
 
 footer#foot_page section#info_site>ul {
-    width: 900px;
+
     display: flex;
-    
     justify-content: space-between;
+    width: 76%;
 }
 
 footer#foot_page section#info_site ul li ul li:nth-child(1n+1) {

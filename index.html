@@ -17,9 +17,9 @@
 <body>
     <header id="branding">
         <div id="menu">
-            <img id="logo" src="./images/logo/Reservia.svg" alt="Reservia logo">
             <nav id="nav_barre_main">
                 <ul class="list_btn">
+                    <h1 id="tilte_site"><img id="logo" src="./images/logo/Reservia.svg" alt="Reservia logo"></h1>
                     <li><a class="btn" href="#">Hébergements</a></li>
                     <li><a class="btn" href="#">Activités</a></li>
                     <li><a class="btn" href="#">S'inscrie</a></li>
@@ -38,9 +38,10 @@
         <section id="filter">
             <div id="filter_research">
                 <i class="fas fa-map-marker-alt"></i>
-                <label for="">
-                    <input type="text" placeholder="Marseille, France"><a id="btn_filter" href="#">Recherche</a><i
-                        class="fas fa-search btn-icon" href="#"></i>
+                <label for="#">
+                    <input id="area_research" type="text" placeholder="Marseille, France">
+                    <i class="fas fa-search btn-icon"></i>
+                    <input id="btn_filter" class="fa-search btn-icon" type="submit" alt="Recherche"></input>
                 </label>
             </div>
             <ul id="filter_field">
@@ -186,12 +187,11 @@
                             <p>Hotel Le soleil du matin</p>
                             <p>prix de la nuit 25€</p>
                             <ul class="note_list">
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-half-alt-solid.svg" alt="note">
-                                </li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-regular.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-regular.svg" alt="note"></li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </ul>
 
                         </div>
@@ -202,12 +202,11 @@
                             <p>Au coeur de l'eau chambres d'hôtes</p>
                             <p>prix de la nuit 30€</p>
                             <ul class="note_list">
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-half-alt-solid.svg" alt="note">
-                                </li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </ul>
                         </div>
                     </li>
@@ -217,12 +216,11 @@
                             <p>Hotel Tout bleu et blanc</p>
                             <p>prix de la nuit 50€</p>
                             <ul class="note_list">
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid.svg" alt="note"></li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-half-alt-solid.svg" alt="note">
-                                </li>
-                                <li><img class="fa-star-solid" src="./images/icon/star-solid-half.svg" alt="note"></li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </ul>
                         </div>
                     </li>
@@ -237,25 +235,25 @@
 
                     <ul>
                         <li class="image_big">
-                            <p>Notre-Dame-de-la-Garde</p>
+                            <p>Vieux Port</p>
                         </li>
                         <ul>
                             <li class="image_small">
                                 <p>Fort de Pomegues</p>
                             </li>
                             <li class="image_small">
-                                <p>Parc nation des Calanques</p>
+                                <p>Iles du Frioul</p>
                             </li>
                         </ul>
                     </ul>
 
                     <ul>
                         <li class="image_big">
-                            <p>Vieux Port</p>
+                            <p>Parc national des Calanques</p>
                         </li>
                         <ul>
                             <li class="image_small">
-                                <p>Iles du Frioul</p>
+                                <p>Notre-Dame-de-la-Garde</p>
                             </li>
                             <li class="image_small">
                                 <p>Parc Longchamp</p>
