@@ -5,9 +5,6 @@ claire #deebff
 fond #f2f2f2
 */
 
-
-/* ------------------------------------------------------------ Generic regle -------------------------------------------------------*/
-
 /*--- Background-color #container_main article and footer#foot_site --*/
 
 main section#container_main article,
@@ -16,24 +13,31 @@ footer {
 }
 
 /*--- a / link "color and border" --------*/
-a {
+a{
     text-decoration: none;
 }
 
-a:link {
+ul.list_btn li a {
+    border: 2px white solid;
+    padding-top:50px;
+    width: 100%;
+}
+
+ul.list_btn li a:link {
     color: #bbbbbb;
 }
 
-a:visited {
+ul.list_btn li a:visited {
     color: #bbbbbb;
 }
 
-a:hover {
+ul.list_btn li:hover a{
     color: #0065fc;
     border-top: 2px solid #0065fc;
+    padding-top:50px;
 }
 
-a:active {
+ul.list_btn li a:active {
     color: #0065fc;
 }
 
@@ -42,85 +46,89 @@ ul {
 
 }
 
+/* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
 
-/* ------------------------------------------------------------ Header -------------------------------------------------------------*/
-
-
-
-header#branding div#filter figure img.fa-info {
+main#wrapper section#filter div#info_filter i{
+    border-radius: 50%;
+    border: 2px #f2f2f2 solid;
+    color:#0065fc;
+}
+main#wrapper section#filter figure img.fa-info {
     border: 2px solid #f2f2f2;
 }
 
-header#branding div#filter input {
+main#wrapper section#filter input {
     border: none;
 }
 
-header#branding div#filter a {
+main#wrapper section#filter a {
     color: #deebff;
     background: #0065fc;
     border-radius: 0 15px 15px 0;
 }
-
-header#branding div#filter div#filter_style {
+ 
+main#wrapper section#filter div#filter_research {
     border: 1px solid #f2f2f2;
     border-radius: 25px;
 }
 
-header#branding div#filter div#filter_style img {
+main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
 
-header#branding div#filter div#filter_style label+img.fa-searh-solid {
+main#wrapper section#filter div#filter_research label input#btn_filter,
+main#wrapper section#filter div#filter_research label>i.fa-search{
     background-color: #0065fc;
+    color:white;
     border-radius: 0 15px 15px 0;
 }
 
-header#branding div#filter ul#filter_field li {
+main#wrapper section#filter ul#filter_field li {
     border: 3px solid #f2f2f2;
     border-radius: 25px;
 }
 
-div#filter div#filter_style+ul#filter_field img {
+main#wrapper section#filter div#filter_research+ul#filter_field i {
     border-radius: 50%;
     background-color: rgba(0, 101, 252, 0.1);
+    color:#0065fc;
 }
-
-
-/* ------------------------------------------------------------ container_main article // container_sub article-------------------------------------------------------------*/
-
-
-
+/**/
 section#container_main article#content_main,
 section#container_main article#content_sub {
     border-radius: 20px;
 }
 
 /*--- Container_main article ul ------------*/
+
+
 section#container_main article#content_main ul li,
 section#container_main article#content_sub ul li {
     background-color: #fff;
     border-radius: 25px;
 }
 
-section#container_main article#content_main ul li div {
-    border-radius: 19px 19px 0 0;
+section#container_main article#content_main ul li div.image_content {
+    border-radius: 19px 19px 0 0;    
 }
 
 section#container_main article#content_sub ul li.list_populaire div{
  border-radius: 19px 0 0 19px;
 }
 
+section#container_main article#content_main div ul li.list_hebergement{
+  
+    box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
+}
 
-section#container_main article#content_main ul li.list_herberg,
+section#container_main article#content_main div#list_hebergement_content ul li.list_hebergement,
 section#container_main article#content_sub ul li.list_populaire {
-    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
 }
 
-main#wrapper section#container_main article#content_main ul li ul li {
-    box-shadow: initial;
-}
+/*---------------*/
 
 section#container_sub article#content_main ul#activites li p {
     background-color: white;
@@ -133,7 +141,30 @@ section#container_sub article#content_main ul#activites li {
     border-radius: 25px;
 }
 
+/*couleur des notes étoile*/
 
+
+div.note_list i.fas,
+ul.note_list i.fas{
+    color: #0065fc;
+    
+}
+ul:first-child li.list_hebergement:nth-child(1) div div.note_list i.fas:last-child,
+ul:first-child li.list_hebergement:nth-child(3) div div.note_list i.fas:last-child{
+color: #deebff;
+}
+
+ul:last-child li.list_hebergement:nth-child(1) div div.note_list i.fas:last-child,
+ul:last-child li.list_hebergement:nth-child(1) div div.note_list i.fas:nth-child(4),
+ul:last-child li.list_hebergement:nth-child(2) div div.note_list i.fas:last-child{
+color: #deebff;
+}
+
+ul li.list_populaire:nth-child(2) div ul i.fas:last-child,
+ul li.list_populaire:nth-child(2) div ul i.fas:nth-child(4),
+ul li.list_populaire:last-child div ul i.fas:last-child{
+    color: #deebff
+}
 
 
 
