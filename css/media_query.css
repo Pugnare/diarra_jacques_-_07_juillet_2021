@@ -25,6 +25,7 @@
 
     section#container_sub article#content_main ul#activites {
         justify-content: center;
+        flex-wrap: wrap;
         row-gap: 30px;
     }
 
@@ -67,6 +68,7 @@
 
     section#container_sub article#content_main ul#activites {
         justify-content: center;
+        flex-wrap: wrap;
         row-gap: 30px;
     }
 
@@ -128,10 +130,13 @@
     section#container_main article#content_sub h2 {
         width: 93%;
     }
-
+section#container_sub{
+    margin-top: 0;
+}
     section#container_sub article#content_main ul#activites {
         justify-content: center;
         row-gap: 30px;
+        flex-wrap: wrap;
     }
 
     section#container_sub article#content_main ul#activites ul:last-child li.image_big {
@@ -150,6 +155,7 @@
     header#branding div#menu nav#nav_barre_main ul.list_btn {
         grid-template-columns: 1fr 125px 125px 90px;
     }
+
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
         color: #bbbbbb;
     }
@@ -180,12 +186,15 @@
         width: initial;
     }
 
-    section#container_main article#content_main div#list_hebergement_content {
-        display: flex;
+    section#container_main article#content_main div#list_hebergement_content{
+        row-gap: 20px;
     }
-
     section#container_main article#content_main div#list_hebergement_content ul {
         row-gap: 20px;
+    }
+    section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement{
+        width: 287px;
+        
     }
 
     section#container_main article#content_sub {
@@ -206,29 +215,75 @@
         width: 93%;
     }
 
-    section#container_sub article#content_main ul#activites {
-        justify-content: center;
-        row-gap: 30px;
+    section#container_sub{
+        margin-top: 0;
+    }
+    section#container_sub article#content_main ul#activites{
+        flex-wrap: wrap;
+        row-gap: 20px;
     }
 
     section#container_sub article#content_main ul#activites ul {
         flex-wrap: wrap;
+        row-gap: 25px;
         justify-content: center;
-        row-gap: 30px;
     }
-
 
     section#container_sub article#content_main ul#activites ul li.image_big,
     section#container_sub article#content_main ul#activites ul li.image_small {
-        width: 333px;
-        height: 195px;
+        width: 287px;
     }
 
     section#container_sub article#content_main ul#activites li.image_big p,
     section#container_sub article#content_main ul#activites li.image_small p {
         padding: 18px 20px;
+    }
+
+  
+
+    section#container_sub article#content_main ul#activites ul li.image_big div:first-child,
+    section#container_sub article#content_main ul#activites ul li.image_small div:last-child {
+
+        height: 134px;
+    }
+
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
+        width: initial;
+        height:134px;
+    }
+
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
+        top: 0;
 
     }
+
+    section#container_sub article#content_main ul#activites ul:first-child li.image_big div img,
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
+        width: 100%;
+        height: initial;
+        left: 0;
+    }
+    footer#foot_page {
+        padding: 30px;
+     }
+ 
+     footer#foot_page section#info_site {
+         height: initial;
+         width: 333px;
+     }
+ 
+     footer#foot_page section#info_site>ul {
+         padding: initial;
+         justify-content: inherit;
+         flex-direction: column;
+         align-content: center;
+     }
+
 }
 
 
@@ -236,26 +291,30 @@
 
     header,
     main {
-        width: 333px;
+        width: 320px;
+        padding: 0;
     }
 
     header#branding div#menu nav#nav_barre_main ul h1 {
-        height: 0px;
+        padding: 10px;
         font-weight: 700;
     }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4){
+        justify-self: self-end;
+        padding-right: 10px;
+    }
+
     header#branding div#menu nav#nav_barre_main ul.list_btn {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-            "tilte . . btn3"
+        grid-template-areas:
+            "tilte tilte btn3 btn3"
             " btn1 btn1 btn2 btn2"
         ;
     }
 
-
- 
-
-    header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn{
-        border-color: white; 
+    header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn {
+        border-color: white;
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 15px;
         width: 100%;
@@ -264,24 +323,33 @@
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover,
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn:hover {
         border-bottom: 2px solid #0065fc;
-        padding-bottom: 15px;    
+        padding-bottom: 15px;
     }
-    
+
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) a.btn {
         border: initial;
     }
-  
-    
+
+
     main#wrapper section#filter div#filter_research {
-        width: 320px;
+        width: 275px;
     }
 
-    main#wrapper section#filter div#filter_research label input#area_research~i.fa-search{
-        visibility:visible;
+    main#wrapper section#filter div#filter_research label{
+        position: relative;
+    }
+    main#wrapper section#filter div#filter_research label input#area_research{
+        width: 150px;
+    }
+
+    main#wrapper section#filter div#filter_research label input#area_research~i.fa-search {
+        visibility: visible;
+        
     }
 
     main#wrapper section#filter div#filter_research label input#area_research~input#btn_filter {
         visibility: collapse;
+        position: absolute;
     }
 
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
@@ -298,6 +366,13 @@
         width: 100%;
     }
 
+    main#wrapper>h1,
+    main#wrapper>h1~p,
+    main#wrapper section#filter{
+        padding: 0 20px;
+    }
+
+
     section#container_main {
         row-gap: 30px;
         justify-content: center;
@@ -305,12 +380,14 @@
 
     }
 
- section#container_main article#content_sub {
+    section#container_main article#content_sub {
         width: 375px;
         align-self: center;
     }
-
-
+    section#container_sub article#content_main h2{
+        align-self: flex-start;
+        padding-left: 20px;
+    }
     section#container_main article#content_main {
         width: initial;
     }
@@ -320,6 +397,18 @@
         background-color: initial;
     }
 
+    section#container_main article#content_sub ul li.list_populaire div.img_populaire{
+        width: 128px;
+    }
+
+    section#container_main article#content_sub ul li.list_populaire div.info_populaire{
+        width: 140px;
+    }
+
+
+    section#container_main article#content_sub h2{
+        width: 50%;
+    }
 
     section#container_main article#content_main div#list_hebergement_content {
         display: flex;
@@ -341,6 +430,14 @@
         padding-bottom: 50px;
     }
 
+    section#container_sub{
+        margin-top: 0;
+    }
+    section#container_sub article#content_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     section#container_main article#content_sub>ul {
         flex-direction: initial;
         justify-content: center;
@@ -349,20 +446,20 @@
 
     section#container_sub article#content_main ul#activites {
         flex-direction: column;
-        align-content: center;
         row-gap: 25px;
     }
 
     section#container_sub article#content_main ul#activites ul {
         flex-wrap: wrap;
         row-gap: 25px;
+        justify-content: center;
     }
 
     section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement,
     section#container_sub article#content_main ul#activites ul li.image_big,
     section#container_sub article#content_main ul#activites ul li.image_small {
-        width: 333px;
-        height: 195px;
+        width: 287px;
+
     }
 
     section#container_sub article#content_main ul#activites li.image_big p,
@@ -370,8 +467,44 @@
         padding: 18px 20px;
     }
 
+    /*nouvelle  organisation*/
+    section#container_main article#content_sub {
+        width: 320px;
+        align-self: center;
+    }
+
+    section#container_sub article#content_main ul#activites ul li.image_big div:first-child,
+    section#container_sub article#content_main ul#activites ul li.image_small div:last-child {
+
+        height: 134px;
+    }
+
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
+        width: initial;
+        height:134px;
+    }
+
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img,
+    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
+        top: 0;
+
+    }
+
+    section#container_sub article#content_main ul#activites ul:first-child li.image_big div img,
+    section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
+        width: 100%;
+        height: initial;
+        left: 0;
+    }
+
+    /*------------------------*/
+
     footer#foot_page {
-        justify-content: center;
+       padding: 30px;
     }
 
     footer#foot_page section#info_site {

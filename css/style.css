@@ -109,11 +109,14 @@ section#container_main article#content_sub ul li {
     border-radius: 25px;
 }
 
-section#container_main article#content_main ul li div.image_content {
+section#container_main article#content_main ul li div.image_content,
+section#container_main article#content_main ul li div.image_content img {
     border-radius: 19px 19px 0 0;    
 }
 
-section#container_main article#content_sub ul li.list_populaire div{
+section#container_main article#content_sub ul li.list_populaire div,
+section#container_main article#content_sub ul li.list_populaire div img
+{
  border-radius: 19px 0 0 19px;
 }
 
@@ -130,9 +133,12 @@ section#container_main article#content_sub ul li.list_populaire {
 
 /*---------------*/
 
-section#container_sub article#content_main ul#activites li p {
+section#container_sub article#content_main ul#activites li div:first-child {
     background-color: white;
-    padding: 20px 0 20px 20px;
+    border-radius:  20px 20px 0 0;
+}
+section#container_sub article#content_main ul#activites li div:last-child p{
+    background-color: white;
     border-radius: 0 0 20px 20px;
 }
 

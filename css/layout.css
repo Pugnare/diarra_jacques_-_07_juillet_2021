@@ -217,7 +217,7 @@ section#container_main article#content_main div#list_hebergement_content>ul li.l
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 249px;
+    width: 237px;
     height: 202px;
 
 }
@@ -225,13 +225,38 @@ section#container_main article#content_main div#list_hebergement_content>ul li.l
 section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content {
     display: flex;
     flex-direction: column;
-    height: 273px;
+    align-content: center;
+    height: 290px;
+    overflow: hidden;
+    position: relative; 
 }
 
 section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content img {
-    visibility: hidden;
+   position: absolute;
+   width:100%;
+}
+section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(1) div.image_content img{
+    bottom: -15px;
+}
+section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(2) div.image_content img{
+    bottom: -25px;
+}
+section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(3) div.image_content img{
+    top: -15px;
+}
+
+section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(1) div.image_content img{
+    bottom: -50px;
+}
+section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(2) div.image_content img{
 
 }
+section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(3) div.image_content img{
+ bottom: -125px;
+}
+
+
+
 
 /*--- content_main ul li ul (content ring)---*/
 section#container_main article#content_main ul li>ul.note_list {
@@ -306,16 +331,32 @@ section#container_main article#content_sub ul li.list_populaire div {
 }
 
 section#container_main article#content_sub ul li.list_populaire div.img_populaire {
-    width: 125px;
+    width: 139px;
     height: 137px;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+     position:relative;
 }
+
+section#container_main article#content_sub ul li.list_populaire div.img_populaire img{
+    position:absolute;
+   height: 100%
+}
+
+section#container_main article#content_sub ul li.list_populaire:last-child div.img_populaire img{
+    height: 212px;
+    bottom: -40px;
+}
+
+/*-----------------*/
 
 section#container_main article#content_sub ul li.list_populaire div.info_populaire {
     align-content: space-around;
     width: 174px;
+}
 
+section#container_main article#content_sub ul li.list_populaire div.info_populaire img {
+    height: 133px;
+    width: 100%;
 }
 
 section#container_main article#content_sub ul li.list_populaire div.info_populaire p {
@@ -342,43 +383,6 @@ section#container_main article#content_main ul li div.image_content {
     border-color: transparent;
 }
 
-section#container_main article#content_main ul:first-child li:nth-child(1) div.image_content {
-    background-image: url(../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-}
-
-section#container_main article#content_main ul:first-child li:nth-child(2) div.image_content {
-    background-image: url(../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-}
-
-section#container_main article#content_main ul:first-child li:nth-child(3) div.image_content {
-    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-}
-
-section#container_main article#content_main ul:last-child li:nth-child(1) div.image_content {
-    background-image: url(../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-}
-
-section#container_main article#content_main ul:last-child li:nth-child(2) div.image_content {
-    background-image: url(../images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-}
-
-section#container_main article#content_main ul:last-child li:nth-child(3) div.image_content {
-    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-}
-
-section#container_main article#content_sub ul li.list_populaire:nth-child(1) div.img_populaire {
-    background-image: url(../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-}
-
-section#container_main article#content_sub ul li.list_populaire:nth-child(2) div.img_populaire {
-    background-image: url(../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
-}
-
-section#container_main article#content_sub ul li.list_populaire:nth-child(3) div.img_populaire {
-    background-image: url(../images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-}
-
-
 /*--------------------------------------------------------- Container_sub   ------------------------------------------------*/
 
 
@@ -387,87 +391,147 @@ section#container_sub {
     margin-top: 75px;
 }
 
-section#container_sub article#content_main ul li {
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+section#container_sub p {
+    margin: 0;
+    padding: 20px 0 20px 20px;
 }
 
 section#container_sub article#content_main ul#activites {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    
 }
 
 section#container_sub article#content_main ul#activites ul {
     display: flex;
-    justify-content: space-between;
-    column-gap: 2.7rem;
-
+    column-gap: 40px;
 }
 
-section#container_sub article#content_main ul#activites ul ul {
-    display: flex;
-    flex-direction: column;
-}
 
-section#container_sub article#content_main ul#activites ul li.image_big,
-section#container_sub article#content_main ul#activites ul li.image_small {
+section#container_sub article#content_main ul#activites ul li.image_big {
     width: 303px;
 }
 
-section#container_sub article#content_main ul#activites ul li.image_big {
-    height: 409px;
+section#container_sub article#content_main ul#activites ul li.image_big div:first-child {
+    height: 389px;
+    overflow: hidden;
+    position: relative
 }
 
-section#container_sub article#content_main ul#activites ul ul li.image_small {
-    height: 183px;
+section#container_sub article#content_main ul#activites ul li.image_big div img {
+    position: absolute;
+    height: 100%
 }
 
+section#container_sub article#content_main ul#activites ul:first-child li.image_big div img {
+    right: -150px;
+    top: 0px
+}
 
-/* section#container_sub article#content_main ul#activites ul li {
+section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
+    left: -110px
+}
+
+/*----------------*/
+
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content {
     display: flex;
-   justify-content: space-around;
-} */
+    flex-direction: column;
+    justify-content: space-between;
 
-section#container_sub article#content_main ul#activites li p {
-    margin: initial;
-    align-self: flex-end;
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 ul {
+    height: 142px;
+}
+
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content li:first-child div:first-child {
+    position: relative;
+    height: 182px;
+    width: 303px;
+    overflow: hidden;
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div:last-child,
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:last-child {
+    height: 56px;
+
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div img {
+    position: absolute;
     width: 100%;
+    top: -150px
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child {
+    position: relative;
+    height: 108px;
+    width: 303px;
+    overflow: hidden;
 }
 
 
-section#container_sub article#content_main ul#activites ul:first-child li.image_big {
-
-    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img {
+    position: absolute;
+    width: 100%;
+    top: -18px;
 }
 
-section#container_sub article#content_main ul#activites ul:first-child li.image_small:nth-child(1) {
-    background-image: url("../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+/*-----------*/
 
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child {
+    position: relative;
+    height: 139px;
+    width: 303px;
+    overflow: hidden;
 }
 
-section#container_sub article#content_main ul#activites ul:first-child li.image_small:nth-child(2) {
-    background-image: url("../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-
-}
-
-section#container_sub article#content_main ul#activites ul:last-child li.image_big {
-
-    background-image: url("../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-
-}
-
-section#container_sub article#content_main ul#activites ul:last-child ul li.image_small:nth-child(1) {
-    background-image: url("../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 ul {
+    display: flex;
+    flex-direction: column;
 
 }
 
-section#container_sub article#content_main ul#activites ul:last-child ul li.image_small:nth-child(2) {
-    background-image: url("../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 ul {
+    height: 142px;
+}
+
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:last-child,
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:last-child {
+    height: 56px;
 
 }
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img {
+    position: absolute;
+    width: 100%;
+    top: 0px
+}
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
+    position: relative;
+    height: 152px;
+    width: 303px;
+    overflow: hidden;
+}
+
+
+section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
+    position: absolute;
+    width: 100%;
+    top: -18px;
+}
+
 
 /*----------------------------------------------------------------- Footer ----------------------------------------------------------*/
 
