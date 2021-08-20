@@ -30,7 +30,7 @@ main#wrapper h1.title_main {
     font-size: 24px;
 }
 
-main#wrapper h1.title_main+p {
+main#wrapper section#filter h2.title_main+p {
     font-size: 16px;
     font-weight: 600;
 }
@@ -39,6 +39,10 @@ main#wrapper h1.title_main+p {
 
 main#wrapper section#filter div#info_filter i.fa-info{
    font-size: 12px;
+}
+
+main#wrapper section#filter div#info_filter span{
+    font-weight: 500;
 }
 
 
@@ -56,9 +60,10 @@ main#wrapper section#filter div#filter_research input::placeholder
 
 }
 /*--- section / article*/
-section#container_main article#content_main ul li figcaption,
+section#container_main article.content_main ul li figcaption,
 section#container_main article#content_sub ul li figcaption:first-child,
-section#container_main article#content_main>span {
+section#container_main article.content_main span:first-child,
+section#container_main article#content_sub p:first-child {
     font-weight: 800;
 }
 

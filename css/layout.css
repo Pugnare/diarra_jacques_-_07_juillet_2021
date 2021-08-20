@@ -1,4 +1,21 @@
 /* CSS Layout----------------------------------------------------------------*/
+
+
+
+/*
+Le CSS est composé de 4 feuille de style "layout.css", "style.css", "fonts.css", "media_query.css"
+-Layout : Corps principal qui organise et agence les différentes éléments HTML.
+-style : Régles de stylisation (color, border...)
+-fonts : réglemente la taille des polices
+-media_query : spécifie les reglés @media des différent viewport / affichage
+
+exception : les régles des ICONS est sont gérer pas layout alors que les instructions de gère le taille est "font-weight"
+
+*/
+
+
+
+/*----------------------------------------------------------------------------*/
 body {
     margin: 0 auto;
     display: flex;
@@ -12,7 +29,7 @@ header {
 
 header,
 main {
-    padding: 0 20px;
+    
     align-self: center;
 }
 
@@ -94,6 +111,7 @@ header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn {
 
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 main#wrapper{
+    margin-top:60px;
     margin-bottom: 20px;
 }
 
@@ -189,7 +207,7 @@ section#container_main {
     column-gap: 43px
 }
 
-section#container_main article#content_main {
+section#container_main article.content_main {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -197,24 +215,24 @@ section#container_main article#content_main {
     width: 880px;
 }
 
-section#container_main article#content_main>h2,
-section#container_main article#content_main>span {
+section#container_main article.content_main>h2,
+section#container_main article.content_main>span {
     align-self: center;
     width: 93%;
 }
 
 
-section#container_main article#content_main>span {
+section#container_main article.content_main>span {
     padding: 34px 0 54px;
 }
 
-section#container_main article#content_main div#list_hebergement_content ul {
+section#container_main article.content_main div#list_hebergement_content ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement {
+section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -223,7 +241,7 @@ section#container_main article#content_main div#list_hebergement_content>ul li.l
 
 }
 
-section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content {
+section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement div.image_content {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -232,27 +250,25 @@ section#container_main article#content_main div#list_hebergement_content>ul li.l
     position: relative; 
 }
 
-section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement div.image_content img {
+section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement div.image_content img {
    position: absolute;
    width:100%;
 }
-section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(1) div.image_content img{
+section#container_main article.content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(1) div.image_content img{
     bottom: -15px;
 }
-section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(2) div.image_content img{
+section#container_main article.content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(2) div.image_content img{
     bottom: -25px;
 }
-section#container_main article#content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(3) div.image_content img{
+section#container_main article.content_main div#list_hebergement_content>ul:first-child li.list_hebergement:nth-child(3) div.image_content img{
     top: -15px;
 }
 
-section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(1) div.image_content img{
+section#container_main article.content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(1) div.image_content img{
     bottom: -50px;
 }
-section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(2) div.image_content img{
 
-}
-section#container_main article#content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(3) div.image_content img{
+section#container_main article.content_main div#list_hebergement_content>ul:nth-child(2) li.list_hebergement:nth-child(3) div.image_content img{
  bottom: -125px;
 }
 
@@ -260,24 +276,20 @@ section#container_main article#content_main div#list_hebergement_content>ul:nth-
 
 
 /*--- content_main ul li ul (content ring)---*/
-section#container_main article#content_main ul li>ul.note_list {
+section#container_main article.content_main ul li>div.note_list {
     display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
 }
 
-
-
 /*--- content_main ul li ul li (ring)---*/
-section#container_main article#content_main ul li>ul.note_list li {
+section#container_main article.content_main ul li>div.note_list i {
     display: flex;
     justify-content: space-evenly;
 
 }
 
-/* margin left*/
-
-section#container_main article#content_main ul li .position_content {
+section#container_main article.content_main ul li div.position_content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -285,8 +297,11 @@ section#container_main article#content_main ul li .position_content {
     padding-left: 20px;
 }
 
-section#container_main article#content_main ul li div.note_list {
-    font-size: 10px;
+section#container_main article.content_main ul li div.note_list,
+section#container_main article#content_sub ul li div div.note_list {
+    display: flex;
+    column-gap: 1px;
+    font-size: 12px;
 }
 
 /*--- container_main content_sub ----------------------------------------------------------------------*/
@@ -295,7 +310,6 @@ section#container_main article#content_sub {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    /* width: 31.6%; */
     width: 415px;
 }
 
@@ -326,7 +340,7 @@ section#container_main article#content_sub ul li {
 }
 
 /*--- content_sub div ---*/
-section#container_main article#content_sub ul li.list_populaire div {
+section#container_main article#content_sub ul li.list_populaire div.info_populaire {
     display: grid;
     grid-template-rows: 23px 30px;
 }
@@ -365,10 +379,7 @@ section#container_main article#content_sub ul li.list_populaire div.info_populai
     height: 15px;
 }
 
-section#container_main article#content_sub ul li div ul.note_list {
-    display: flex;
-    font-size: 10px;
-}
+
 
 /*---- img --------*/
 
@@ -403,77 +414,78 @@ section#container_sub article#content_main ul#activites {
     
 }
 
-section#container_sub article#content_main ul#activites ul {
-    display: flex;
-    column-gap: 40px;
-}
-
-
-section#container_sub article#content_main ul#activites ul li.image_big {
+section#container_sub article#content_main ul#activites li ul li.image_big {
     width: 303px;
 }
 
-section#container_sub article#content_main ul#activites ul li.image_big div:first-child {
+section#container_sub article#content_main ul#activites li ul li.image_big div:first-child {
     height: 389px;
     overflow: hidden;
-    position: relative
+    position: relative;
 }
 
-section#container_sub article#content_main ul#activites ul li.image_big div img {
+section#container_sub article#content_main ul#activites li ul li.image_big div img {
     position: absolute;
     height: 100%
 }
 
-section#container_sub article#content_main ul#activites ul:first-child li.image_big div img {
+section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img {
     right: -150px;
     top: 0px
 }
 
-section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
+section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
     left: -110px
 }
 
 /*----------------*/
 
+section#container_sub article#content_main ul#activites li#group_img_1>ul{
+    display: flex;
+    column-gap: 40px;
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content {
+}
+section#container_sub article#content_main ul#activites li#group_img_1 ul li ul.small_image_content.group_1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 ul {
+
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul{
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between; 
+    height: 100%;
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 ul {
-    height: 142px;
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li.image_small {
+    display: flex;
+    flex-direction: column;
 }
 
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content li:first-child div:first-child {
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child {
     position: relative;
     height: 182px;
     width: 303px;
     overflow: hidden;
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div:last-child,
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:last-child {
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:last-child,
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:last-child {
     height: 56px;
 
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div img {
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div img {
     position: absolute;
     width: 100%;
     top: -150px
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child {
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child {
     position: relative;
     height: 108px;
     width: 303px;
@@ -481,53 +493,65 @@ section#container_sub article#content_main ul#activites ul ul.small_image_conten
 }
 
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img {
+section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div img {
     position: absolute;
     width: 100%;
     top: -18px;
 }
 
-/*-----------*/
+/*-----------------------------------*/
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child {
-    position: relative;
-    height: 139px;
-    width: 303px;
-    overflow: hidden;
+section#container_sub article#content_main ul#activites li#group_img_2>ul{
+    display: flex;
+    column-gap: 40px;
+
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 ul {
+
+
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul{
     display: flex;
     flex-direction: column;
+    justify-content: space-between; 
+    height:100%
+    
+}
+
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li.image_small {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 
 }
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 ul {
-    height: 142px;
-}
-
-
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:last-child,
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:last-child {
-    height: 56px;
-
-}
-
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img {
-    position: absolute;
-    width: 100%;
-    top: 0px
-}
-
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child {
     position: relative;
-    height: 152px;
+    height: 182px;
     width: 303px;
     overflow: hidden;
 }
 
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:last-child,
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:last-child {
+    height: 57px;
 
-section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
+}
+
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div img {
+    position: absolute;
+    width: 100%;
+    
+}
+
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
+    position: relative;
+    height: 108px;
+    width: 303px;
+    overflow: hidden;
+}
+
+section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div img {
     position: absolute;
     width: 100%;
     top: -18px;

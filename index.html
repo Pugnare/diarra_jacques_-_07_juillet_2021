@@ -25,22 +25,19 @@
                 </ul>
             </nav>
         </div>
-
-
-
-
     </header>
 
     <main id="wrapper">
-        <h1 class="title_main">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou pleine nature</p>
+
         <section id="filter">
+            <h2 class="title_main">Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou pleine nature</p>
             <div id="filter_research">
                 <i class="fas fa-map-marker-alt"></i>
-                <label for="#">
+                <label for="area_research">
                     <input id="area_research" type="text" placeholder="Marseille, France">
                     <i class="fas fa-search btn-icon"></i>
-                    <input id="btn_filter" class="fa-search btn-icon" type="submit" alt="Recherche"></input>
+                    <input id="btn_filter" class="fa-search btn-icon" type="submit" value="Rcherche"></input>
                 </label>
             </div>
             <ul id="filter_field">
@@ -62,12 +59,12 @@
                     <span>Animaux autorises</span>
                 </li>
             </ul>
-            <div id="info_filter"><i class="fas fa-info"></i> Plus de 500 logements sont disponible dans cette ville
+            <div id="info_filter"><i class="fas fa-info"></i> <span>Plus de 500 logements sont disponible dans cette ville</span>
             </div>
             </div>
         </section>
         <section id="container_main">
-            <article id="content_main">
+            <article class="content_main">
                 <h2 class="title_sub">Hébergements à Marseille</h2>
                 <div id="list_hebergement_content">
                     <ul>
@@ -191,13 +188,13 @@
                         <div class="info_populaire">
                             <p>Hotel Le soleil du matin</p>
                             <p>prix de la nuit 25€</p>
-                            <ul class="note_list">
+                            <div class="note_list">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                            </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="list_populaire">
@@ -207,13 +204,13 @@
                         <div class="info_populaire">
                             <p>Au coeur de l'eau chambres d'hôtes</p>
                             <p>prix de la nuit 30€</p>
-                            <ul class="note_list">
+                            <div class="note_list">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                            </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="list_populaire">
@@ -223,56 +220,89 @@
                         <div class="info_populaire">
                             <p>Hotel Tout bleu et blanc</p>
                             <p>prix de la nuit 50€</p>
-                            <ul class="note_list">
+                            <div class="note_list">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                            </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
-                </div>
             </article>
         </section>
         <section id="container_sub">
             <article id="content_main">
                 <h2>Activites a Marseille</h2>
                 <ul id="activites">
-                    <ul>
-                        <li class="image_big">
-                            <div><img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=""></div>
-                           <div><p>Vieux Port</p></div>
-                        </li>
-                        <ul class="small_image_content group_1">
-                            <li class="image_small">
-                                <div> <img src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt=""></div>  
-                                <div> <p>Fort de Pomegues</p></div> 
+                    <li id="group_img_1">
+                        <ul>
+                            <li class="image_big">
+                                <div>
+                                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                        alt="">
+                                </div>
+                                <div>
+                                    <p>Vieux Port</p>
+                                </div>
                             </li>
-                            <li class="image_small">
-                                <div><img src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt=""></div>
-                                <div><p>Iles du Frioul</p></div>
+                            <li class="small_image_content group_1">
+                                <ul>
+                                    <li class="image_small">
+                                        <div> <img
+                                                src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                                alt=""></div>
+                                        <div>
+                                            <p>Fort de Pomegues</p>
+                                        </div>
+                                    </li>
+                                    <li class="image_small">
+                                        <div><img
+                                                src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                                alt=""></div>
+                                        <div>
+                                            <p>Iles du Frioul</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
-                    </ul>
+                    </li>
+                    <li id="group_img_2">
+                        <ul>
+                            <li class="image_big">
+                                <div>
+                                    <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"alt="">
+                                </div>
+                                <div>
+                                    <p>Parc national des Calanques</p>
+                                </div>
+                            </li>
+                            <li class="small_image_content group_2">
+                                <ul>
+                                    <li class="image_small">
+                                        <div>
+                                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"alt="">
+                                        </div>
+                                        <div>
+                                            <p>Notre-Dame-de-la-Garde</p>
+                                        </div>
+                                    </li>
+                                    <li class="image_small">
+                                        <div>
+                                            <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                                alt="">
+                                        </div>
+                                        <div>
+                                            <p>Parc Longchamp</p>
+                                        </div>
+                                    </li>
 
-                    <ul>
-                        <li class="image_big">
-                            <div><img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></div>
-                            <div><p>Parc national des Calanques</p></div>
-                        </li>
-                        <ul class="small_image_content group_2">
-                            <li class="image_small">
-                                <div><img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt=""></div>
-                                <div><p>Notre-Dame-de-la-Garde</p></div>
+                                </ul>
                             </li>
-                            <li class="image_small">
-                                <div><img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt=""></div>
-                                <div><p>Parc Longchamp</p></div>
                         </ul>
-                        </li>
-                    </ul>
+                    </li>
                 </ul>
             </article>
         </section>

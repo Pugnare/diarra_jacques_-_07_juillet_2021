@@ -52,9 +52,12 @@
         flex-wrap: wrap;
     }
 
-
     section#container_main article#content_sub {
         width: 880px;
+    }
+
+    section#container_main article#content_sub h2 {
+        width: 93%;
     }
 
     section#container_main article#content_sub>ul {
@@ -62,9 +65,7 @@
         justify-content: center;
     }
 
-    section#container_main article#content_sub h2 {
-        width: 93%;
-    }
+
 
     section#container_sub article#content_main ul#activites {
         justify-content: center;
@@ -92,11 +93,6 @@
     }
 
 
-    section#container_main {
-        row-gap: 30px;
-        flex-wrap: wrap;
-    }
-
     main#wrapper section#filter ul#filter_field {
         row-gap: 20px;
     }
@@ -105,16 +101,20 @@
         width: 100%;
     }
 
-    section#container_main article#content_main {
-        width: initial;
-
+    section#container_main {
+        row-gap: 30px;
+        flex-wrap: wrap;
     }
 
-    section#container_main article#content_main div#list_hebergement_content {
+    section#container_main article.content_main {
+        width: initial;
+    }
+
+    section#container_main article.content_main div#list_hebergement_content {
         display: flex;
     }
 
-    section#container_main article#content_main div#list_hebergement_content ul {
+    section#container_main article.content_main div#list_hebergement_content ul {
         row-gap: 20px;
     }
 
@@ -130,9 +130,11 @@
     section#container_main article#content_sub h2 {
         width: 93%;
     }
-section#container_sub{
-    margin-top: 0;
-}
+
+    section#container_sub {
+        margin-top: 0;
+    }
+
     section#container_sub article#content_main ul#activites {
         justify-content: center;
         row-gap: 30px;
@@ -182,19 +184,22 @@ section#container_sub{
         flex-wrap: wrap;
     }
 
-    section#container_main article#content_main {
+    section#container_main article.content_main {
         width: initial;
+
     }
 
-    section#container_main article#content_main div#list_hebergement_content{
+    section#container_main article.content_main div#list_hebergement_content {
         row-gap: 20px;
     }
-    section#container_main article#content_main div#list_hebergement_content ul {
+
+    section#container_main article.content_main div#list_hebergement_content ul {
         row-gap: 20px;
     }
-    section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement{
+
+    section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement {
         width: 287px;
-        
+
     }
 
     section#container_main article#content_sub {
@@ -215,10 +220,11 @@ section#container_sub{
         width: 93%;
     }
 
-    section#container_sub{
+    section#container_sub {
         margin-top: 0;
     }
-    section#container_sub article#content_main ul#activites{
+
+    section#container_sub article#content_main ul#activites {
         flex-wrap: wrap;
         row-gap: 20px;
     }
@@ -239,7 +245,7 @@ section#container_sub{
         padding: 18px 20px;
     }
 
-  
+
 
     section#container_sub article#content_main ul#activites ul li.image_big div:first-child,
     section#container_sub article#content_main ul#activites ul li.image_small div:last-child {
@@ -252,7 +258,7 @@ section#container_sub{
     section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child,
     section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
         width: initial;
-        height:134px;
+        height: 134px;
     }
 
     section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img,
@@ -268,21 +274,22 @@ section#container_sub{
         height: initial;
         left: 0;
     }
+
     footer#foot_page {
         padding: 30px;
-     }
- 
-     footer#foot_page section#info_site {
-         height: initial;
-         width: 333px;
-     }
- 
-     footer#foot_page section#info_site>ul {
-         padding: initial;
-         justify-content: inherit;
-         flex-direction: column;
-         align-content: center;
-     }
+    }
+
+    footer#foot_page section#info_site {
+        height: initial;
+        width: 333px;
+    }
+
+    footer#foot_page section#info_site>ul {
+        padding: initial;
+        justify-content: inherit;
+        flex-direction: column;
+        align-content: center;
+    }
 
 }
 
@@ -300,7 +307,7 @@ section#container_sub{
         font-weight: 700;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4){
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) {
         justify-self: self-end;
         padding-right: 10px;
     }
@@ -335,16 +342,17 @@ section#container_sub{
         width: 275px;
     }
 
-    main#wrapper section#filter div#filter_research label{
+    main#wrapper section#filter div#filter_research label {
         position: relative;
     }
-    main#wrapper section#filter div#filter_research label input#area_research{
+
+    main#wrapper section#filter div#filter_research label input#area_research {
         width: 150px;
     }
 
     main#wrapper section#filter div#filter_research label input#area_research~i.fa-search {
         visibility: visible;
-        
+
     }
 
     main#wrapper section#filter div#filter_research label input#area_research~input#btn_filter {
@@ -368,7 +376,7 @@ section#container_sub{
 
     main#wrapper>h1,
     main#wrapper>h1~p,
-    main#wrapper section#filter{
+    main#wrapper section#filter {
         padding: 0 20px;
     }
 
@@ -377,40 +385,27 @@ section#container_sub{
         row-gap: 30px;
         justify-content: center;
         flex-direction: column;
-
     }
 
     section#container_main article#content_sub {
         width: 375px;
         align-self: center;
     }
-    section#container_sub article#content_main h2{
-        align-self: flex-start;
-        padding-left: 20px;
-    }
-    section#container_main article#content_main {
+
+    /*-------------------------------------------------*/
+
+
+
+    section#container_main article.content_main {
         width: initial;
     }
 
-    section#container_main article#content_main {
+    section#container_main article.content_main {
         order: 1;
         background-color: initial;
     }
 
-    section#container_main article#content_sub ul li.list_populaire div.img_populaire{
-        width: 128px;
-    }
-
-    section#container_main article#content_sub ul li.list_populaire div.info_populaire{
-        width: 140px;
-    }
-
-
-    section#container_main article#content_sub h2{
-        width: 50%;
-    }
-
-    section#container_main article#content_main div#list_hebergement_content {
+    section#container_main article.content_main div#list_hebergement_content {
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -418,26 +413,47 @@ section#container_sub{
 
     }
 
-    section#container_main article#content_main div#list_hebergement_content ul {
+    section#container_main article.content_main div#list_hebergement_content ul {
         flex-direction: column;
         align-self: center;
         row-gap: 15px;
         margin: 0;
     }
 
-    section#container_main article#content_main~article#content_sub {
+    section#container_main article.content_main~article#content_sub {
         border-radius: initial;
         padding-bottom: 50px;
     }
 
-    section#container_sub{
+    section#container_main article#content_sub ul li.list_populaire div.img_populaire {
+        width: 128px;
+    }
+
+    section#container_main article#content_sub ul li.list_populaire div.info_populaire {
+        width: 140px;
+    }
+
+    /*---------------*/
+    section#container_sub {
         margin-top: 0;
     }
-    section#container_sub article#content_main{
+
+    section#container_sub article#content_main {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    section#container_sub article#content_main h2 {
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    section#container_main article#content_sub {
+        width: 320px;
+        align-self: center;
+    }
+
     section#container_main article#content_sub>ul {
         flex-direction: initial;
         justify-content: center;
@@ -449,53 +465,43 @@ section#container_sub{
         row-gap: 25px;
     }
 
-    section#container_sub article#content_main ul#activites ul {
+    section#container_sub article#content_main ul#activites li ul {
         flex-wrap: wrap;
         row-gap: 25px;
         justify-content: center;
     }
 
-    section#container_main article#content_main div#list_hebergement_content>ul li.list_hebergement,
+    /*correction des conteneurs*/
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child,
+    section#container_sub article#content_main ul#activites li ul li.image_big,
     section#container_sub article#content_main ul#activites ul li.image_big,
     section#container_sub article#content_main ul#activites ul li.image_small {
         width: 287px;
-
     }
 
-    section#container_sub article#content_main ul#activites li.image_big p,
-    section#container_sub article#content_main ul#activites li.image_small p {
+    section#container_sub article#content_main ul#activites li ul li.image_big p,
+    section#container_sub article#content_main ul#activites li ul li.image_small p {
         padding: 18px 20px;
     }
 
-    /*nouvelle  organisation*/
-    section#container_main article#content_sub {
-        width: 320px;
-        align-self: center;
-    }
-
-    section#container_sub article#content_main ul#activites ul li.image_big div:first-child,
-    section#container_sub article#content_main ul#activites ul li.image_small div:last-child {
-
+    /*reajustement des conteneurs img pour mettre la taille des img*/
+    section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child ,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
+        width: initial;
         height: 134px;
     }
 
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
-        width: initial;
-        height:134px;
-    }
-
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_1 ul li:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:last-child div img {
         top: 0;
-
     }
 
-    section#container_sub article#content_main ul#activites ul:first-child li.image_big div img,
-    section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
+    section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img,
+    section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
         width: 100%;
         height: initial;
         left: 0;
@@ -504,7 +510,7 @@ section#container_sub{
     /*------------------------*/
 
     footer#foot_page {
-       padding: 30px;
+        padding: 30px;
     }
 
     footer#foot_page section#info_site {

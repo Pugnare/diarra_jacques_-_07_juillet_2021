@@ -95,7 +95,7 @@ main#wrapper section#filter div#filter_research+ul#filter_field i {
     color:#0065fc;
 }
 /**/
-section#container_main article#content_main,
+section#container_main article.content_main,
 section#container_main article#content_sub {
     border-radius: 20px;
 }
@@ -103,14 +103,14 @@ section#container_main article#content_sub {
 /*--- Container_main article ul ------------*/
 
 
-section#container_main article#content_main ul li,
+section#container_main article.content_main ul li,
 section#container_main article#content_sub ul li {
     background-color: #fff;
     border-radius: 25px;
 }
 
-section#container_main article#content_main ul li div.image_content,
-section#container_main article#content_main ul li div.image_content img {
+section#container_main article.content_main ul li div.image_content,
+section#container_main article.content_main ul li div.image_content img {
     border-radius: 19px 19px 0 0;    
 }
 
@@ -120,12 +120,12 @@ section#container_main article#content_sub ul li.list_populaire div img
  border-radius: 19px 0 0 19px;
 }
 
-section#container_main article#content_main div ul li.list_hebergement{
+section#container_main article.content_main div ul li.list_hebergement{
   
     box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
 }
 
-section#container_main article#content_main div#list_hebergement_content ul li.list_hebergement,
+section#container_main article.content_main div#list_hebergement_content ul li.list_hebergement,
 section#container_main article#content_sub ul li.list_populaire {
     box-shadow: 11px 13px 36px 1px rgba(0, 0, 0, 0.2);
     border: 5px solid white;
@@ -142,7 +142,9 @@ section#container_sub article#content_main ul#activites li div:last-child p{
     border-radius: 0 0 20px 20px;
 }
 
-section#container_sub article#content_main ul#activites li {
+section#container_sub article#content_main ul#activites li ul li.image_big,
+section#container_sub article#content_main ul#activites li ul li.image_small{
+    
     box-shadow: 0px 15px 32px 1px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
 }
@@ -166,9 +168,9 @@ ul:last-child li.list_hebergement:nth-child(2) div div.note_list i.fas:last-chil
 color: #deebff;
 }
 
-ul li.list_populaire:nth-child(2) div ul i.fas:last-child,
-ul li.list_populaire:nth-child(2) div ul i.fas:nth-child(4),
-ul li.list_populaire:last-child div ul i.fas:last-child{
+ul li.list_populaire:nth-child(2) div div i.fas:last-child,
+ul li.list_populaire:nth-child(2) div div i.fas:nth-child(4),
+ul li.list_populaire:last-child div div i.fas:last-child{
     color: #deebff
 }
 
