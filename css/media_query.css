@@ -235,45 +235,41 @@
         justify-content: center;
     }
 
-    section#container_sub article#content_main ul#activites ul li.image_big,
-    section#container_sub article#content_main ul#activites ul li.image_small {
-        width: 287px;
-    }
-
-    section#container_sub article#content_main ul#activites li.image_big p,
-    section#container_sub article#content_main ul#activites li.image_small p {
-        padding: 18px 20px;
-    }
-
-
-
-    section#container_sub article#content_main ul#activites ul li.image_big div:first-child,
-    section#container_sub article#content_main ul#activites ul li.image_small div:last-child {
-
-        height: 134px;
-    }
-
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:first-child div,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div:first-child,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div:first-child,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div:first-child {
-        width: initial;
-        height: 134px;
-    }
-
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_1 li:last-child div img,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:first-child div img,
-    section#container_sub article#content_main ul#activites ul ul.small_image_content.group_2 li:last-child div img {
-        top: 0;
-
-    }
-
-    section#container_sub article#content_main ul#activites ul:first-child li.image_big div img,
-    section#container_sub article#content_main ul#activites ul:last-child li.image_big div img {
-        width: 100%;
-        height: initial;
-        left: 0;
-    }
+      /*correction des conteneurs*/
+      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child,
+      section#container_sub article#content_main ul#activites li ul li.image_big,
+      section#container_sub article#content_main ul#activites ul li.image_big,
+      section#container_sub article#content_main ul#activites ul li.image_small {
+          width: 287px;
+      }
+  
+      section#container_sub article#content_main ul#activites li ul li.image_big p,
+      section#container_sub article#content_main ul#activites li ul li.image_small p {
+          padding: 18px 20px;
+      }
+  
+      /*reajustement des conteneurs img pour mettre la taille des img*/
+      section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
+      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child ,
+      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
+      section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
+      section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
+          width: initial;
+          height: 134px;
+      }
+  
+      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_1 ul li:first-child div img,
+      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:first-child div img,
+      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:last-child div img {
+          top: 0;
+      }
+  
+      section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img,
+      section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
+          width: 100%;
+          height: initial;
+          left: 0;
+      }
 
     footer#foot_page {
         padding: 30px;
@@ -424,7 +420,16 @@
         border-radius: initial;
         padding-bottom: 50px;
     }
+      section#container_main article#content_sub {
+        width: 320px;
+        align-self: center;
+    }
 
+    section#container_main article#content_sub>ul {
+        flex-direction: initial;
+        justify-content: center;
+        padding: initial;
+    }
     section#container_main article#content_sub ul li.list_populaire div.img_populaire {
         width: 128px;
     }
@@ -447,17 +452,6 @@
     section#container_sub article#content_main h2 {
         align-self: flex-start;
         padding-left: 20px;
-    }
-
-    section#container_main article#content_sub {
-        width: 320px;
-        align-self: center;
-    }
-
-    section#container_main article#content_sub>ul {
-        flex-direction: initial;
-        justify-content: center;
-        padding: initial;
     }
 
     section#container_sub article#content_main ul#activites {
