@@ -26,6 +26,10 @@ ul.list_btn li a {
 ul.list_btn li a:link {
     color: #bbbbbb;
 }
+ul.list_btn li:last-child a.btn{
+    color: #0065fc;
+}
+
 
 ul.list_btn li a:visited {
     color: #bbbbbb;
@@ -77,11 +81,10 @@ main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
     border-radius: 15px 0 0 15px;
 }
 
-main#wrapper section#filter div#filter_research label input#btn_filter,
-main#wrapper section#filter div#filter_research label>i.fa-search{
+main#wrapper section#filter div#filter_research label button#btn_filter{
     background-color: #0065fc;
     color:white;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 15px 15px 0 ;
 }
 
 main#wrapper section#filter ul#filter_field li {
@@ -89,7 +92,7 @@ main#wrapper section#filter ul#filter_field li {
     border-radius: 25px;
 }
 
-main#wrapper section#filter div#filter_research+ul#filter_field i {
+main#wrapper section#filter div#filter_research+div ul#filter_field i {
     border-radius: 50%;
     background-color: rgba(0, 101, 252, 0.1);
     color:#0065fc;
@@ -169,7 +172,6 @@ color: #deebff;
 }
 
 ul li.list_populaire:nth-child(2) div div i.fas:last-child,
-ul li.list_populaire:nth-child(2) div div i.fas:nth-child(4),
 ul li.list_populaire:last-child div div i.fas:last-child{
     color: #deebff
 }

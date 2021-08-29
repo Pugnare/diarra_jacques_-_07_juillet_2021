@@ -20,16 +20,12 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-}
-
-header {
-    width: 1338px;
+    max-width: 1440px;
 }
 
 header,
 main {
-    
+    width: 1340px;
     align-self: center;
 }
 
@@ -42,77 +38,81 @@ ul {
     padding: 0;
 }
 
-
-h1 {
-
-    margin: initial;
-}
-
 p {
     margin: 2px 0 0;
+}
+
+button{
+    cursor: pointer;
 }
 
 
 /*-------------------------------------- Header / Nav barre -----------------------------------*/
 
 
-
-header#branding div#menu nav#nav_barre_main ul.list_btn {
-
-    display: grid;
-    grid-template-columns: 1fr 200px 200px 200px;
-    grid-template-areas:
-        "tilte btn1 btn2 btn3"
-    ;
+header#branding{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+   
 }
 
-
-
-header#branding div#menu nav#nav_barre_main ul {
+header#branding>h1 {
+    margin: initial;
+    position:absolute;
+    left: 0;
+    top: 35px;
+    
+}
+header#branding nav#nav_barre_main ul.list_btn {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-areas:
+        "btn1 btn2 btn3"
+    ;
+}
+header#branding nav#nav_barre_main ul {
     margin: initial;
     align-items: center;
 }
 
 
-header#branding div#menu nav#nav_barre_main ul h1 {
+header#branding nav#nav_barre_main ul h1 {
     height: 0px;
-    grid-area: tilte;
 }
 
 
-header#branding div#menu nav#nav_barre_main ul li {
+header#branding  nav#nav_barre_main ul li {
     display: flex;
     justify-content: center;
 }
 
 
-header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) {
+header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) {
     grid-area: btn1;
 
 }
 
-header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(3) {
+header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) {
     grid-area: btn2;
 
 }
 
-header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) {
+header#branding  nav#nav_barre_main ul.list_btn li:nth-child(3) {
     grid-area: btn3;
 
 }
 
-header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn {
+header#branding  nav#nav_barre_main ul.list_btn li a.btn {
     text-align: center;
 
 }
 
 
-
-
 /*----------------------------------------------------------------- Main ----------------------------------------------------------*/
 main#wrapper{
     margin-top:60px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 /*-------------------------------------------------------------- Section -----------------------------------------------------------*/
@@ -126,7 +126,6 @@ main#wrapper section#filter div#info_filter {
     display: flex;
     align-items: baseline;
     column-gap: 15px;
-
 }
 
 main#wrapper section#filter div#info_filter i.fa-info {
@@ -144,10 +143,8 @@ main#wrapper section#filter div#filter_research label {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
+   
 }
-
-
 main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
     padding: 20px;
 }
@@ -156,15 +153,23 @@ main#wrapper section#filter div#filter_research label input#area_research {
     padding-left: 1rem;
 }
 
-main#wrapper section#filter div#filter_research label input#btn_filter,
-main#wrapper section#filter div#filter_research label>i.fa-search {
+main#wrapper section#filter div#filter_research label>i.fa-search,
+main#wrapper section#filter div#filter_research label button#btn_filter
+{
     padding: 20px;
     align-self: center;
 }
-
-main#wrapper section#filter div#filter_research label i.fa-search {
-    visibility: collapse;
+main#wrapper section#filter div#filter_research label button#btn_filter{
+    border: initial;
+     position: relative;
 }
+
+main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+    visibility: collapse;
+    position: absolute;
+}
+
+
 
 /*-------------------------------*/
 
@@ -173,23 +178,33 @@ main#wrapper section#filter ul#filter_field {
     align-items: center;
     flex-wrap: wrap;
     column-gap: 20px;
-    margin-bottom: 35px;
+    
 }
 
 
-main#wrapper section#filter ul#filter_field li:nth-child(2) i.fas {
+main#wrapper section#filter  div#filter_list{
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 35px;
+}
+main#wrapper section#filter  div#filter_list h3{
+    align-self: center;
+}
+
+
+main#wrapper section#filter ul#filter_field li:nth-child(1) i.fas {
     padding: 14px 12px;
 }
 
-main#wrapper section#filter ul#filter_field li:nth-child(3) i.fas {
+main#wrapper section#filter ul#filter_field li:nth-child(2) i.fas {
     padding: 14px 16px;
 }
 
-main#wrapper section#filter ul#filter_field li:nth-child(4) i.fas {
+main#wrapper section#filter ul#filter_field li:nth-child(3) i.fas {
     padding: 14px 14px;
 }
 
-main#wrapper section#filter ul#filter_field li:nth-child(5) i.fas {
+main#wrapper section#filter ul#filter_field li:nth-child(4) i.fas {
     padding: 14px 13px;
 }
 
@@ -203,7 +218,6 @@ section#container_main {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-
     column-gap: 43px
 }
 
@@ -211,8 +225,7 @@ section#container_main article.content_main {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    width: 65.8%;
-    width: 880px;
+    width: 100%;
 }
 
 section#container_main article.content_main>h2,
@@ -221,24 +234,35 @@ section#container_main article.content_main>span {
     width: 93%;
 }
 
+section#container_main article.content_main>h2{
+    margin-top: 53px;
+}
+section#container_main article.content_main>span{
+    margin-top: 30px;
+}
 
 section#container_main article.content_main>span {
     padding: 34px 0 54px;
 }
 
+section#container_main article.content_main div#list_hebergement_content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;   
+}
 section#container_main article.content_main div#list_hebergement_content ul {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap;margin: 0;
+
 }
 
 section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 237px;
+    width: 241px;
     height: 202px;
-
 }
 
 section#container_main article.content_main div#list_hebergement_content>ul li.list_hebergement div.image_content {
@@ -306,6 +330,7 @@ section#container_main article#content_sub ul li div div.note_list {
 
 /*--- container_main content_sub ----------------------------------------------------------------------*/
 
+
 section#container_main article#content_sub {
     display: flex;
     flex-flow: column wrap;
@@ -326,7 +351,7 @@ section#container_main article#content_sub img.fa-chart-line {
 /*--- content_sub ul -------------*/
 section#container_main article#content_sub>ul {
     display: flex;
-    padding: 0 31px;
+    padding: 0 39px;
     flex-flow: column wrap;
     gap: 35px;
 }
@@ -429,12 +454,12 @@ section#container_sub article#content_main ul#activites li ul li.image_big div i
     height: 100%
 }
 
-section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img {
+section#container_sub article#content_main ul#activites li:first-child ul li.image_big div img {
     right: -150px;
     top: 0px
 }
 
-section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
+section#container_sub article#content_main ul#activites li:last-child ul li.image_big div img {
     left: -110px
 }
 
@@ -482,7 +507,7 @@ section#container_sub article#content_main ul#activites li#group_img_1 ul li.sma
 section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div img {
     position: absolute;
     width: 100%;
-    top: -150px
+    top: -110px
 }
 
 section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child {
@@ -496,7 +521,7 @@ section#container_sub article#content_main ul#activites li#group_img_1 ul li.sma
 section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div img {
     position: absolute;
     width: 100%;
-    top: -18px;
+    top: -21px;
 }
 
 /*-----------------------------------*/
@@ -507,27 +532,22 @@ section#container_sub article#content_main ul#activites li#group_img_2>ul{
 
 }
 
-
-
 section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    height:100%
-    
+    height:100%    
 }
 
 section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li.image_small {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-
 }
 
 section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child {
     position: relative;
-    height: 182px;
+    height: 140px;
     width: 303px;
     overflow: hidden;
 }
@@ -546,7 +566,7 @@ section#container_sub article#content_main ul#activites li#group_img_2 ul li.sma
 
 section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
     position: relative;
-    height: 108px;
+    height: 153px;
     width: 303px;
     overflow: hidden;
 }
@@ -564,7 +584,7 @@ footer {
 
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
 
 footer#foot_page section#info_site {

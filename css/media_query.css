@@ -47,6 +47,8 @@
         width: 880px;
     }
 
+
+
     section#container_main {
         row-gap: 30px;
         flex-wrap: wrap;
@@ -64,7 +66,6 @@
         flex-direction: initial;
         justify-content: center;
     }
-
 
 
     section#container_sub article#content_main ul#activites {
@@ -88,10 +89,19 @@
         width: 699px;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn {
-        grid-template-columns: 1fr 135px 135px 90px;
+    header#branding nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 155px 155px 115px;
     }
 
+    main#wrapper section#filter div#filter_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main#wrapper section#filter div#filter_list h3 {
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
 
     main#wrapper section#filter ul#filter_field {
         row-gap: 20px;
@@ -111,7 +121,7 @@
     }
 
     section#container_main article.content_main div#list_hebergement_content {
-        display: flex;
+        flex-direction: row;
     }
 
     section#container_main article.content_main div#list_hebergement_content ul {
@@ -146,29 +156,92 @@
     }
 }
 
-@media screen and (min-width: 576.8px) and (max-width: 767.8px) {
+@media screen and (min-width: 576px) and (max-width: 767.8px) {
 
-    header,
+    header {
+        width: 100%;
+
+    }
+
     main,
     footer#foot_page section#info_site {
         width: 576px;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn {
-        grid-template-columns: 1fr 125px 125px 90px;
+    header#branding {
+        justify-content: center;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
+    header#branding h1 {
+        left: 35px;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) {
+        padding-right: 35px;
+    }
+
+    header#branding nav#nav_barre_main {
+        width: 100%;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            ".  btn3"
+            " btn1  btn2"
+        ;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
         color: #bbbbbb;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn:hover,
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover {
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn,
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn {
+        padding-bottom: 15px;
+        border-bottom: 3px white solid;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn:hover,
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover {
         border-top: none;
         border-bottom: 3px #0065fc solid;
         padding-bottom: 15px;
         width: 100%;
+    }
 
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn {
+        border: initial;
+        text-align: right
+    }
+
+    main#wrapper section#filter div#filter_list {
+        flex-direction: column;
+    }
+
+    main#wrapper section#filter div#filter_list h3 {
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter {
+        padding: 28px;
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter span {
+        visibility: collapse;
+        position: absolute;
+        left: -42px;
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+        visibility: visible;
+        left: 20px;
+        top: 20px;
+    }
+
+    main#wrapper section#filter div#filter_research label input~button#btn_filter {
+        border-radius: 15px;
     }
 
     main#wrapper section#filter ul#filter_field {
@@ -235,41 +308,41 @@
         justify-content: center;
     }
 
-      /*correction des conteneurs*/
-      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child,
-      section#container_sub article#content_main ul#activites li ul li.image_big,
-      section#container_sub article#content_main ul#activites ul li.image_big,
-      section#container_sub article#content_main ul#activites ul li.image_small {
-          width: 287px;
-      }
-  
-      section#container_sub article#content_main ul#activites li ul li.image_big p,
-      section#container_sub article#content_main ul#activites li ul li.image_small p {
-          padding: 18px 20px;
-      }
-  
-      /*reajustement des conteneurs img pour mettre la taille des img*/
-      section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
-      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child ,
-      section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
-      section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
-      section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
-          width: initial;
-          height: 134px;
-      }
-  
-      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_1 ul li:first-child div img,
-      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:first-child div img,
-      section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:last-child div img {
-          top: 0;
-      }
-  
-      section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img,
-      section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
-          width: 100%;
-          height: initial;
-          left: 0;
-      }
+    /*correction des conteneurs*/
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child,
+    section#container_sub article#content_main ul#activites li ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_small {
+        width: 287px;
+    }
+
+    section#container_sub article#content_main ul#activites li ul li.image_big p,
+    section#container_sub article#content_main ul#activites li ul li.image_small p {
+        padding: 18px 20px;
+    }
+
+    /*reajustement des conteneurs img pour mettre la taille des img*/
+    section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
+        width: initial;
+        height: 134px;
+    }
+
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_1 ul li:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:last-child div img {
+        top: 0;
+    }
+
+    section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img,
+    section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
+        width: 100%;
+        height: initial;
+        left: 0;
+    }
 
     footer#foot_page {
         padding: 30px;
@@ -290,70 +363,90 @@
 }
 
 
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 375.8px) and (max-width: 576px) {
 
     header,
     main {
-        width: 320px;
+        width: 100%;
         padding: 0;
     }
 
-    header#branding div#menu nav#nav_barre_main ul h1 {
-        padding: 10px;
-        font-weight: 700;
+    header#branding h1 {
+        left: 35px;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) {
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) {
         justify-self: self-end;
-        padding-right: 10px;
+        padding-right: 35px;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    header#branding nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "tilte tilte btn3 btn3"
-            " btn1 btn1 btn2 btn2"
+            ".  btn3"
+            " btn1  btn2"
         ;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li a.btn {
+    header#branding nav#nav_barre_main {
+        width: 100%;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li a.btn {
         border-color: white;
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 15px;
         width: 100%;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover,
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn:hover {
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn:hover,
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover {
         border-bottom: 2px solid #0065fc;
-        padding-bottom: 15px;
+
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child(4) a.btn {
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn {
         border: initial;
+        justify-self: flex-end;
     }
 
+
+    main#wrapper section#filter div#filter_list {
+        flex-direction: column;
+    }
+
+    main#wrapper section#filter div#filter_list h3 {
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
 
     main#wrapper section#filter div#filter_research {
-        width: 275px;
+        width: 285px;
     }
 
     main#wrapper section#filter div#filter_research label {
-        position: relative;
+        width: initial;
     }
 
-    main#wrapper section#filter div#filter_research label input#area_research {
-        width: 150px;
+    main#wrapper section#filter div#filter_research label input {
+        width: 158px;
     }
 
-    main#wrapper section#filter div#filter_research label input#area_research~i.fa-search {
-        visibility: visible;
-
+    main#wrapper section#filter div#filter_research label button#btn_filter {
+        padding: 28px;
     }
 
-    main#wrapper section#filter div#filter_research label input#area_research~input#btn_filter {
+    main#wrapper section#filter div#filter_research label button#btn_filter span {
         visibility: collapse;
         position: absolute;
+        left: -62px;
+
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+        visibility: visible;
+        left: 20px;
+        top: 20px;
     }
 
     header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
@@ -420,8 +513,9 @@
         border-radius: initial;
         padding-bottom: 50px;
     }
-      section#container_main article#content_sub {
-        width: 320px;
+
+    section#container_main article#content_sub {
+       
         align-self: center;
     }
 
@@ -430,6 +524,7 @@
         justify-content: center;
         padding: initial;
     }
+
     section#container_main article#content_sub ul li.list_populaire div.img_populaire {
         width: 128px;
     }
@@ -480,7 +575,7 @@
 
     /*reajustement des conteneurs img pour mettre la taille des img*/
     section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
-    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child ,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child,
     section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
     section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
     section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
@@ -503,9 +598,7 @@
 
     /*------------------------*/
 
-    footer#foot_page {
-        padding: 30px;
-    }
+
 
     footer#foot_page section#info_site {
         height: initial;
@@ -518,5 +611,254 @@
         flex-direction: column;
         align-content: center;
     }
+}
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+
+    header,
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    header#branding h1 {
+        left: 15px;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) {
+        justify-self: self-end;
+        padding-right: 15px;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            ".  btn3"
+            " btn1  btn2"
+        ;
+    }
+
+    header#branding nav#nav_barre_main {
+        width: 100%;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li a.btn {
+        border-color: white;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn:hover,
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn:hover {
+        border-bottom: 2px solid #0065fc;
+
+    }
+
+    header#branding nav#nav_barre_main ul.list_btn li:nth-child(3) a.btn {
+        border: initial;
+        justify-self: flex-end;
+    }
+
+
+    main#wrapper section#filter div#filter_list {
+        flex-direction: column;
+    }
+
+    main#wrapper section#filter div#filter_list h3 {
+        align-self: flex-start;
+        margin-bottom: 0;
+    }
+
+    main#wrapper section#filter div#filter_research {
+        width: 285px;
+    }
+
+    main#wrapper section#filter div#filter_research label {
+        width: initial;
+    }
+
+    main#wrapper section#filter div#filter_research label input {
+        width: 158px;
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter {
+        padding: 28px;
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter span {
+        visibility: collapse;
+        position: absolute;
+        left: -62px;
+
+    }
+
+    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+        visibility: visible;
+        left: 20px;
+        top: 20px;
+    }
+
+    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
+        color: #bbbbbb;
+    }
+
+
+    main#wrapper section#filter ul#filter_field {
+        row-gap: 14px;
+        column-gap: 6px;
+    }
+
+    main#wrapper section#filter ul#filter_field span {
+        width: 100%;
+    }
+
+    main#wrapper>h1,
+    main#wrapper>h1~p,
+    main#wrapper section#filter {
+        padding: 0 20px;
+    }
+
+
+    section#container_main {
+        row-gap: 30px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section#container_main article#content_sub {
+        width: 320px;
+        align-self: center;
+    }
+
+    /*-------------------------------------------------*/
+
+
+
+    section#container_main article.content_main {
+        width: initial;
+    }
+
+    section#container_main article.content_main {
+        order: 1;
+        background-color: initial;
+    }
+
+    section#container_main article.content_main div#list_hebergement_content {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 15px;
+
+    }
+
+    section#container_main article.content_main div#list_hebergement_content ul {
+        flex-direction: column;
+        align-self: center;
+        row-gap: 15px;
+        margin: 0;
+    }
+
+    section#container_main article.content_main~article#content_sub {
+        border-radius: initial;
+        padding-bottom: 50px;
+    }
+
+  
+
+    section#container_main article#content_sub>ul {
+        flex-direction: initial;
+        justify-content: center;
+        padding: initial;
+    }
+
+    section#container_main article#content_sub ul li.list_populaire div.img_populaire {
+        width: 128px;
+    }
+
+    section#container_main article#content_sub ul li.list_populaire div.info_populaire {
+        width: 140px;
+    }
+
+    /*---------------*/
+    section#container_sub {
+        margin-top: 0;
+    }
+
+    section#container_sub article#content_main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#container_sub article#content_main h2 {
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+
+    section#container_sub article#content_main ul#activites {
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    section#container_sub article#content_main ul#activites li ul {
+        flex-wrap: wrap;
+        row-gap: 25px;
+        justify-content: center;
+    }
+
+    /*correction des conteneurs*/
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child,
+    section#container_sub article#content_main ul#activites li ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_big,
+    section#container_sub article#content_main ul#activites ul li.image_small {
+        width: 287px;
+    }
+
+    section#container_sub article#content_main ul#activites li ul li.image_big p,
+    section#container_sub article#content_main ul#activites li ul li.image_small p {
+        padding: 18px 20px;
+    }
+
+    /*reajustement des conteneurs img pour mettre la taille des img*/
+    section#container_sub article#content_main ul#activites li ul li.image_big div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_1 ul li.small_image_content.group_1 ul li:last-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:first-child div:first-child,
+    section#container_sub article#content_main ul#activites li#group_img_2 ul li.small_image_content.group_2 ul li:last-child div:first-child {
+        width: initial;
+        height: 134px;
+    }
+
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_1 ul li:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:first-child div img,
+    section#container_sub article#content_main ul#activites li ul li ul li.small_image_content.group_2:last-child div img {
+        top: 0;
+    }
+
+    section#container_sub article#content_main ul#activites li ul:first-child li.image_big div img,
+    section#container_sub article#content_main ul#activites li ul:last-child li.image_big div img {
+        width: 100%;
+        height: initial;
+        left: 0;
+    }
+
+    /*------------------------*/
+
+
+
+    footer#foot_page section#info_site {
+        height: initial;
+        width: 333px;
+    }
+
+    footer#foot_page section#info_site>ul {
+        padding: initial;
+        justify-content: inherit;
+        flex-direction: column;
+        align-content: center;
+        padding-left: 25px;
+    }
+
 
 }

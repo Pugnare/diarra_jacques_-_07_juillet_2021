@@ -45,12 +45,9 @@ main#wrapper section#filter div#info_filter span{
     font-weight: 500;
 }
 
-
-main#wrapper section#filter div#filter_research label input{
-    font-size: 1rem;
-}
-main#wrapper section#filter div#filter_research label{
-    font-weight: 600;
+main#wrapper section#filter div#filter_research label input,
+main#wrapper section#filter div#filter_research label button#btn_filter {
+    font-weight: 600;font-size: 1rem;
 }
 
 main#wrapper section#filter ul#filter_field,
@@ -62,10 +59,20 @@ main#wrapper section#filter div#filter_research input::placeholder
 /*--- section / article*/
 section#container_main article.content_main ul li figcaption,
 section#container_main article#content_sub ul li figcaption:first-child,
-section#container_main article.content_main span:first-child,
+section#container_main article.content_main>span,section#container_main article.content_main ul li span:first-child,
 section#container_main article#content_sub p:first-child {
     font-weight: 800;
 }
+
+section#container_main article.content_main div ul li div:last-child span:nth-child(2)::after,
+section#container_main article#content_sub ul li.list_populaire div.info_populaire p:nth-child(2)::after{
+content: "€";
+font-size: 14px;
+font-weight: 700;
+}
+
+
+
 
 
 
