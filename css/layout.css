@@ -218,7 +218,7 @@ section#container_main {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    column-gap: 43px
+    column-gap: 43px;
 }
 
 section#container_main article.content_main {
@@ -227,6 +227,11 @@ section#container_main article.content_main {
     justify-content: space-around;
     width: 100%;
 }
+/* MODIF-------------------------*/
+    section#container_main >div{
+        border: red 3px solid;
+    }
+/*-------------------------*/
 
 section#container_main article.content_main>h2,
 section#container_main article.content_main>span {
@@ -236,6 +241,7 @@ section#container_main article.content_main>span {
 
 section#container_main article.content_main>h2{
     margin-top: 53px;
+
 }
 section#container_main article.content_main>span{
     margin-top: 30px;
