@@ -45,13 +45,13 @@ main#wrapper section#filter div#info_filter span{
     font-weight: 500;
 }
 
-main#wrapper section#filter div#filter_research label input,
-main#wrapper section#filter div#filter_research label button#btn_filter {
+main#wrapper section#filter form#filter_research label input,
+main#wrapper section#filter form#filter_research label button#btn_filter {
     font-weight: 600;font-size: 1rem;
 }
 
 main#wrapper section#filter ul#filter_field,
-main#wrapper section#filter div#filter_research input::placeholder
+main#wrapper section#filte form#filter_research input::placeholder
 {
     font-weight: 800;
 
