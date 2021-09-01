@@ -35,10 +35,10 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <label for="area_research">
                     <input id="area_research" type="text" placeholder="Marseille, France">
-                </label> 
+                </label>
                 <button id="btn_filter" type="button">
-                        <span>Rechercher</span>
-                        <i class="fas fa-search"></i>
+                    <span>Rechercher</span>
+                    <i class="fas fa-search"></i>
                 </button>
             </form>
             <div id="filter_list">
@@ -67,9 +67,12 @@
                 <span>Plus de 500 logements sont disponible dans cette ville</span>
             </div>
         </section>
+        
         <section id="container_main">
+        <div>
+            <h2 class="title_sub">Hébergements à Marseille</h2>
             <article class="content_main">
-                <h2 class="title_sub">Hébergements à Marseille</h2>
+                
                 <div id="list_hebergement_content">
                     <ul>
                         <li class="list_hebergement">
@@ -182,6 +185,7 @@
                 </div>
                 <span>Afficher plus</span>
             </article>
+        </div>
             <article id="content_sub">
                 <h2>Les plus populaire <i class="fas fa-chart-line"></i></h2>
                 <ul>
@@ -237,111 +241,114 @@
                 </ul>
             </article>
         </section>
-        <section id="container_sub">
-            <article id="content_main">
-                <h2>Activites a Marseille</h2>
-                <ul id="activites">
-                    <li id="group_img_1">
+           
+            <section id="container_sub">
+                 <h2>Activites a Marseille</h2>
+                <article id="content_main">
+                    <ul id="activites">
+                        <li id="group_img_1">
+                            <ul>
+                                <li class="image_big">
+                                    <div>
+                                        <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                            alt="le Vieux Port est le centre où les locaux et touristes se retrouvent pour prendre un verre en terrasse ou se balader.">
+                                    </div>
+                                    <div>
+                                        <p>Vieux Port</p>
+                                    </div>
+                                </li>
+                                <li class="small_image_content group_1">
+                                    <ul>
+                                        <li class="image_small">
+                                            <div> <img
+                                                    src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                                    alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l'île de Pomègues, à 87 mètres d'altitude. Il s'agit du point culminant de l'archipel du Frioul.">
+                                            </div>
+                                            <div>
+                                                <p>Fort de Pomegues</p>
+                                            </div>
+                                        </li>
+                                        <li class="image_small">
+                                            <div><img
+                                                    src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                                    alt="Les îles du Frioul constituent un archipel situé à environ 2,7 km au large du quartier d'Endoume, à Marseille. Il est composé de quatre îles">
+                                            </div>
+                                            <div>
+                                                <p>Iles du Frioul</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="group_img_2">
+                            <ul>
+                                <li class="image_big">
+                                    <div>
+                                        <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                            alt="Le parc national des Calanques est un parc national français, couvrant les calanques de Marseille, dans le département des Bouches-du-Rhône, au cœur de la métropole d'Aix-Marseille-Provence">
+                                    </div>
+                                    <div>
+                                        <p>Parc national des Calanques</p>
+                                    </div>
+                                </li>
+                                <li class="small_image_content group_2">
+                                    <ul>
+                                        <li class="image_small">
+                                            <div>
+                                                <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                                    alt="La basilique Notre-Dame-de-la-Garde ou plus simplement Notre-Dame-de-la-Garde, souvent surnommée « la Bonne Mère » (en provençal Nouestro-Damo de la Gardo et la Boueno Maire), est une basilique mineure de l'Église catholique datée du xixe siècle">
+                                            </div>
+                                            <div>
+                                                <p>Notre-Dame-de-la-Garde</p>
+                                            </div>
+                                        </li>
+                                        <li class="image_small">
+                                            <div>
+                                                <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                                    alt="Le palais Longchamp est un palais-château d'eau de style néo-classique-Second Empire du XIXᵉ siècle, du quartier Cinq-Avenues du 4ᵉ arrondissement de Marseille, dans les Bouches-du-Rhône en Provence-Alpes-Côte d'Azur.">
+                                            </div>
+                                            <div>
+                                                <p>Parc Longchamp</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+    </main>
+    <footer id="foot_page">
+        <div>
+            <section id="info_site">
+                <ul>
+                    <li>
+                        <h4>A propos</h4>
                         <ul>
-                            <li class="image_big">
-                                <div>
-                                    <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                        alt="le Vieux Port est le centre où les locaux et touristes se retrouvent pour prendre un verre en terrasse ou se balader.">
-                                </div>
-                                <div>
-                                    <p>Vieux Port</p>
-                                </div>
-                            </li>
-                            <li class="small_image_content group_1">
-                                <ul>
-                                    <li class="image_small">
-                                        <div> <img
-                                                src="./images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                                alt="Erigé à la fin 19ème siècle le Fort de Pomègues domine le nord de l'île de Pomègues, à 87 mètres d'altitude. Il s'agit du point culminant de l'archipel du Frioul.">
-                                        </div>
-                                        <div>
-                                            <p>Fort de Pomegues</p>
-                                        </div>
-                                    </li>
-                                    <li class="image_small">
-                                        <div><img
-                                                src="./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                                alt="Les îles du Frioul constituent un archipel situé à environ 2,7 km au large du quartier d'Endoume, à Marseille. Il est composé de quatre îles">
-                                        </div>
-                                        <div>
-                                            <p>Iles du Frioul</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><a href="#">Fonctionnements du site</a></li>
+                            <li><a href="#">Conditions general de vente</a></li>
+                            <li><a href="#">Donnees et confidentialite</a></li>
                         </ul>
                     </li>
-                    <li id="group_img_2">
+                    <li>
+                        <h4>Nos hebergements</h4>
                         <ul>
-                            <li class="image_big">
-                                <div>
-                                    <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                        alt="Le parc national des Calanques est un parc national français, couvrant les calanques de Marseille, dans le département des Bouches-du-Rhône, au cœur de la métropole d'Aix-Marseille-Provence">
-                                </div>
-                                <div>
-                                    <p>Parc national des Calanques</p>
-                                </div>
-                            </li>
-                            <li class="small_image_content group_2">
-                                <ul>
-                                    <li class="image_small">
-                                        <div>
-                                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                                alt="La basilique Notre-Dame-de-la-Garde ou plus simplement Notre-Dame-de-la-Garde, souvent surnommée « la Bonne Mère » (en provençal Nouestro-Damo de la Gardo et la Boueno Maire), est une basilique mineure de l'Église catholique datée du xixe siècle">
-                                        </div>
-                                        <div>
-                                            <p>Notre-Dame-de-la-Garde</p>
-                                        </div>
-                                    </li>
-                                    <li class="image_small">
-                                        <div>
-                                            <img src="./images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                                alt="Le palais Longchamp est un palais-château d'eau de style néo-classique-Second Empire du XIXᵉ siècle, du quartier Cinq-Avenues du 4ᵉ arrondissement de Marseille, dans les Bouches-du-Rhône en Provence-Alpes-Côte d'Azur.">
-                                        </div>
-                                        <div>
-                                            <p>Parc Longchamp</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><a href="#">Charte qualite</a></li>
+                            <li><a href="#">Soumettre votre hotel</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Assistance</h4>
+                        <ul>
+                            <li><a href="#">Contre d'aide</a></li>
+                            <li><a href="#">Nous contacter</a></li>
                         </ul>
                     </li>
                 </ul>
-            </article>
-        </section>
-    </main>
-    <footer id="foot_page">
-        <section id="info_site">
-            <ul>
-                <li>
-                    <h4>A propos</h4>
-                    <ul>
-                        <li><a href="#">Fonctionnements du site</a></li>
-                        <li><a href="#">Conditions general de vente</a></li>
-                        <li><a href="#">Donnees et confidentialite</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Nos hebergements</h4>
-                    <ul>
-                        <li><a href="#">Charte qualite</a></li>
-                        <li><a href="#">Soumettre votre hotel</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h4>Assistance</h4>
-                    <ul>
-                        <li><a href="#">Contre d'aide</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            </section>
+        </div>
     </footer>
 </body>
 
