@@ -71,17 +71,17 @@ main#wrapper section#filter a {
     border-radius: 0 15px 15px 0;
 }
  
-main#wrapper section#filter div#filter_research {
+main#wrapper section#filter form#filter_research {
     border: 1px solid #f2f2f2;
     border-radius: 25px;
 }
 
-main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
+main#wrapper section#filter form#filter_research i.fa-map-marker-alt {
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
 
-main#wrapper section#filter div#filter_research label button#btn_filter{
+main#wrapper section#filter form#filter_research label button#btn_filter{
     background-color: #0065fc;
     color:white;
     border-radius: 0 15px 15px 0 ;
@@ -92,7 +92,7 @@ main#wrapper section#filter ul#filter_field li {
     border-radius: 25px;
 }
 
-main#wrapper section#filter div#filter_research+div ul#filter_field i {
+main#wrapper section#filter form#filter_research+div ul#filter_field i {
     border-radius: 50%;
     background-color: rgba(0, 101, 252, 0.1);
     color:#0065fc;

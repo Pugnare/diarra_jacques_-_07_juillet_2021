@@ -132,39 +132,39 @@ main#wrapper section#filter div#info_filter i.fa-info {
     padding: 5px 10px;
 }
 
-main#wrapper section#filter div#filter_research {
+main#wrapper section#filter form#filter_research {
     display: flex;
     margin: 25px 0;
     width: 400px;
 }
 
-main#wrapper section#filter div#filter_research label {
+main#wrapper section#filter form#filter_research label {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
    
 }
-main#wrapper section#filter div#filter_research i.fa-map-marker-alt {
+main#wrapper section#filter form#filter_research i.fa-map-marker-alt {
     padding: 20px;
 }
 
-main#wrapper section#filter div#filter_research label input#area_research {
+main#wrapper section#filter form#filter_research label input#area_research {
     padding-left: 1rem;
 }
 
-main#wrapper section#filter div#filter_research label>i.fa-search,
-main#wrapper section#filter div#filter_research label button#btn_filter
+main#wrapper section#filter form#filter_research label>i.fa-search,
+main#wrapper section#filter form#filter_research label button#btn_filter
 {
     padding: 20px;
     align-self: center;
 }
-main#wrapper section#filter div#filter_research label button#btn_filter{
+main#wrapper section#filter form#filter_research label button#btn_filter{
     border: initial;
      position: relative;
 }
 
-main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+main#wrapper section#filter form#filter_research label button#btn_filter i.fa-search {
     visibility: collapse;
     position: absolute;
 }
