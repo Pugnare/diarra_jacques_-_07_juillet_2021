@@ -192,10 +192,6 @@
         ;
     }
 
-    header#branding nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
-        color: #bbbbbb;
-    }
-
     header#branding nav#nav_barre_main ul.list_btn li:nth-child(1) a.btn,
     header#branding nav#nav_barre_main ul.list_btn li:nth-child(2) a.btn {
         padding-bottom: 15px;
@@ -449,11 +445,6 @@
         top: 20px;
     }
 
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
-        color: #bbbbbb;
-    }
-
-
     main#wrapper section#filter ul#filter_field {
         row-gap: 14px;
         column-gap: 6px;
@@ -697,10 +688,6 @@
         visibility: visible;
         left: 20px;
         top: 20px;
-    }
-
-    header#branding div#menu nav#nav_barre_main ul.list_btn li:nth-child a.btn:link {
-        color: #bbbbbb;
     }
 
 
