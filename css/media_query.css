@@ -224,23 +224,23 @@
         margin-bottom: 0;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter {
+    main#wrapper section#filter form#filter_research button#btn_filter {
         padding: 28px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter span {
+    main#wrapper section#filter form#filter_research button#btn_filter span {
         visibility: collapse;
         position: absolute;
         left: -42px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+    main#wrapper section#filter form#filter_research button#btn_filter i.fa-search {
         visibility: visible;
         left: 20px;
         top: 20px;
     }
 
-    main#wrapper section#filter div#filter_research label input~button#btn_filter {
+    main#wrapper section#filter form#filter_research label input~button#btn_filter {
         border-radius: 15px;
     }
 
@@ -420,30 +420,30 @@
         margin-bottom: 0;
     }
 
-    main#wrapper section#filter div#filter_research {
+    main#wrapper section#filter form#filter_research {
         width: 285px;
     }
 
-    main#wrapper section#filter div#filter_research label {
+    main#wrapper section#filter form#filter_research label {
         width: initial;
     }
 
-    main#wrapper section#filter div#filter_research label input {
+    main#wrapper section#filter form#filter_research label input {
         width: 158px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter {
+    main#wrapper section#filter form#filter_research button#btn_filter {
         padding: 28px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter span {
+    main#wrapper section#filter form#filter_research button#btn_filter span {
         visibility: collapse;
         position: absolute;
         left: -62px;
 
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+    main#wrapper section#filter form#filter_research button#btn_filter i.fa-search {
         visibility: visible;
         left: 20px;
         top: 20px;
@@ -670,30 +670,30 @@
         margin-bottom: 0;
     }
 
-    main#wrapper section#filter div#filter_research {
+    main#wrapper section#filter form#filter_research {
         width: 285px;
     }
 
-    main#wrapper section#filter div#filter_research label {
+    main#wrapper section#filter form#filter_research label {
         width: initial;
     }
 
-    main#wrapper section#filter div#filter_research label input {
+    main#wrapper section#filter form#filter_research label input {
         width: 158px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter {
+    main#wrapper section#filter form#filter_research button#btn_filter {
         padding: 28px;
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter span {
+    main#wrapper section#filter form#filter_research button#btn_filter span {
         visibility: collapse;
         position: absolute;
         left: -62px;
 
     }
 
-    main#wrapper section#filter div#filter_research label button#btn_filter i.fa-search {
+    main#wrapper section#filter form#filter_research button#btn_filter i.fa-search {
         visibility: visible;
         left: 20px;
         top: 20px;

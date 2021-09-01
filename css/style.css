@@ -81,7 +81,7 @@ main#wrapper section#filter form#filter_research i.fa-map-marker-alt {
     border-radius: 15px 0 0 15px;
 }
 
-main#wrapper section#filter form#filter_research label button#btn_filter{
+main#wrapper section#filter form#filter_research button#btn_filter{
     background-color: #0065fc;
     color:white;
     border-radius: 0 15px 15px 0 ;

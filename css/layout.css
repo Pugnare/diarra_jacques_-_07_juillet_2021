@@ -154,17 +154,17 @@ main#wrapper section#filter form#filter_research label input#area_research {
 }
 
 main#wrapper section#filter form#filter_research label>i.fa-search,
-main#wrapper section#filter form#filter_research label button#btn_filter
+main#wrapper section#filter form#filter_research button#btn_filter
 {
     padding: 20px;
     align-self: center;
 }
-main#wrapper section#filter form#filter_research label button#btn_filter{
+main#wrapper section#filter form#filter_research button#btn_filter{
     border: initial;
      position: relative;
 }
 
-main#wrapper section#filter form#filter_research label button#btn_filter i.fa-search {
+main#wrapper section#filter form#filter_research button#btn_filter i.fa-search {
     visibility: collapse;
     position: absolute;
 }

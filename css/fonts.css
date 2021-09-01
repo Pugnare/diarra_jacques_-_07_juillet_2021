@@ -46,7 +46,7 @@ main#wrapper section#filter div#info_filter span{
 }
 
 main#wrapper section#filter form#filter_research label input,
-main#wrapper section#filter form#filter_research label button#btn_filter {
+main#wrapper section#filter form#filter_research button#btn_filter {
     font-weight: 600;font-size: 1rem;
 }
 
