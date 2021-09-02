@@ -342,6 +342,7 @@ section#container_main article#content_sub {
 
 section#container_main article#content_sub h2 {
     width: 81%;
+    margin-top:53px;
     display: flex;
     justify-content: space-between;
 }
