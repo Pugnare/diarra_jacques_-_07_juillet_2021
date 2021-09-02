@@ -227,11 +227,6 @@ section#container_main article.content_main {
     justify-content: space-around;
     width: 100%;
 }
-/* MODIF-------------------------*/
-    section#container_main >div{
-        border: red 3px solid;
-    }
-/*-------------------------*/
 
 section#container_main article.content_main>h2,
 section#container_main article.content_main>span {
